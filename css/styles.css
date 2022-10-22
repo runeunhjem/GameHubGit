@@ -21,6 +21,13 @@
   font-weight: 400;
   color: var(--color-white);
 }
+:root .h1__desktop {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 94px;
+}
 :root h1 {
   font-family: "Roboto";
   font-size: 3.583rem;
