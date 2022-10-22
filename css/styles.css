@@ -79,6 +79,7 @@ html {
 }
 
 body {
+  background-color: var(--color-black-90);
   background-image: url(../images/bg-img.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -133,7 +134,14 @@ footer a {
   align-items: center;
 }
 .menu-main img {
-  width: 24px;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.nav {
+  height: 330px;
+  margin-top: 2px;
 }
 
 nav {
@@ -150,7 +158,6 @@ nav {
 }
 nav .active {
   background-color: var(--color-grey-disabled);
-  border-right: 2px solid var(--color-yellow-logo);
   width: 100%;
   border-radius: 0.4em;
   cursor: default;
@@ -165,6 +172,10 @@ nav li:hover {
 }
 nav li:hover p {
   color: var(--color-yellow-logo);
+}
+
+.nav {
+  height: 330px;
 }
 
 .menu-flyin {
@@ -190,7 +201,7 @@ nav li:hover p {
 
 nav, .menu-flyin ul {
   width: 160px;
-  padding: 5px 10px;
+  padding: 0 10px;
   z-index: 999;
 }
 
@@ -203,23 +214,27 @@ nav, .menu-flyin ul {
   padding: 0 0 0px 0;
   margin-left: 30px;
   width: 125px;
+  height: 24px;
   cursor: pointer;
 }
 .close img {
-  width: 16px;
+  padding: 2px;
+  width: 24px;
 }
 
 nav, .menu-flyin li {
   display: flex;
   width: 150px;
+  padding: 3px 0;
   justify-content: flex-start;
   margin: 0 3px;
   z-index: 999;
+  cursor: pointer;
 }
 nav img, .menu-flyin li img {
   padding: 4px;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 nav a {
@@ -286,6 +301,7 @@ nav a {
   justify-content: flex-end;
   margin: 0 auto;
   height: 120px;
+  width: 360px;
 }
 
 .navbar-top {
@@ -296,6 +312,7 @@ nav a {
 }
 .navbar-top .top-menu {
   display: inline-block;
+  padding-left: 5px;
 }
 .navbar-top .topmenu, .navbar-top .top-menu {
   display: inline-block;
@@ -304,7 +321,6 @@ nav a {
   width: 100%;
   background-color: var(--color-grey-disabled);
   border-top: 0px solid var(--color-yellow-logo);
-  border-right: 1px solid var(--color-yellow-logo);
   border-bottom: 0px;
   border-radius: 0.4em;
   cursor: default;
@@ -325,7 +341,6 @@ nav a {
   display: inline-flex;
   justify-content: space-evenly;
   margin-top: 5px;
-  margin-right: 5px;
   align-items: center;
   width: 360px;
   height: 35px;
@@ -358,21 +373,21 @@ nav a {
   display: Flex;
   list-style: none;
   align-items: center;
+  padding: 3px 0;
 }
 .topnav li img {
   padding: 4px;
-  width: 30px;
+  width: 24px;
 }
 .topnav li a {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
-  width: auto;
 }
 
 .top-menu ul {
   width: 150px;
-  height: 350px;
+  height: 330px;
   border: none;
 }
 .top-menu ul li:hover {
@@ -441,7 +456,7 @@ input {
   justify-content: right;
   width: 100%;
   height: 20px;
-  margin: 5px;
+  margin: 5px 0;
   font-size: 0.8rem;
   border-radius: 0.5em;
 }
@@ -451,12 +466,14 @@ input {
   justify-content: flex-end;
   width: 100%;
   height: 24px;
+  margin: 0;
 }
 
 .form__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
+  gap: 8px;
 }
 .form__buttons input {
   font-size: 0.7rem;
@@ -466,7 +483,7 @@ input {
 .cta {
   display: flex;
   justify-content: center;
-  width: 63px;
+  width: 68px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   margin: 5px auto;
@@ -491,6 +508,7 @@ main {
 .main__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -498,7 +516,7 @@ main {
 .buy-sell_buttons {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  max-width: 100%;
   margin-top: 80px;
 }
 .buy-sell_buttons img {
@@ -511,8 +529,9 @@ main {
 
 .logo__main {
   display: flex;
-  width: 100%;
-  height: 50vh;
+  margin: 0;
+  width: 90%;
+  height: 40vh;
   justify-content: center;
   background-image: url(../images/gamehub/logo_ylw_blk.png);
   background-size: contain;
@@ -526,6 +545,10 @@ main {
   justify-content: center;
   margin: 2em auto 4em auto;
   gap: 2em;
+}
+.apps img {
+  width: 30%;
+  max-width: 156px;
 }
 
 /* Footer */
@@ -546,7 +569,6 @@ footer {
 
 .left .active {
   background-color: var(--color-grey-disabled);
-  border-right: 2px solid var(--color-yellow-logo);
   width: 100%;
   border-radius: 0.4em;
   cursor: default;
@@ -564,7 +586,7 @@ footer {
 }
 
 .left ul {
-  width: 165px;
+  width: 170px;
   padding: 5px 10px;
   margin: 5px auto;
 }
@@ -573,6 +595,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 0 3px;
+  padding: 3px;
 }
 .left li img {
   padding: 4px;
