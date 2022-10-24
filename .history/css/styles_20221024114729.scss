@@ -718,8 +718,7 @@ footer {
     text-align: center;
 }
 
-.app-text,
-.partners {
+.app-text {
     display: block;
     padding-bottom: 1em;
     text-align: center;
@@ -739,8 +738,6 @@ footer {
 .trustpilot__images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
 }
 
 .right {

@@ -629,13 +629,6 @@ footer {
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    gap: 2em;
-    width: 33%;
-
     .active {
             background-color: var(--color-grey-disabled);
             width: 100%;
@@ -682,74 +675,16 @@ footer {
 .middle {
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    gap: 2em;
-    width: 33%;
-}
-
-.get-app,
-.social-media {
-    display: block;
     justify-content: center;
     align-items: center;
-}
-
-.social-media {
-    border: 1px solid var(--color-yellow-logo);
-    padding: 1em;
-    border-radius: 1em;
-}
-
-.app-text,
-.app-images,
-.social-media__icons,
-.trustpilot {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-    
-
-}
-
-.social-media__text {
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.app-text,
-.partners {
-    display: block;
-    padding-bottom: 1em;
-    text-align: center;
-    p {
-        padding: 2px;
-    }
-}
-
-.app-images {
-    img {        
-        width: 70%;
-        max-width: 156px;
-        padding: 5px;
-    }
-}
-
-.trustpilot__images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 1em;
 }
 
-.right {
+.get-app, .app-images, .social-media {
     display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    gap: 2em;
-    width: 33%;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .copyright {

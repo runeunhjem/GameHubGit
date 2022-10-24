@@ -689,10 +689,10 @@ footer {
 }
 
 .get-app,
-.social-media {
+.social-media,
+.trustpilot__images {
     display: block;
     justify-content: center;
-    align-items: center;
 }
 
 .social-media {
@@ -718,8 +718,7 @@ footer {
     text-align: center;
 }
 
-.app-text,
-.partners {
+.app-text {
     display: block;
     padding-bottom: 1em;
     text-align: center;
@@ -734,13 +733,6 @@ footer {
         max-width: 156px;
         padding: 5px;
     }
-}
-
-.trustpilot__images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
 }
 
 .right {
