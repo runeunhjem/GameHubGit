@@ -186,7 +186,6 @@ nav {
     margin: 0;
     background-color: var(--color-black-90);
     z-index: 500;
-    // padding-bottom: 1px;
     border: 1px solid var(--color-yellow-logo);
     border-radius: 1em;
     .active {
@@ -219,7 +218,7 @@ nav {
     top: 45px;    
     left: 5px;
     margin: 0;
-    // padding-bottom: 1px;
+    padding-bottom: 1px;
     background-color: var(--color-black-90);
     z-index: 999;
     border: 1px solid var(--color-yellow-logo);
@@ -255,15 +254,14 @@ nav, .menu-flyin ul {
 
 
 .close {
-    display: flex;
-    // grid-template-columns: 0.4fr 0.2fr;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.4fr 0.2fr;
+    justify-content: right;
     align-items: center;
     right: 20px;
-    gap: 3px;
-    // padding: 0 0 2px 0;
-    margin-left: 80px;
-    width: 30px;
+    padding: 0 0 0px 0;
+    margin-left: 30px;
+    width: 125px;
     height: 24px;
     // border: none;
     font-size: 20px;
@@ -342,7 +340,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2px;
+    margin: 0;
     position: fixed;
     top: 5px;
     height: 35px;
@@ -353,7 +351,7 @@ nav a {
     .top-menu {
         display: inline-block;
         padding-left: 5px;
-        margin-top: 2px;
+        
     }
 
     .topmenu, .top-menu {

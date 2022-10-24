@@ -256,12 +256,11 @@ nav, .menu-flyin ul {
 
 .close {
     display: flex;
-    // grid-template-columns: 0.4fr 0.2fr;
+    grid-template-columns: 0.4fr 0.2fr;
     justify-content: space-between;
     align-items: center;
     right: 20px;
-    gap: 3px;
-    // padding: 0 0 2px 0;
+    padding: 0 0 0px 0;
     margin-left: 80px;
     width: 30px;
     height: 24px;
@@ -342,7 +341,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2px;
+    margin: 0;
     position: fixed;
     top: 5px;
     height: 35px;
@@ -353,7 +352,7 @@ nav a {
     .top-menu {
         display: inline-block;
         padding-left: 5px;
-        margin-top: 2px;
+        
     }
 
     .topmenu, .top-menu {
