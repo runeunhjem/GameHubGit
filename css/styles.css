@@ -221,6 +221,7 @@ nav, .menu-flyin ul {
   width: 160px;
   padding: 0 10px;
   z-index: 999;
+  background-color: none;
 }
 
 .close {
