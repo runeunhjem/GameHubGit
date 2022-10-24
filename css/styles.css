@@ -151,6 +151,7 @@ nav {
   display: none;
   position: fixed;
   width: 160px;
+  height: 335px;
   top: 45px;
   left: 5px;
   margin: 0;
@@ -181,7 +182,7 @@ nav li:hover p {
   display: none;
   position: fixed;
   width: 160px;
-  height: 330px;
+  height: 335px;
   top: 45px;
   left: 5px;
   margin: 0;
@@ -325,6 +326,9 @@ nav a {
   border-radius: 0.5em;
   padding-top: 0px;
   z-index: 1000;
+}
+.navbar-top img {
+  margin: 3px;
 }
 .navbar-top .top-menu {
   display: inline-block;

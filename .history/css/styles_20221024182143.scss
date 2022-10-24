@@ -181,7 +181,6 @@ nav {
     display: none;
     position: fixed;
     width: 160px;
-    height: 335px;
     top: 45px;
     left: 5px;
     margin: 0;
@@ -216,7 +215,7 @@ nav {
     display: none;
     position: fixed;
     width: 160px;
-    height: 335px;
+    height: 330px;
     top: 45px;    
     left: 5px;
     margin: 0;
@@ -261,7 +260,7 @@ nav, .menu-flyin ul {
     justify-content: space-between;
     align-items: center;
     right: 20px;
-    gap: 3px;
+    gap: 5px;
     // padding: 0 0 2px 0;
     margin-left: 80px;
     width: 30px;
@@ -280,7 +279,7 @@ nav, .menu-flyin ul {
 nav, .menu-flyin li {
     display: flex;
     width: 140px;
-    padding: 3px 0;
+    padding: 2px 0;
     // justify-content: flex-start;
     margin: 0 3px;
     z-index: 999;
@@ -351,9 +350,6 @@ nav a {
     border-radius: 0.5em;
     padding-top: 0px;
     z-index: 1000;
-    img {
-        margin: 3px;
-    }
     .top-menu {
         display: inline-block;
         padding-left: 5px;
