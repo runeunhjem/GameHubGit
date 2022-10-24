@@ -314,6 +314,10 @@ nav a {
   width: 360px;
 }
 
+.top-burger {
+  cursor: pointer;
+}
+
 .navbar-top {
   display: flex;
   justify-content: center;
