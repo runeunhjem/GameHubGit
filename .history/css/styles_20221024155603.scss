@@ -536,14 +536,17 @@ input {
 #username:focus-within {
     background-color: lightgoldenrodyellow;
     color: var(--color-black-90);
-    
+    #username:before { content: "   ";
+    }
 }
 
 #password:focus-within {
     background-color: lightgoldenrodyellow;
     color: var(--color-black-90);
 }
-
+input:: {
+    content: "   "
+}
 .form__inputs {
     display: flex;
     justify-content: flex-end;

@@ -519,7 +519,6 @@ form {
         background-color: var(--color-black);
         border: 1px solid var(--color-yellow-logo);        
         color: var(--color-yellow-logo);
-        
     }   
 }
 
@@ -532,16 +531,15 @@ input {
     font-size: 0.8rem;
     border-radius: 0.5em;
 }
-
-#username:focus-within {
-    background-color: lightgoldenrodyellow;
-    color: var(--color-black-90);
-    
+input:focus {
+    background-color: lightblue;
 }
 
-#password:focus-within {
-    background-color: lightgoldenrodyellow;
-    color: var(--color-black-90);
+select:focus {
+    background-color: ivory;
+}:focus-within {
+    background-color: lightblue;
+    margin-left: 10px;
 }
 
 .form__inputs {

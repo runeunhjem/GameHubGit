@@ -536,9 +536,9 @@ input {
 #username:focus-within {
     background-color: lightgoldenrodyellow;
     color: var(--color-black-90);
-    
+    ::before { content: "   ";
+        
 }
-
 #password:focus-within {
     background-color: lightgoldenrodyellow;
     color: var(--color-black-90);

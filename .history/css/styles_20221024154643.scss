@@ -532,16 +532,16 @@ input {
     font-size: 0.8rem;
     border-radius: 0.5em;
 }
+#username, #password:focus-within {
+    background-color: lightgoldenrodyellow;
+} {
 
+}
 #username:focus-within {
     background-color: lightgoldenrodyellow;
-    color: var(--color-black-90);
-    
 }
-
 #password:focus-within {
     background-color: lightgoldenrodyellow;
-    color: var(--color-black-90);
 }
 
 .form__inputs {

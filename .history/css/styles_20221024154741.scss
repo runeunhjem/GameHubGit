@@ -535,13 +535,10 @@ input {
 
 #username:focus-within {
     background-color: lightgoldenrodyellow;
-    color: var(--color-black-90);
-    
+    color: var;
 }
-
 #password:focus-within {
     background-color: lightgoldenrodyellow;
-    color: var(--color-black-90);
 }
 
 .form__inputs {
