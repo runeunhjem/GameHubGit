@@ -427,7 +427,7 @@ nav a {
     img {
         // padding: 4px;
         width: 24px;
-        // height: 24px;
+        height: 24px;
     }
     a {
         display: flex;
@@ -517,7 +517,9 @@ form {
     
     #username, #password {
         background-color: var(--color-black);
-        border: 1px solid var(--color-yellow-logo);        
+        border: 1px solid var(--color-yellow-logo);
+        margin-left: 5px;
+        // border-radius: 0.5em;
         color: var(--color-white);
     }   
 }

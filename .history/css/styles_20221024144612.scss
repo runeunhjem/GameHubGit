@@ -99,12 +99,15 @@ html {
 }
 
 body {
-    position: relative;    
+    position: relative;
+    // display: grid;
+    // grid-template-rows: auto 1fr auto;
+    // align-items: center;  
     background-color: var(--color-black-90);
     background-image: url(../images/bg-img.png);
     background-size: 150%;    
     background-repeat: no-repeat;
-    background-position-x: -100px;
+    background-position-x: -150px;
     color: var(--color-white);    
     height: 100vh;    
 }
@@ -379,7 +382,6 @@ nav a {
     align-items: center;
     margin: 0 auto;
     width: 360px;
-    padding: 0;
 }
 
 .topnav ul {
@@ -422,12 +424,10 @@ nav a {
     list-style: none;
     align-items: center;
     padding: 3px 0;
-    width: auto;
-    justify-content: center;
     img {
         // padding: 4px;
         width: 24px;
-        // height: 24px;
+        height: 24px;
     }
     a {
         display: flex;
@@ -455,13 +455,8 @@ nav a {
 }
 .back {
     padding-right: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    margin: 0;
     
-    // a {
-    //     width: 60px;
-    // }
 }
 
 
@@ -492,8 +487,7 @@ nav a {
     text-align: center;
     color: rgba(0, 0, 0, 0.9);
     z-index: 0;
-    p {
-        padding-right: 5px;
+p {
     transform: rotate(-6.92deg);
     -webkit-text-stroke-color: var(--color-yellow-logo);
     -webkit-text-stroke-width: 1px;
@@ -517,7 +511,9 @@ form {
     
     #username, #password {
         background-color: var(--color-black);
-        border: 1px solid var(--color-yellow-logo);        
+        border: 1px solid var(--color-yellow-logo);
+        margin-bottom: 2px;
+        // border-radius: 0.5em;
         color: var(--color-white);
     }   
 }
@@ -526,7 +522,7 @@ input {
     display: flex;
     justify-content: right;
     width: 100%;
-    height: 25px;
+    height: 20px;
     margin: 5px 0;
     font-size: 0.8rem;
     border-radius: 0.5em;
@@ -536,7 +532,7 @@ input {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 30px;
+    height: 24px;
     margin: 0; 
 }
 
