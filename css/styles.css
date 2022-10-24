@@ -15,7 +15,8 @@
 :root h1, :root h2, :root h3, :root h4, :root h5, :root h6,
 :root .paragraph__medium,
 :root .paragraph__xs,
-:root .paragraph__xxs {
+:root .paragraph__xxs,
+:root .paragraph__large {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -54,6 +55,11 @@
   font-weight: 600;
   font-size: 1.44rem;
   line-height: 28px;
+}
+:root .paragraph__large {
+  font-size: 1.2rem;
+  line-height: 25px;
+  font-weight: 600;
 }
 :root .paragraph__medium {
   font-size: 1rem;
@@ -519,7 +525,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 1000px;
 }
 
 .buy-sell_buttons {
@@ -539,7 +545,8 @@ main {
 .logo__main {
   display: flex;
   margin: 0;
-  width: 90%;
+  width: 80%;
+  max-width: 1000px;
   height: 40vh;
   justify-content: center;
   background-image: url(../images/gamehub/logo_ylw_blk.png);
@@ -547,17 +554,16 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .apps {
   display: flex;
   width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 400px;
+  justify-content: space-around;
   margin: 2em auto 4em auto;
-  gap: 2em;
 }
 .apps img {
-  width: 30%;
+  align-items: center;
+  width: 100%;
   max-width: 156px;
 }
 
@@ -649,12 +655,12 @@ footer {
 }
 
 .app-text,
-.app-images,
 .social-media__icons,
 .trustpilot {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social-media__text {
@@ -666,16 +672,26 @@ footer {
 .partners {
   display: block;
   padding-bottom: 1em;
+  justify-content: center;
   text-align: center;
 }
 .app-text p,
 .partners p {
   padding: 2px;
 }
+.app-text a,
+.partners a {
+  text-decoration: underline;
+  color: var(--color-yellow-logo);
+}
 
+.app-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .app-images img {
-  width: 70%;
-  max-width: 156px;
+  max-width: 130px;
   padding: 5px;
 }
 
@@ -693,6 +709,20 @@ footer {
   align-items: center;
   gap: 2em;
   width: 33%;
+}
+
+.logo__footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.logo__footer img {
+  width: 75%;
+  max-width: 100%;
+}
+
+.partners .paragraph__medium {
+  padding-bottom: 1em;
 }
 
 .copyright {
