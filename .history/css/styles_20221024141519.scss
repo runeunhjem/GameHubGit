@@ -423,9 +423,8 @@ nav a {
     align-items: center;
     padding: 3px 0;
     img {
-        // padding: 4px;
+        padding: 4px;
         width: 24px;
-        height: 24px;
     }
     a {
         display: flex;
@@ -652,7 +651,8 @@ footer {
     padding: 2em 0;
 }
 
-.left {
+.left,
+.middle {
     display: flex;
     flex-direction: column;
     justify-content: top;

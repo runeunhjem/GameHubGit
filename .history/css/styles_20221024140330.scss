@@ -423,9 +423,8 @@ nav a {
     align-items: center;
     padding: 3px 0;
     img {
-        // padding: 4px;
+        padding: 4px;
         width: 24px;
-        height: 24px;
     }
     a {
         display: flex;
@@ -639,12 +638,12 @@ main {
 
 /* Footer */
 footer {
-    display: flex;    
+    display: flex;
     flex-direction: column;    
     align-items: center;
     background-color: var(--color-black-90);
 }
-.footer__wrapper {
+.footer {
     width: 100%;
     border-top: 1px solid var(--color-yellow-logo);
     display: flex;    
@@ -732,6 +731,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
+
 }
 
 .social-media__text {
@@ -750,7 +751,8 @@ footer {
     }
     a {
         text-decoration: underline;
-        color: var(--color-yellow-logo);        
+        color: var(--color-yellow-logo);
+        
     }
 }
 
@@ -759,6 +761,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     img {        
+        // width: 70%;
         max-width: 130px;
         padding: 5px;
     }

@@ -115,6 +115,7 @@ footer a {
 .main-menu {
   display: inline-block;
   position: fixed;
+  display: none;
 }
 
 .menu-main:hover {
@@ -389,8 +390,8 @@ nav a {
   padding: 3px 0;
 }
 .topnav li img {
-  padding: 4px;
   width: 24px;
+  height: 24px;
 }
 .topnav li a {
   display: flex;
@@ -575,7 +576,7 @@ footer {
   background-color: var(--color-black-90);
 }
 
-.footer {
+.footer__wrapper {
   width: 100%;
   border-top: 1px solid var(--color-yellow-logo);
   display: flex;

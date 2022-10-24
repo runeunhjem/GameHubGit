@@ -423,9 +423,8 @@ nav a {
     align-items: center;
     padding: 3px 0;
     img {
-        // padding: 4px;
+        padding: 4px;
         width: 24px;
-        height: 24px;
     }
     a {
         display: flex;
@@ -731,7 +730,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;   
+
 }
 
 .social-media__text {
