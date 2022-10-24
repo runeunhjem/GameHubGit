@@ -135,7 +135,7 @@ footer {
 .main-menu {
     display: inline-block;
     position: fixed;
-    // display: none;
+    display: none;
     
 }
 
@@ -279,7 +279,7 @@ nav, .menu-flyin li {
     display: flex;
     width: 150px;
     padding: 3px 0;
-    // justify-content: flex-start;
+    justify-content: flex-start;
     margin: 0 3px;
     z-index: 999;
     cursor: pointer;
@@ -350,13 +350,12 @@ nav a {
 
     .topmenu, .top-menu {
         display: inline-block;
-        
         // .topmenu {
         //     display: inline-block;
         //     width: 165px;
         
             li {
-                
+                width: 40px;
                 .active {
                     width: 100%;
                     background-color: var(--color-grey-disabled);
@@ -425,7 +424,7 @@ nav a {
     align-items: center;
     padding: 3px 0;
     width: auto;
-    justify-content: flex-start;
+    justify-content: center;
     img {
         // padding: 4px;
         width: 24px;
@@ -439,11 +438,7 @@ nav a {
     }
 }
 
-.top-menu li {
-    width: 150px;
-}
-
-    .top-menu ul {
+.top-menu ul {
     width: 150px;
     height: 330px;
     border: none;

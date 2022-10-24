@@ -117,7 +117,6 @@ footer a {
 .main-menu {
   display: inline-block;
   position: fixed;
-  display: none;
 }
 
 .menu-main:hover {
@@ -246,7 +245,6 @@ nav, .menu-flyin li {
   display: flex;
   width: 150px;
   padding: 3px 0;
-  justify-content: flex-start;
   margin: 0 3px;
   z-index: 999;
   cursor: pointer;
@@ -392,7 +390,7 @@ nav a {
   align-items: center;
   padding: 3px 0;
   width: auto;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .topnav li img {
   width: 24px;
@@ -401,6 +399,10 @@ nav a {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
+}
+
+.top-menu li {
+  width: 150px;
 }
 
 .top-menu ul {
@@ -572,6 +574,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .apps {
   display: flex;
   width: 100%;
