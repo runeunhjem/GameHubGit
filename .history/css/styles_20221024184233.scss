@@ -339,13 +339,11 @@ nav a {
     width: 360px;
 }
 
-
-
 .navbar-top {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1px;
+    margin-top: 2px;
     position: fixed;
     top: 5px;
     height: 35px;
@@ -353,7 +351,7 @@ nav a {
     border-radius: 0.5em;
     padding-top: 0px;
     z-index: 1000;
-    .topmenu__images {
+    topmeu__images {
         margin: 3px;
     }
     .top-menu {

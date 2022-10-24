@@ -318,7 +318,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2px;
+  margin-top: 1px;
   position: fixed;
   top: 5px;
   height: 35px;
@@ -327,7 +327,7 @@ nav a {
   padding-top: 0px;
   z-index: 1000;
 }
-.navbar-top img {
+.navbar-top .topmenu__images {
   margin: 3px;
 }
 .navbar-top .top-menu {
