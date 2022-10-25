@@ -115,8 +115,8 @@ footer a {
 }
 
 .main-menu {
-  display: inline-block;
   position: fixed;
+  display: none;
 }
 
 .menu-main:hover {
@@ -133,7 +133,7 @@ footer a {
   background: var(--color-black-90);
   padding: 0px 10px 0px 0px;
   gap: 3px;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: 5px;
   border-radius: 0.5em;
   border: 1px solid var(--color-yellow-logo);
@@ -563,7 +563,7 @@ main {
   margin-top: 5em;
 }
 .buy-sell_buttons img {
-  width: 15vh;
+  width: 12vh;
   border-radius: 50%;
 }
 .buy-sell_buttons a {
@@ -600,7 +600,7 @@ main {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--color-black-90);
 }
 
@@ -608,8 +608,13 @@ footer {
   width: 100%;
   border-top: 1px solid var(--color-yellow-logo);
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   padding: 2em 0;
+}
+.footer__wrapper .widescreen {
+  display: none;
 }
 
 .left {
@@ -617,8 +622,8 @@ footer {
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  gap: 2em;
   width: 33%;
+  border-bottom: 1px solid var(--color-yellow-logo);
 }
 .left .active {
   background-color: var(--color-grey-disabled);
@@ -666,6 +671,7 @@ footer {
   flex-direction: column;
   justify-content: top;
   align-items: center;
+  margin-top: 1em;
   gap: 2em;
   width: 33%;
 }
@@ -675,6 +681,7 @@ footer {
   display: block;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid var(--color-yellow-logo);
 }
 
 .social-media {
@@ -687,7 +694,6 @@ footer {
 .social-media__icons,
 .trustpilot {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -701,7 +707,6 @@ footer {
 .partners {
   display: block;
   padding-bottom: 1em;
-  justify-content: center;
   text-align: center;
 }
 .app-text p,
@@ -718,6 +723,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 1em;
 }
 .app-images img {
   max-width: 130px;
@@ -729,6 +735,11 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
+  padding-bottom: 1.5em;
+}
+
+.trustpilot {
+  border-bottom: 1px solid var(--color-yellow-logo);
 }
 
 .right {
@@ -738,6 +749,7 @@ footer {
   align-items: center;
   gap: 2em;
   width: 33%;
+  margin-top: 2em;
 }
 
 .logo__footer {
@@ -763,4 +775,34 @@ footer {
   text-align: center;
   margin: 0 auto;
   background-color: var(--color-black-90);
+}
+
+/* @media screensize under 480px */
+@media screen and (min-width: 769px) {
+  .main-menu {
+    display: inline-block;
+  }
+  .buy-sell_buttons img {
+    width: 15vh;
+  }
+  .footer__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer__wrapper .widescreen {
+    display: flex;
+  }
+  .left, .middle, .right,
+.get-app,
+.trustpilot {
+    border-bottom: 0;
+    margin-top: 0;
+  }
+  .trustpilot__images {
+    padding-top: 1em;
+  }
+  .social-media {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }/*# sourceMappingURL=styles.css.map */
