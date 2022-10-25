@@ -756,7 +756,7 @@ footer {
 .middle {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: top;
     align-items: center;
     margin-top: 1em;;
     gap: 2em;
@@ -833,7 +833,7 @@ footer {
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: top;
     align-items: center;
     gap: 2em;
     width: 33%;

@@ -213,7 +213,7 @@ nav, .menu-flyin ul {
   width: 160px;
   padding: 0 10px;
   z-index: 999;
-  background-color: none;
+  background-color: transparent;
 }
 
 .close {
@@ -267,8 +267,6 @@ nav a {
           animation-name: flyin;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-direction: "normal";
-          animation-direction: "normal";
 }
 @-webkit-keyframes flyin {
   0% {
@@ -293,8 +291,8 @@ nav a {
           animation-name: flyin;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-direction: "normal";
-          animation-direction: "normal";
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
 }
 @keyframes flyin {
   0% {
@@ -306,7 +304,8 @@ nav a {
 }
 
 .wrapper {
-  display: flex wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;
   margin: 0 auto;
@@ -620,7 +619,7 @@ footer {
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   align-items: center;
   width: 33%;
   border-bottom: 1px solid var(--color-yellow-logo);
@@ -669,7 +668,7 @@ footer {
 .middle {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 1em;
   gap: 2em;
@@ -745,7 +744,7 @@ footer {
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   align-items: center;
   gap: 2em;
   width: 33%;
