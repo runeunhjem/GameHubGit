@@ -12,7 +12,6 @@
   --color-black-90: rgba(0, 0, 0, 0.9);
   /* Font styles */
 }
-
 :root h1, :root h2, :root h3, :root h4, :root h5, :root h6,
 :root .paragraph__medium,
 :root .paragraph__xs,
@@ -23,7 +22,6 @@
   font-weight: 400;
   color: var(--color-white);
 }
-
 :root .h1__desktop {
   font-family: "Roboto";
   font-style: italic;
@@ -31,56 +29,46 @@
   font-size: 80px;
   line-height: 94px;
 }
-
 :root h1 {
   font-family: "Roboto";
   font-size: 3.583rem;
   line-height: 67px;
 }
-
 :root h2 {
   font-size: 2.986rem;
   line-height: 58px;
 }
-
 :root h3 {
   font-size: 2.488rem;
   line-height: 48px;
 }
-
 :root h4 {
   font-size: 2.074rem;
   line-height: 40px;
   color: var(--color-yellow-logo);
 }
-
 :root h5 {
   font-size: 1.728rem;
   line-height: 33px;
 }
-
 :root h6 {
   font-weight: 600;
   font-size: 1.44rem;
   line-height: 28px;
 }
-
 :root .paragraph__large {
   font-size: 1.2rem;
   line-height: 25px;
   font-weight: 600;
 }
-
 :root .paragraph__medium {
   font-size: 1rem;
   line-height: 24px;
 }
-
 :root .paragraph__xs {
   font-size: 0.694rem;
   line-height: 16px;
 }
-
 :root .paragraph__xxs {
   font-size: 0.579rem;
   line-height: 16px;
@@ -205,22 +193,10 @@ footer a {
 }
 
 #top-burger:checked ~ .menu-flyin {
-  display: block;
-  -webkit-animation-name: flyin;
-  animation-name: flyin;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-}
-
-@-webkit-keyframes flyin {
-  0% {
-    left: -300px;
-  }
-  100% {
-    left: 0px;
-  }
+  display: block;  
+          animation-name: flyin;  
+          animation-duration: 0.5s;
+          animation-direction: normal;
 }
 
 @keyframes flyin {
@@ -231,6 +207,7 @@ footer a {
     left: 0px;
   }
 }
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -238,7 +215,7 @@ footer a {
   justify-content: flex-end;
   margin: 0 auto;
   height: 140px;
-  width: 100%;
+  width: 360px;
 }
 
 .top-burger {
@@ -258,11 +235,9 @@ footer a {
   padding-top: 0px;
   z-index: 1000;
 }
-
 .navbar-top .topmenu__images {
   margin: 3px;
 }
-
 .navbar-top .top-menu {
   display: inline-block;
   padding-left: 5px;
@@ -275,12 +250,11 @@ footer a {
   border-radius: 0.4em;
   cursor: default;
 }
-
 .navbar-top .top-menu li .active p {
   color: var(--color-yellow-logo);
 }
 
-.topnav {
+.wrapp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,24 +274,20 @@ footer a {
   border: 1px solid var(--color-yellow-logo);
   padding: 0;
 }
-
 .topnav ul li:hover {
   background-color: var(--color-grey-disabled);
   border-top: 1px solid var(--color-yellow-logo);
   border-bottom: 1px solid var(--color-yellow-logo);
   border-radius: 0.4em;
 }
-
 .topnav ul li:hover p {
   color: var(--color-yellow-logo);
 }
-
 .topnav ul .active {
   background-color: var(--color-grey-disabled);
   border-radius: 0.4em;
   cursor: default;
 }
-
 .topnav ul .active p {
   color: var(--color-yellow-logo);
 }
@@ -331,11 +301,9 @@ footer a {
   height: 30px;
   justify-content: flex-start;
 }
-
 .topnav li img {
   width: 24px;
 }
-
 .topnav li a {
   display: flex;
   justify-content: flex-start;
@@ -352,7 +320,6 @@ footer a {
   height: 330px;
   border: none;
 }
-
 .top-menu ul li:hover {
   background-color: var(--color-grey-disabled);
   border-right: 2px solid var(--color-yellow-logo);
@@ -360,7 +327,6 @@ footer a {
   border-bottom: none;
   border-radius: 0.4em;
 }
-
 .top-menu ul li:hover p {
   color: var(--color-yellow-logo);
 }
@@ -371,6 +337,7 @@ footer a {
   align-items: center;
   justify-content: flex-end;
 }
+
 
 /* Main section*/
 main {
@@ -392,12 +359,10 @@ main {
   width: 90%;
   margin-top: 5em;
 }
-
 .buy-sell_buttons img {
   width: 12vh;
   border-radius: 50%;
 }
-
 .buy-sell_buttons a {
   border-radius: 50%;
 }
@@ -422,7 +387,6 @@ main {
   justify-content: space-around;
   margin: 2em auto 4em auto;
 }
-
 .apps img {
   align-items: center;
   width: 100%;
@@ -446,7 +410,6 @@ footer {
   justify-content: space-evenly;
   padding: 2em 0;
 }
-
 .footer__wrapper .widescreen {
   display: none;
 }
@@ -456,26 +419,23 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+//   width: 33%;
   border-bottom: 1px solid var(--color-yellow-logo);
 }
-
 .left .active {
   background-color: var(--color-grey-disabled);
   width: 100%;
   border-radius: 0.4em;
   cursor: default;
 }
-
 .left .active p {
   color: var(--color-yellow-logo);
 }
-
 .left li:hover {
   background-color: var(--color-grey-disabled);
   border-right: 2px solid var(--color-yellow-logo);
   border-radius: 0.4em;
 }
-
 .left li:hover p {
   color: var(--color-yellow-logo);
 }
@@ -492,7 +452,6 @@ footer {
   margin: 0 3px;
   padding: 3px;
 }
-
 .left li img {
   padding: 4px;
   width: 30px;
@@ -511,6 +470,7 @@ footer {
   align-items: center;
   margin-top: 1em;
   gap: 2em;
+//   width: 33%;
 }
 
 .get-app,
@@ -546,12 +506,10 @@ footer {
   padding-bottom: 1em;
   text-align: center;
 }
-
 .app-text p,
 .partners p {
   padding: 2px;
 }
-
 .app-text a,
 .partners a {
   text-decoration: underline;
@@ -564,7 +522,6 @@ footer {
   justify-content: center;
   padding-bottom: 1em;
 }
-
 .app-images img {
   max-width: 130px;
   padding: 5px;
@@ -588,6 +545,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 2em;
+//   width: 33%;
   margin-top: 2em;
 }
 
@@ -596,7 +554,6 @@ footer {
   justify-content: center;
   text-align: center;
 }
-
 .logo__footer img {
   width: 75%;
   max-width: 100%;
@@ -619,9 +576,12 @@ footer {
 
 /* @media screensize under 480px */
 @media screen and (min-width: 769px) {
+
   .main-menu {
     display: inline-block;
   }
+  
+  
   .buy-sell_buttons img {
     width: 15vh;
   }
@@ -645,4 +605,4 @@ footer {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-}/*# sourceMappingURL=main.css.map */
+}
