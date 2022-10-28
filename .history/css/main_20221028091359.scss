@@ -928,17 +928,12 @@ footer {
 
   .header__wrapper-wide {
     height: 200px;
-    max-width: 1980px;
     .explore {      
-      h1 {        
-        margin-top: 30px;        
+      h1 {
+        
+        margin-top: 30px;
+        align-self: flex-start;
       }
     }
-  }
-
-  .footer__wrapper {
-    padding-right: 550px;
-    padding-left: 550px;
-    justify-content: space-around;
   }
 }

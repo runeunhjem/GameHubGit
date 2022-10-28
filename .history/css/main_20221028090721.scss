@@ -923,22 +923,14 @@ footer {
   }
 }
 
-/* @media screensize over 1980px */
-@media screen and (min-width: 1981px) {
+/* @media screensize over 1080px */
+@media screen and (min-width: 1081px) {
 
   .header__wrapper-wide {
-    height: 200px;
-    max-width: 1980px;
-    .explore {      
-      h1 {        
-        margin-top: 30px;        
+    .explore {
+      h1 {
+        
       }
     }
-  }
 
-  .footer__wrapper {
-    padding-right: 550px;
-    padding-left: 550px;
-    justify-content: space-around;
-  }
 }
