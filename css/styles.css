@@ -12,78 +12,37 @@
   --color-black-90: rgba(0, 0, 0, 0.9);
   /* Font styles */
 }
-
-:root h1, :root h2, :root h3, :root h4, :root h5, :root h6,
-:root .paragraph__medium,
-:root .paragraph__xs,
-:root .paragraph__xxs,
-:root .paragraph__large {
+:root h1, :root h2, :root h3, :root h4, :root h5, :root h6 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  color: var(--color-white);
 }
-
-:root .h1__desktop {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 94px;
-}
-
 :root h1 {
   font-family: "Roboto";
   font-size: 3.583rem;
   line-height: 67px;
 }
-
 :root h2 {
   font-size: 2.986rem;
   line-height: 58px;
 }
-
 :root h3 {
   font-size: 2.488rem;
   line-height: 48px;
 }
-
 :root h4 {
   font-size: 2.074rem;
   line-height: 40px;
   color: var(--color-yellow-logo);
 }
-
 :root h5 {
   font-size: 1.728rem;
   line-height: 33px;
 }
-
 :root h6 {
   font-weight: 600;
   font-size: 1.44rem;
   line-height: 28px;
-}
-
-:root .paragraph__large {
-  font-size: 1.2rem;
-  line-height: 25px;
-  font-weight: 600;
-}
-
-:root .paragraph__medium {
-  font-size: 1rem;
-  line-height: 24px;
-}
-
-:root .paragraph__xs {
-  font-size: 0.694rem;
-  line-height: 16px;
-}
-
-:root .paragraph__xxs {
-  font-size: 0.579rem;
-  line-height: 16px;
 }
 
 * {
