@@ -54,7 +54,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.0rem;
+  font-size: 1.05rem;
 }
 
 html {
@@ -98,7 +98,7 @@ footer a {
   display: none;
   position: fixed;
   width: 160px;
-  height: 360px;
+  height: 335px;
   top: 45px;
   left: 5px;
   margin: 0;
@@ -110,7 +110,6 @@ footer a {
 
 .menu-flyin li:hover {
   background-color: var(--color-grey-disabled);
-  
   border-right: 2px solid var(--color-yellow-logo);
   border-radius: 0.4em;
 }
@@ -132,7 +131,7 @@ footer a {
 
 .menu-flyin .menu {
   width: 160px;
-  padding: 1px 10px;
+  padding: 0 10px;
   z-index: 999;
   background-color: transparent;
 }
@@ -146,7 +145,7 @@ footer a {
   margin-left: 80px;
   width: 30px;
   height: 24px;
-  // font-size: 1.05rem;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -224,8 +223,6 @@ footer a {
 }
 .navbar-top .topmenu__images {
   margin: 3px;
-  display: flex;
-  align-items: center;;
 }
 .navbar-top .top-menu {
   display: inline-block;
@@ -234,9 +231,7 @@ footer a {
   width: 100%;
   border: 0px;
 }
-.menu {
-  align-items: center;
-}
+
 .navbar-top .top-menu li .active {
   width: 100%;
   background-color: var(--color-grey-disabled);
@@ -267,19 +262,12 @@ footer a {
   border: 1px solid var(--color-yellow-logo);
   padding: 0;
 }
-.topnav__mob li:hover {
+.topnav__mob .menu li:hover {
   background-color: var(--color-grey-disabled);
   border-top: 1px solid var(--color-yellow-logo);
   border-bottom: 1px solid var(--color-yellow-logo);
   border-radius: 0.4em;
   color: var(--color-yellow-logo);
-}
-.menu-flyin  li:hover {
-  background-color: var(--color-grey-disabled);
-  border-top: 0px solid var(--color-yellow-logo);
-  border-bottom: 0px solid var(--color-yellow-logo);
-  // border-radius: 0.4em;
-  // color: var(--color-yellow-logo);
 }
 
 .topnav__mob .menu .active {
@@ -311,13 +299,12 @@ footer a {
 }
 
 .top-menu li {
-  width: 146px;
-  height: 32px;
+  width: 140px;
 }
 
 .top-menu .menu {
-  width: 156px;
-  // height: 330px;
+  width: 150px;
+  height: 330px;
   border: none;
 }
 .top-menu .menu li:hover {
@@ -781,7 +768,7 @@ footer {
     width: 100%;    
   }
 
-    .header__wrapper-wide {
+  .header__wrapper-wide {
     padding: 0 5px;
     width: 100%;
     padding-top: 5px;
@@ -792,7 +779,7 @@ footer {
     '. logo explore profile__pic profile__name logout'
     '. logo explore . . .';
     // 'menu logo explore . . .';
-    grid-template-columns: 60px 190px 1fr 100px 210px 155px;
+    grid-template-columns: 80px 190px 1fr 100px 210px 155px;
     grid-template-rows: 40px 75px 15px;
     height: 140px;
     width: 100%;

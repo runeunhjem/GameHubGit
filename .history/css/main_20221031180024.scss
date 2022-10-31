@@ -274,14 +274,7 @@ footer a {
   border-radius: 0.4em;
   color: var(--color-yellow-logo);
 }
-.menu-flyin  li:hover {
-  background-color: var(--color-grey-disabled);
-  border-top: 0px solid var(--color-yellow-logo);
-  border-bottom: 0px solid var(--color-yellow-logo);
-  // border-radius: 0.4em;
-  // color: var(--color-yellow-logo);
-}
-
+.menu {}
 .topnav__mob .menu .active {
   background-color: var(--color-grey-disabled);
   border-radius: 0.4em;
