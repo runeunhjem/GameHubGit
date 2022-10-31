@@ -174,11 +174,11 @@ footer a {
 #top-burger:checked ~ .menu-flyin {
   display: block;
   -webkit-animation-name: flyin;
-  animation-name: flyin;
+          animation-name: flyin;
   -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-direction: normal;
-  animation-direction: normal;
+          animation-direction: normal;
 }
 
 @-webkit-keyframes flyin {

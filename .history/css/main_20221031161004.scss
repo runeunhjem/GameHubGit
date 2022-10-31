@@ -756,7 +756,20 @@ footer {
   }
 }
 
-
+#top-burger:checked ~ .menu-flyin {
+  display: block;  
+  animation-name: flyin;  
+  animation-duration: 0.5s;  
+  animation-direction: normal;
+}
+@keyframes flyin {
+  0% {
+    top: -30px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
