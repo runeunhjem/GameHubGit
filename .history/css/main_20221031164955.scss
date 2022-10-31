@@ -129,7 +129,7 @@ footer a {
   color: var(--color-yellow-logo);
 }
 
-.menu-flyin menu {
+.menu-flyin span {
   width: 160px;
   padding: 0 10px;
   z-index: 999;
@@ -302,12 +302,12 @@ footer a {
   width: 140px;
 }
 
-.top-menu menu {
+.top-menu span {
   width: 150px;
   height: 330px;
   border: none;
 }
-.top-menu menu li:hover {
+.top-menu span li:hover {
   background-color: var(--color-grey-disabled);
   border-right: 2px solid var(--color-yellow-logo);
   border-top: none;
@@ -432,7 +432,7 @@ footer {
   }
 }
 
-.left menu {
+.left span {
   width: 170px;
   padding: 5px 10px;
   margin: 5px auto;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;900&display=swap");
 
 :root {
-  
+  font-size: 1rem;
   /* Color styles */
   --color-yellow-logo: #F5C518;
   --color-yellow-80: rgba(245, 197, 24, 0.5);
@@ -54,7 +54,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.05rem;
 }
 
 html {
@@ -129,7 +128,7 @@ footer a {
   color: var(--color-yellow-logo);
 }
 
-.menu-flyin menu {
+.menu-flyin span {
   width: 160px;
   padding: 0 10px;
   z-index: 999;
@@ -164,9 +163,9 @@ footer a {
 }
 
 .menu-flyin li img {
-  padding: 2px;
-  width: 30px;
-  height: 30px;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
 }
 
 .menu-flyin a {
@@ -251,7 +250,7 @@ footer a {
   padding: 0;  
 }
 
-.topnav__mob menu {
+.topnav__mob span {
   display: inline-flex;
   justify-content: space-evenly;
   margin-top: 0px;
@@ -262,7 +261,7 @@ footer a {
   border: 1px solid var(--color-yellow-logo);
   padding: 0;
 }
-.topnav__mob menu li:hover {
+.topnav__mob span li:hover {
   background-color: var(--color-grey-disabled);
   border-top: 1px solid var(--color-yellow-logo);
   border-bottom: 1px solid var(--color-yellow-logo);
@@ -270,12 +269,12 @@ footer a {
   color: var(--color-yellow-logo);
 }
 
-.topnav__mob menu .active {
+.topnav__mob span .active {
   background-color: var(--color-grey-disabled);
   border-radius: 0.4em;
   cursor: default;
 }
-.topnav__mob menu .active p {
+.topnav__mob span .active p {
   color: var(--color-yellow-logo);
 }
 
@@ -302,12 +301,12 @@ footer a {
   width: 140px;
 }
 
-.top-menu menu {
+.top-menu span {
   width: 150px;
   height: 330px;
   border: none;
 }
-.top-menu menu li:hover {
+.top-menu span li:hover {
   background-color: var(--color-grey-disabled);
   border-right: 2px solid var(--color-yellow-logo);
   border-top: none;
@@ -432,7 +431,7 @@ footer {
   }
 }
 
-.left menu {
+.left span {
   width: 170px;
   padding: 5px 10px;
   margin: 5px auto;
