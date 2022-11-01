@@ -775,7 +775,6 @@ footer {
     display: grid;
     width: 100%;
     height: 100%;
-    padding-top: 1em;
     grid-area: explore;
     text-align: center;
   }
@@ -786,9 +785,11 @@ footer {
     font-size: 4.7vw;
     white-space: nowrap;
     color: var(--color-black);
-    transform: rotate(-6.92deg);
-    -webkit-text-stroke: 2px;
+    -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--color-yellow-logo);
+  }
+  .header__wrapper-wide .explore img {
+    width: 80%;
   }
   .header__wrapper-wide .header__profile-pic {
     background-image: url(../images/img_profilepic_wide.png);
@@ -845,6 +846,10 @@ footer {
   }
   .header__wrapper-wide .explore h1 {
     margin-top: 30px;
+  }
+  .header__wrapper-wide .explore img {
+    margin-top: 25px;
+    width: 60%;
   }
   .footer__wrapper {
     padding-right: 550px;

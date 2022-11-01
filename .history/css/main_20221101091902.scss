@@ -826,7 +826,7 @@ footer {
         font-family: 'Roboto';
         font-style: italic;
         font-weight: 900;
-        font-size: 4.7vw;
+        // font-size: 4.7vw;
         white-space: nowrap;
         color: var(--color-black);
         // transform: rotate(-6.92deg);
@@ -835,7 +835,6 @@ footer {
       }
       img {
         width: 80%;
-
       }
     }
 
@@ -907,13 +906,8 @@ footer {
       h1 {        
         margin-top: 30px;        
       }
-      img {
-        margin-top: 25px;
-        width: 60%;
-      }
     }
   }
-  
 
   .footer__wrapper {
     padding-right: 550px;
