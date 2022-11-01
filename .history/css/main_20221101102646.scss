@@ -408,7 +408,9 @@ footer {
   justify-content: space-evenly;
   padding: 2em 0;
 }
-
+.footer__wrapper .widescreen {
+  display: none;
+}
 
 .left {
   display: flex;
@@ -581,10 +583,6 @@ footer {
 /* @media screensize under 769px */
 @media screen and (max-width: 768px) {
   
-  .footer__wrapper .widescreen {
-    display: none;
-  }
-
   .header__wrapper {
     display: none;
   }
@@ -879,7 +877,7 @@ footer {
     align-items: flex-start;
   }
 
-  .footer__wrapper, .links, .widescreen {
+  .footer__wrapper .links .widescreen {
     display: flex;
     
   }
