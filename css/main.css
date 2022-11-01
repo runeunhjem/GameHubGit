@@ -93,8 +93,8 @@ footer a {
   position: fixed;
   width: 160px;
   height: 360px;
-  top: 50px;
-  right: 7px;
+  top: 47px;
+  right: 6px;
   margin: 0;
   background-color: var(--color-black-90);
   z-index: 999;
