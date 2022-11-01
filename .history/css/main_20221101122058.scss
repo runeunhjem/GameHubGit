@@ -106,7 +106,7 @@ footer a {
   z-index: 999;
   border: 1px solid var(--color-yellow-logo);
   border-radius: 1em;
-  // overflow-y: auto;
+  scroll-behavior: auto;
 }
 
 .menu-flyin .links:hover {
@@ -576,27 +576,6 @@ footer {
   text-align: center;
   margin: 0 auto;
   background-color: var(--color-black-90);
-}
-
-@media screen and (max-height: 450px) {
-  .menu-flyin {
-    height: 250px;
-    // padding: 0;
-    .active {
-      height: 16px;
-    }
-    .links {
-      height: 20px;
-      font-size: 8px;
-      img {
-        padding: 0px;
-        width: 15px;
-        height: 12px;
-      }
-    }
-    
-  }
-  
 }
 
 /* @media screensize under 769px */

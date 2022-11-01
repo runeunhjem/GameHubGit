@@ -586,15 +586,14 @@ footer {
       height: 16px;
     }
     .links {
-      height: 20px;
+      height: 16px;
       font-size: 8px;
-      img {
-        padding: 0px;
-        width: 15px;
-        height: 12px;
-      }
     }
-    
+    img {
+      // padding: 8px;
+      width: 15px;
+      height: 12px;
+    }
   }
   
 }

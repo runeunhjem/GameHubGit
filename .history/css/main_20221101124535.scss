@@ -580,21 +580,10 @@ footer {
 
 @media screen and (max-height: 450px) {
   .menu-flyin {
-    height: 250px;
-    // padding: 0;
-    .active {
-      height: 16px;
+    padding: 0
+    img {
+      display: none;
     }
-    .links {
-      height: 20px;
-      font-size: 8px;
-      img {
-        padding: 0px;
-        width: 15px;
-        height: 12px;
-      }
-    }
-    
   }
   
 }
