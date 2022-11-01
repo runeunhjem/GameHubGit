@@ -183,19 +183,19 @@ footer a {
 
 @-webkit-keyframes flyin {
   0% {
-    right: -300px;
+    top: -300px;
   }
   100% {
-    right: 0px;
+    top: 47px;
   }
 }
 
 @keyframes flyin {
   0% {
-    right: -300px;
+    top: -300px;
   }
   100% {
-    right: 0px;
+    top: 47px;
   }
 }
 .header__wrapper {
