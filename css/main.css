@@ -515,14 +515,15 @@ footer {
   text-align: center;
 }
 
-.app-text p,
-.partners p {
+.app-text p {
   padding: 2px;
 }
 
 .app-text a,
 .partners a {
-  text-decoration: underline;
+  display: block;
+  padding-top: 5px;
+  text-decoration: none;
   color: var(--color-yellow-logo);
 }
 
@@ -570,8 +571,15 @@ footer {
   max-width: 100%;
 }
 
-.partners .paragraph__medium {
+.partners {
   padding-bottom: 1em;
+}
+.partners a:hover {
+  text-decoration: underline;
+}
+.partners h7 {
+  font-size: 1.2rem;
+  padding-bottom: 5px;
 }
 
 .copyright {
