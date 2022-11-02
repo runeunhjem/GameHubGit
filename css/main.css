@@ -12,7 +12,7 @@
   --color-black-90: rgba(0, 0, 0, 0.9);
   /* Font styles */
 }
-:root h1, :root h2, :root h3, :root h4, :root h5, :root h6 {
+:root h2, :root h3, :root h4, :root h5, :root h6 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -337,12 +337,25 @@ footer a {
   justify-content: flex-end;
 }
 
+.index_sign-in__profile_pic {
+  background-image: url(../images/img_profilepic_unregistered.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: profile__pic;
+  align-self: center;
+  background-position-y: top;
+  margin-right: 10px;
+  margin-top: 5px;
+  height: 100%;
+}
+
 /* Main section*/
 main {
   background-color: var(--color-black-60);
 }
 
-.main__wrapper {
+/* Put section ID's here from the different pages */
+.index, .index_sign-in {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -351,23 +364,21 @@ main {
   max-width: 1000px;
 }
 
-.buy-sell_buttons {
+/* Homepage | Main section */
+.index .buy-sell_buttons {
   display: flex;
   justify-content: space-around;
   width: 90%;
   margin-top: 5em;
 }
-
-.buy-sell_buttons img {
+.index .buy-sell_buttons img {
   width: 12vh;
   border-radius: 50%;
 }
-
-.buy-sell_buttons a {
+.index .buy-sell_buttons a {
   border-radius: 50%;
 }
-
-.logo__main {
+.index .logo__main {
   display: flex;
   margin: 0;
   width: 80%;
@@ -379,19 +390,122 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.apps {
+.index .apps {
   display: flex;
   width: 100%;
   max-width: 400px;
   justify-content: space-around;
   margin: 2em auto 4em auto;
 }
-
-.apps img {
+.index .apps img {
   align-items: center;
   width: 100%;
   max-width: 156px;
+}
+
+/* Sign in or Register | Main section */
+.index_sign-in {
+  min-height: 50vh;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: center;
+}
+.index_sign-in .h1_signin {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: "Roboto";
+  font-size: 3.33rem;
+  white-space: nowrap;
+  font-style: normal;
+}
+.index_sign-in fieldset {
+  border: 1px solid var(--color-yellow-logo);
+  padding: 0.7em;
+}
+.index_sign-in legend {
+  padding: 0 0.5em;
+  color: var(--color-yellow-logo);
+}
+.index_sign-in .signin_form_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.index_sign-in .full_sign-in_wrapper {
+  display: block;
+}
+.index_sign-in .sign_in {
+  margin: 0.6em 0;
+  display: flex;
+  width: 380px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+.index_sign-in .sign_in label {
+  color: var(--color-yellow-logo);
+}
+.index_sign-in .sign_in .sign-in-button {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+.index_sign-in .sign_in #username_signin, .index_sign-in .sign_in #password_signin {
+  width: 150px;
+  background-color: var(--color-black);
+  color: var(--color-yellow-logo);
+  border: 1px solid var(--color-yellow-logo);
+  height: 30px;
+  border-radius: 0.4em;
+  margin: 0 20px;
+  margin: 0.4em 0;
+}
+.index_sign-in #username_signin:focus-within {
+  background-color: lightgoldenrodyellow;
+  color: var(--color-black-90);
+}
+.index_sign-in #password_signin:focus-within {
+  background-color: lightgoldenrodyellow;
+  color: var(--color-black-90);
+}
+.index_sign-in .quick_buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 370px;
+  margin-top: 2em;
+}
+.index_sign-in .quick_buttons a {
+  display: flex;
+  width: 128px;
+  height: 40px;
+  text-decoration: none;
+  justify-content: space-evenly;
+  background-color: var(--color-black-90);
+  color: var(--color-white);
+  border: 1px solid var(--color-yellow-logo);
+  padding: 10px;
+  align-items: center;
+  font-size: 1.15rem;
+}
+.index_sign-in a {
+  border: 1px solid var(--color-black-90);
+  background-color: var(--color-yellow-logo);
+  color: var(--color-black-90);
+  padding: 3px 9.1em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: 400;
+}
+.index_sign-in .facebook::before {
+  content: url(../images/ico_facebook.svg);
+}
+.index_sign-in .google::before {
+  content: url(../images/ico_google-chrome.svg);
+}
+.index_sign-in a:hover {
+  background-color: var(--color-grey-disabled);
+  color: var(--color-yellow-logo);
+  border: 1px solid var(--color-yellow-logo);
 }
 
 /* Footer */
@@ -417,11 +531,17 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
   border-bottom: 1px solid var(--color-yellow-logo);
 }
 
 .footer__sitenav {
   margin-bottom: 8px;
+}
+.footer__sitenav span {
+  display: block;
+  align-items: flex-start;
+  height: 30px;
 }
 
 .left .active {
@@ -631,7 +751,7 @@ footer {
     align-content: flex-start;
     grid-template-areas: "navbar navbar navbar" "profile__pic profile__name logout" "profile__pic . .";
     grid-template-columns: 80px 200px 80px;
-    grid-template-rows: 40px 75px 15px;
+    grid-template-rows: 45px 75px 15px;
     height: 140px;
     width: 360px;
   }
@@ -646,6 +766,7 @@ footer {
     background-image: url(../images/img_logo_footer.png);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-top: 5px;
   }
   .header__wrapper-wide .explore_none {
     display: none;
@@ -662,17 +783,22 @@ footer {
     align-self: center;
     background-position-y: top;
     margin-right: 10px;
+    margin-top: 5px;
     height: 100%;
   }
   .header__wrapper-wide .profile__name {
     display: grid;
     grid-area: profile__name;
     text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
   }
   .header__wrapper-wide .logout {
     display: grid;
     text-align: right;
     color: var(--color-yellow-logo);
+    padding-right: 5px;
+    margin-top: 5px;
   }
 }
 /* @media screensize from 769px to 1080px */
@@ -682,16 +808,11 @@ footer {
     width: 100%;
   }
   .header__wrapper-wide {
-    height: 140px;
     display: grid;
-    padding: 0 5px;
     width: 100%;
-    padding-top: 5px;
-    justify-content: space-around;
     grid-template-areas: "menu logo explore profile__pic navbar navbar" ". logo explore profile__pic profile__name logout" ". logo explore . . .";
     grid-template-columns: 80px 150px 1fr 100px 210px 155px;
-    grid-template-rows: 40px 75px 15px;
-    height: 140px;
+    grid-template-rows: 45px 75px 15px;
     width: 100%;
   }
   .header__wrapper-wide .topnav__mob {
@@ -703,6 +824,7 @@ footer {
     background-image: url(../images/img_logo_footer.png);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-top: 5px;
   }
   .header__wrapper-wide .explore_none {
     display: flex;
@@ -719,17 +841,22 @@ footer {
     align-self: center;
     background-position-y: top;
     margin: 10px;
+    margin-top: 5px;
     height: 100%;
   }
   .header__wrapper-wide .profile__name {
     display: grid;
     grid-area: profile__name;
     text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
   }
   .header__wrapper-wide .logout {
     display: grid;
     text-align: right;
     color: var(--color-yellow-logo);
+    padding-right: 5px;
+    margin-top: 5px;
   }
   .header__wrapper-wide .topnav__mob {
     grid-area: navbar;
@@ -765,15 +892,11 @@ footer {
     width: 100%;
   }
   .header__wrapper-wide {
-    padding: 0 5px;
-    width: 100%;
-    padding-top: 5px;
     display: grid;
     justify-content: space-around;
     grid-template-areas: "menu logo explore profile__pic navbar navbar" ". logo explore profile__pic profile__name logout" ". logo explore . . .";
     grid-template-columns: 60px 190px 1fr 100px 210px 155px;
-    grid-template-rows: 40px 75px 15px;
-    height: 140px;
+    grid-template-rows: 45px 75px 15px;
     width: 100%;
   }
   .header__wrapper-wide .topnav__mob {
@@ -785,6 +908,7 @@ footer {
     background-image: url(../images/img_logo_footer.png);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-top: 5px;
   }
   .header__wrapper-wide .explore_none {
     display: none;
@@ -818,17 +942,22 @@ footer {
     align-self: center;
     background-position-y: top;
     margin: 10px;
+    margin-top: 5px;
     height: 100%;
   }
   .header__wrapper-wide .profile__name {
     display: grid;
     grid-area: profile__name;
     text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
   }
   .header__wrapper-wide .logout {
     display: grid;
     text-align: right;
     color: var(--color-yellow-logo);
+    padding-right: 5px;
+    margin-top: 5px;
   }
   .header__wrapper-wide .topnav__mob {
     grid-area: navbar;
