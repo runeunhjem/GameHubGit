@@ -32,8 +32,8 @@
               <nav class="navbar-top">                
                     <div class="menu" role="navigation" aria-label="Quick Navigation">
                         <!-- Checkbox hack gives label error in validator -->
-                        <div class="links">
-                          <label class="top-burger" for="top-burger">                          
+                        <div class="links">                          
+                          <label tabindex="0" class="top-burger" for="top-burger">                          
                             <img class="topmenu__images" src="images/ico_menu.svg" alt="Open or close the Menu">
                           </label>
                         </div>
@@ -41,11 +41,11 @@
                               
                                   <div class="menu-flyin" role="navigation" aria-label="Fly-in Site Navigation">
                                     <div class="top-menu">
-                                        <div class="top-menu">
+                                        
                                         <label class="close" for="top-burger">Close<img src="images/ico_close.svg" alt="Close the Menu"></label>
                                         <!-- Checkbox hack to close the flyin-menu -->
                                         <input type="checkbox" id="ham-burger">
-                                        <div class="links"><div class="back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div></div>
+                                        <div class="links back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div>
                                         <div class="links"><a href="index_signed-in.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                                         <div class="links"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
                                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
@@ -55,7 +55,7 @@
                                         <div class="links"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                                         <div class="links"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                                         <div class="links"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                               
@@ -77,7 +77,7 @@
         </div>
         
     </header>
-
+    
     <main id="main">
       <div class="main__wrapper">
 

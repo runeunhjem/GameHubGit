@@ -74,7 +74,7 @@ header {
   width: 100%;
 }
 
-/* Skip-link tip from https://css-tricks.com/how-to-create-a-skip-to-content-link/#maincontent */
+/* Skip-to main tip from https://css-tricks.com/how-to-create-a-skip-to-content-link/#maincontent */
 .skip-link {
   background: var(--color-black-90);
   color: var(--color-yellow-logo);
