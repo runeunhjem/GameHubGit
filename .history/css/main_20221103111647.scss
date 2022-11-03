@@ -598,26 +598,9 @@ main {
       height: 30px;
       border-radius: 0.4em;
       margin:  0 20px;
-      margin: 0.4em 0;
-      input:invalid {
-        border: 4px solid red;
-      }
+      margin: 0.4em 0;      
     }
     
-    #first-name:focus-within,
-    #last-name:focus-within,
-    #email:focus-within,
-    #street-address:focus-within,
-    #zip:focus-within,
-    #city:focus-within,
-    #country:focus-within,
-    #phone:focus-within,
-    #username:focus-within,
-    #password:focus-within,
-    #repeat-password:focus-within {
-      background-color: lightgoldenrodyellow;
-      color: var(--color-black-90);
-    }
     
     #street-address, #email, #repeat-password {
       width: 313px;
@@ -627,15 +610,6 @@ main {
     }
   }
   
-}
-
-.required {
-  color: var(--color-red);
-  
-}
-.required:before {
-  content: ".";
-  color: #0000;
 }
 
 

@@ -553,11 +553,37 @@ main {
   margin: 0 20px;
   margin: 0.4em 0;
 }
+.index_sign-in .register #first-name input:invalid, .index_sign-in .register #last-name input:invalid, .index_sign-in .register #email input:invalid, .index_sign-in .register #street-address input:invalid, .index_sign-in .register #zip input:invalid, .index_sign-in .register #city input:invalid, .index_sign-in .register #country input:invalid, .index_sign-in .register #phone input:invalid, .index_sign-in .register #username input:invalid, .index_sign-in .register #password input:invalid, .index_sign-in .register #repeat-password input:invalid {
+  border: 4px solid red;
+}
+.index_sign-in .register #first-name:focus-within,
+.index_sign-in .register #last-name:focus-within,
+.index_sign-in .register #email:focus-within,
+.index_sign-in .register #street-address:focus-within,
+.index_sign-in .register #zip:focus-within,
+.index_sign-in .register #city:focus-within,
+.index_sign-in .register #country:focus-within,
+.index_sign-in .register #phone:focus-within,
+.index_sign-in .register #username:focus-within,
+.index_sign-in .register #password:focus-within,
+.index_sign-in .register #repeat-password:focus-within {
+  background-color: lightgoldenrodyellow;
+  color: var(--color-black-90);
+}
 .index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #repeat-password {
   width: 313px;
 }
 .index_sign-in .register .register-button {
   margin-top: 1.3em;
+}
+
+.required {
+  color: var(--color-red);
+}
+
+.required:before {
+  content: ".";
+  color: rgba(0, 0, 0, 0);
 }
 
 /* Footer */

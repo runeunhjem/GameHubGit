@@ -634,10 +634,17 @@ main {
   
 }
 .required:before {
-  content: ".";
-  color: #0000;
+  content: ".  ";
+  color: 
+}
+input:required {
+  border-color: #800000;
+  border-width: 3px;
 }
 
+input:required:invalid {
+  border-color: #c00000;
+}
 
 /* Footer */
 footer {

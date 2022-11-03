@@ -631,14 +631,13 @@ main {
 
 .required {
   color: var(--color-red);
-  
 }
-.required:before {
-  content: ".";
-  color: #0000;
+*:required {
+  placeholder::after {
+    content: "  *"
+    color: var(var(--color-red))
+  };
 }
-
-
 /* Footer */
 footer {
   display: flex;

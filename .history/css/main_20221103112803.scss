@@ -599,9 +599,7 @@ main {
       border-radius: 0.4em;
       margin:  0 20px;
       margin: 0.4em 0;
-      input:invalid {
-        border: 4px solid red;
-      }
+      
     }
     
     #first-name:focus-within,
@@ -627,15 +625,6 @@ main {
     }
   }
   
-}
-
-.required {
-  color: var(--color-red);
-  
-}
-.required:before {
-  content: ".";
-  color: #0000;
 }
 
 

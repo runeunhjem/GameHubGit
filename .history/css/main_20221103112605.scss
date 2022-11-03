@@ -598,10 +598,7 @@ main {
       height: 30px;
       border-radius: 0.4em;
       margin:  0 20px;
-      margin: 0.4em 0;
-      input:invalid {
-        border: 4px solid red;
-      }
+      margin: 0.4em 0;      
     }
     
     #first-name:focus-within,
@@ -628,16 +625,9 @@ main {
   }
   
 }
-
-.required {
-  color: var(--color-red);
-  
+input:invalid {
+  border: 1px solid red;
 }
-.required:before {
-  content: ".";
-  color: #0000;
-}
-
 
 /* Footer */
 footer {
