@@ -684,7 +684,7 @@ main {
 
 .profile__card {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 240px 1fr;
   padding: 10px;
   margin-bottom: 2em;
   width: 90%;
@@ -703,7 +703,7 @@ main {
     // margin: 1em;
     min-width: 100px;
     min-height: 100px;
-    // width: 100%;
+    width: 100%;
   }
   .spacer {
     height: 1em;

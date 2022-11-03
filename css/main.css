@@ -631,8 +631,8 @@ main {
 
 .profile__card {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  padding: 1em;
+  grid-template-columns: 200px 1fr;
+  padding: 10px;
   margin-bottom: 2em;
   width: 90%;
   background-color: var(--color-black-90);
@@ -642,14 +642,11 @@ main {
 }
 .profile__card .picture {
   background-position: top right;
-  background-image: url(../images/profileimg.jpg);
-  background-size: cover;
+  background-image: url(../images/img_profilepic_wide.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  border: 1px solid var(--color-yellow-logo);
-  border-radius: 50%;
-  box-shadow: 0 3px 10px var(--color-yellow-logo);
-  margin: 1em;
   min-width: 100px;
+  min-height: 100px;
 }
 .profile__card .spacer {
   height: 1em;
