@@ -428,6 +428,7 @@ main {
 .index_sign-in fieldset {
   border: 1px solid var(--color-yellow-logo);
   padding: 0.7em;
+  color: var(--color-white);
   background-color: var(--color-black-60);
 }
 .index_sign-in legend {
@@ -452,7 +453,7 @@ main {
 }
 .index_sign-in .sign_in label, .index_sign-in .register label {
   display: flex;
-  color: var(--color-yellow-logo);
+  color: var(--color-white);
   justify-content: left;
 }
 .index_sign-in .sign_in .sign-in-button, .index_sign-in .sign_in .register-button, .index_sign-in .register .sign-in-button, .index_sign-in .register .register-button {

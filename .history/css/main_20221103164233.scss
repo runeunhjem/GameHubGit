@@ -889,14 +889,12 @@ a:hover {
 }
 
 .partners { 
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   .checkpartners {
     padding-bottom: 2em;
     font-size: 1.2rem;
   }
-  .partners__spacer {
-    padding: 10px;
-  }
+  
   a:hover {
     text-decoration: underline;    
   }

@@ -894,9 +894,7 @@ a:hover {
     padding-bottom: 2em;
     font-size: 1.2rem;
   }
-  .partners__spacer {
-    padding: 10px;
-  }
+  
   a:hover {
     text-decoration: underline;    
   }
@@ -905,7 +903,9 @@ a:hover {
   }
   
 }
-
+.partners__spacer {
+  padding: 102em 2em;
+}
 .copyright {
   display: block;
   align-items: center;

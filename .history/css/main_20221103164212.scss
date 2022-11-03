@@ -891,12 +891,10 @@ a:hover {
 .partners { 
   padding-bottom: 1em;
   .checkpartners {
-    padding-bottom: 2em;
+    padding: 2em;
     font-size: 1.2rem;
   }
-  .partners__spacer {
-    padding: 10px;
-  }
+  
   a:hover {
     text-decoration: underline;    
   }
