@@ -60,11 +60,10 @@ html {
 }
 
 body {
+  position: relative;
   background-color: var(--color-black-90);
   background-image: url(../images/bg-img.jpg);
-  background-size: 130%;
-  background-position-x: -80px;
-  background-position-y: -20px;
+  background-size: 100%;
   color: var(--color-white);
   height: 100vh;
 }

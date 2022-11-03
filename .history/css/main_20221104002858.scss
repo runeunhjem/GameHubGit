@@ -68,10 +68,10 @@ body {
   position: relative;
   background-color: var(--color-black-90);
   background-image: url(../images/bg-img.jpg);
-  background-size: 100%;
+  background-size: cover;
   // background-repeat: no-repeat;
   // background-position-x: -80px;
-  // background-position-y: 10px;
+  // background-position-y: -20px;
   color: var(--color-white);
   height: 100vh;
 }
