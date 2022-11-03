@@ -647,9 +647,9 @@ main {
   background-repeat: no-repeat;
   border: 1px solid var(--color-yellow-logo);
   border-radius: 50%;
-  margin: 0 1em 1em 1em;
+  box-shadow: 0 3px 10px var(--color-yellow-logo);
+  margin: 1em;
   min-width: 100px;
-  min-height: 100px;
 }
 .profile__card .spacer {
   height: 1em;
