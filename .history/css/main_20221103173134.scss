@@ -697,9 +697,9 @@ main {
     background-image: url(../images/profileimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border: 1px solid var(--color-yellow-logo);
+    border: 2px solid var(--color-yellow-logo);
     border-radius: 50%;
-    // box-shadow: 0 3px 10px var(--color-yellow-logo);
+    box-shadow: 0 3px 100px var(--color-yellow-logo);
     margin: 0 1em 1em 1em;
     min-width: 100px;
     min-height: 100px;
