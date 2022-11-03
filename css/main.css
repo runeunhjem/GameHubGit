@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;900&display=swap");
 :root {
+  /* Styles */
+  --border-1px-yellow: 1px solid #F5C518;
+  --border-radius-boxes: 0.4em;
   /* Color styles */
   --color-yellow-logo: #F5C518;
   --color-yellow-80: rgba(245, 197, 24, 0.5);
@@ -355,7 +358,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about {
+.index, .index_sign-in, .about, .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -588,6 +591,7 @@ main {
   border-bottom: 1px solid var(--color-yellow-logo);
 }
 
+/* About Us Page */
 .about-us__content {
   display: block;
   justify-content: left;
@@ -595,25 +599,55 @@ main {
   max-width: 580px;
 }
 
-.about {
+.about, .profile {
   width: 90%;
   min-height: 50vh;
   justify-content: flex-start;
 }
-.about h1 {
+.about h1, .profile h1 {
   font-weight: 400;
   font-size: 4.3rem;
   line-height: 97px;
 }
-.about h3 {
+.about h3, .profile h3 {
   color: var(--color-yellow-logo);
 }
-.about p {
+.about p, .profile p {
   font-size: 1.2rem;
   padding: 5px 0;
 }
-.about .bottomdivider {
+.about .bottomdivider, .profile .bottomdivider {
   margin-bottom: 2em;
+}
+
+/* Profile Page */
+.profile {
+  width: 100%;
+}
+.profile h4 {
+  padding-bottom: 0.5em;
+}
+
+.profile__card {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 90%;
+  background-color: var(--color-black-90);
+  max-width: 600px;
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+}
+.profile__card .picture {
+  background-position: top right;
+  background-image: url(../images/img_profilepic_wide.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1em;
+}
+.profile__card .spacer {
+  height: 1em;
 }
 
 /* Footer */
@@ -650,6 +684,10 @@ footer {
   display: block;
   align-items: flex-start;
   height: 30px;
+}
+
+a:hover {
+  color: var(--color-yellow-logo);
 }
 
 .left .active {
@@ -793,12 +831,18 @@ footer {
 .partners {
   padding-bottom: 1em;
 }
+.partners .checkpartners {
+  padding-bottom: 2em;
+  font-size: 1.2rem;
+}
+.partners .partners__spacer {
+  padding: 10px;
+}
 .partners a:hover {
   text-decoration: underline;
 }
-.partners .checkpartners {
-  font-size: 1.2rem;
-  padding-bottom: 5px;
+.partners a {
+  padding: 2px 0;
 }
 
 .copyright {
@@ -915,6 +959,9 @@ footer {
     grid-area: menu;
     width: 100%;
   }
+  .profile__card .spacer {
+    height: 3em;
+  }
   .header__wrapper-wide {
     display: grid;
     width: 100%;
@@ -989,8 +1036,8 @@ footer {
     padding-top: 1em;
   }
   .social-media {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 /* @media screensize over 1080px */
@@ -998,6 +1045,9 @@ footer {
   .main-menu {
     grid-area: menu;
     width: 100%;
+  }
+  .profile__card .spacer {
+    height: 5em;
   }
   .header__wrapper-wide {
     display: grid;
