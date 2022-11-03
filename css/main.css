@@ -355,7 +355,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in {
+.index, .index_sign-in, .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,6 +425,7 @@ main {
 .index_sign-in fieldset {
   border: 1px solid var(--color-yellow-logo);
   padding: 0.7em;
+  background-color: var(--color-black-60);
 }
 .index_sign-in legend {
   padding: 0 0.5em;
@@ -516,11 +517,6 @@ main {
   color: var(--color-yellow-logo);
   border: 1px solid var(--color-yellow-logo);
 }
-.index_sign-in .divider {
-  width: 200px;
-  height: 1em;
-  border-bottom: 1px solid var(--color-yellow-logo);
-}
 .index_sign-in h4 {
   color: var(--color-white);
   margin: 1em auto;
@@ -530,7 +526,7 @@ main {
   margin-bottom: 2em;
 }
 .index_sign-in .fieldset_register label {
-  width: 150px;
+  width: 151px;
   text-align: left;
 }
 .index_sign-in .register {
@@ -539,12 +535,12 @@ main {
   justify-content: space-between;
 }
 .index_sign-in .register a {
-  width: 313px;
+  width: 315px;
   white-space: nowrap;
   padding: 4px 0;
 }
 .index_sign-in .register #first-name, .index_sign-in .register #last-name, .index_sign-in .register #email, .index_sign-in .register #street-address, .index_sign-in .register #zip, .index_sign-in .register #city, .index_sign-in .register #country, .index_sign-in .register #phone, .index_sign-in .register #username, .index_sign-in .register #password, .index_sign-in .register #repeat-password {
-  width: 150px;
+  width: 152px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: 1px solid var(--color-yellow-logo);
@@ -571,7 +567,7 @@ main {
   color: var(--color-black-90);
 }
 .index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #repeat-password {
-  width: 313px;
+  width: 310px;
 }
 .index_sign-in .register .register-button {
   margin-top: 1.3em;
@@ -584,6 +580,40 @@ main {
 .required:before {
   content: ".";
   color: rgba(0, 0, 0, 0);
+}
+
+.divider {
+  width: 200px;
+  height: 1em;
+  border-bottom: 1px solid var(--color-yellow-logo);
+}
+
+.about-us__content {
+  display: block;
+  justify-content: left;
+  padding: 1em;
+  max-width: 580px;
+}
+
+.about {
+  width: 90%;
+  min-height: 50vh;
+  justify-content: flex-start;
+}
+.about h1 {
+  font-weight: 400;
+  font-size: 4.3rem;
+  line-height: 97px;
+}
+.about h3 {
+  color: var(--color-yellow-logo);
+}
+.about p {
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+.about .bottomdivider {
+  margin-bottom: 2em;
 }
 
 /* Footer */
