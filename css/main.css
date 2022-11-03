@@ -371,6 +371,9 @@ main {
   width: 90%;
   margin-top: 5em;
 }
+.index .buy-sell_buttons img:hover {
+  transform: scale(1.5);
+}
 .index .buy-sell_buttons img {
   width: 12vh;
   border-radius: 50%;
@@ -409,8 +412,12 @@ main {
   justify-content: flex-start;
   width: 100%;
   text-align: center;
+  /* Register form */
 }
-.index_sign-in .h1_signin {
+.index_sign-in input {
+  text-indent: 10px;
+}
+.index_sign-in .h2_signin {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   white-space: nowrap;
@@ -423,14 +430,15 @@ main {
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
 }
-.index_sign-in .signin_form_wrapper {
+.index_sign-in .signin_form_wrapper,
+.index_sign-in .register_form_wrapper {
   display: flex;
   justify-content: space-around;
 }
 .index_sign-in .full_sign-in_wrapper {
   display: block;
 }
-.index_sign-in .sign_in {
+.index_sign-in .sign_in, .index_sign-in .register {
   margin: 0.6em 0;
   display: flex;
   width: 380px;
@@ -438,16 +446,18 @@ main {
   align-items: center;
   justify-content: space-around;
 }
-.index_sign-in .sign_in label {
+.index_sign-in .sign_in label, .index_sign-in .register label {
+  display: flex;
   color: var(--color-yellow-logo);
+  justify-content: left;
 }
-.index_sign-in .sign_in .sign-in-button {
+.index_sign-in .sign_in .sign-in-button, .index_sign-in .sign_in .register-button, .index_sign-in .register .sign-in-button, .index_sign-in .register .register-button {
   display: flex;
   justify-content: center;
   height: 40px;
   align-items: center;
 }
-.index_sign-in .sign_in #username_signin, .index_sign-in .sign_in #password_signin {
+.index_sign-in .sign_in #username_signin, .index_sign-in .sign_in #password_signin, .index_sign-in .register #username_signin, .index_sign-in .register #password_signin {
   width: 150px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
@@ -457,19 +467,20 @@ main {
   margin: 0 20px;
   margin: 0.4em 0;
 }
+.index_sign-in #password_signin:focus-within,
 .index_sign-in #username_signin:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
 }
-.index_sign-in #password_signin:focus-within {
-  background-color: lightgoldenrodyellow;
-  color: var(--color-black-90);
+.index_sign-in h3 {
+  margin-top: 1em;
 }
 .index_sign-in .quick_buttons {
   display: flex;
   justify-content: space-around;
   width: 370px;
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 .index_sign-in .quick_buttons a {
   display: flex;
@@ -483,12 +494,13 @@ main {
   padding: 10px;
   align-items: center;
   font-size: 1.15rem;
+  white-space: nowrap;
 }
 .index_sign-in a {
   border: 1px solid var(--color-black-90);
   background-color: var(--color-yellow-logo);
   color: var(--color-black-90);
-  padding: 3px 9.1em;
+  padding: 3px 8em;
   border-radius: 0.4em;
   text-decoration: none;
   font-weight: 400;
@@ -503,6 +515,49 @@ main {
   background-color: var(--color-grey-disabled);
   color: var(--color-yellow-logo);
   border: 1px solid var(--color-yellow-logo);
+}
+.index_sign-in .divider {
+  width: 200px;
+  height: 1em;
+  border-bottom: 1px solid var(--color-yellow-logo);
+}
+.index_sign-in h4 {
+  color: var(--color-white);
+  margin: 1em auto;
+}
+.index_sign-in .fieldset_register {
+  height: 570px;
+  margin-bottom: 2em;
+}
+.index_sign-in .fieldset_register label {
+  width: 150px;
+  text-align: left;
+}
+.index_sign-in .register {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index_sign-in .register a {
+  width: 313px;
+  white-space: nowrap;
+  padding: 4px 0;
+}
+.index_sign-in .register #first-name, .index_sign-in .register #last-name, .index_sign-in .register #email, .index_sign-in .register #street-address, .index_sign-in .register #zip, .index_sign-in .register #city, .index_sign-in .register #country, .index_sign-in .register #phone, .index_sign-in .register #username, .index_sign-in .register #password, .index_sign-in .register #repeat-password {
+  width: 150px;
+  background-color: var(--color-black);
+  color: var(--color-yellow-logo);
+  border: 1px solid var(--color-yellow-logo);
+  height: 30px;
+  border-radius: 0.4em;
+  margin: 0 20px;
+  margin: 0.4em 0;
+}
+.index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #repeat-password {
+  width: 313px;
+}
+.index_sign-in .register .register-button {
+  margin-top: 1.3em;
 }
 
 /* Footer */
@@ -838,7 +893,7 @@ footer {
     align-self: center;
     background-position-y: top;
     margin: 10px;
-    margin-top: 5px;
+    margin-top: 20px;
     height: 100%;
   }
   .header__wrapper-wide .profile__name {
@@ -939,7 +994,7 @@ footer {
     align-self: center;
     background-position-y: top;
     margin: 10px;
-    margin-top: 5px;
+    margin-top: 20px;
     height: 100%;
   }
   .header__wrapper-wide .profile__name {
