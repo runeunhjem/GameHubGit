@@ -631,7 +631,7 @@ main {
 
 .profile__card {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 200px 1fr;
   padding: 1em;
   margin-bottom: 2em;
   width: 90%;
@@ -646,6 +646,8 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 1em;
+  min-width: 100px;
+  min-height: 100px;
 }
 .profile__card .spacer {
   height: 1em;
