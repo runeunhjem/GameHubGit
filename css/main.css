@@ -631,7 +631,7 @@ main {
 
 .profile__card {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 180px 1fr;
   padding: 1em;
   margin-bottom: 2em;
   width: 90%;
