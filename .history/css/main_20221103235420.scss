@@ -484,7 +484,7 @@ main {
     }
     display: flex;
     // flex-direction: row;
-    width: 340px;
+    width: 380px;
     height: 100px;
     align-items: center;
     justify-content: space-around;
@@ -1153,11 +1153,6 @@ a:hover {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  .index_sign-in {
-    .sign_in, .register {
-      width: 360px;
-    }
-  }
 }
 
 
@@ -1296,12 +1291,6 @@ a:hover {
   .social-media {
     margin-top: 2em;
     margin-bottom: 2em;
-  }
-
-  .index_sign-in {
-    .sign_in, .register {
-      width: 380px;
-    }
   }
 }
 

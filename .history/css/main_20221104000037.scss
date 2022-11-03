@@ -1153,10 +1153,9 @@ a:hover {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  .index_sign-in {
-    .sign_in, .register {
-      width: 360px;
-    }
+
+  .sign_in, .register {
+    width: 360px;
   }
 }
 
@@ -1298,11 +1297,7 @@ a:hover {
     margin-bottom: 2em;
   }
 
-  .index_sign-in {
-    .sign_in, .register {
-      width: 380px;
-    }
-  }
+  .sign_in, .register {
 }
 
 /* @media screensize over 1980px */

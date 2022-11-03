@@ -426,6 +426,7 @@ main {
 .index_sign-in fieldset {
   border: 1px solid var(--color-yellow-logo);
   padding: 0.7em;
+  border-radius: var(--border-radius-boxes);
   color: var(--color-white);
   background-color: var(--color-black-60);
 }
@@ -444,7 +445,7 @@ main {
 .index_sign-in .sign_in, .index_sign-in .register {
   margin: 0.6em 0;
   display: flex;
-  width: 380px;
+  width: 340px;
   height: 100px;
   align-items: center;
   justify-content: space-around;
@@ -1039,6 +1040,9 @@ a:hover {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+  .index_sign-in .sign_in, .index_sign-in .register {
+    width: 360px;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
@@ -1142,6 +1146,9 @@ a:hover {
   .social-media {
     margin-top: 2em;
     margin-bottom: 2em;
+  }
+  .index_sign-in .sign_in, .index_sign-in .register {
+    width: 380px;
   }
 }
 /* @media screensize over 1980px */
