@@ -643,7 +643,7 @@ main {
   color: #0000;
 }
 .divider {
-  text-align: center;
+  display:
   width: 200px;
   height: 1em;
   margin-bottom: 1em;
@@ -799,7 +799,7 @@ main {
     max-width: 1000px;  
     
     .contact-info, .visit-info, .send-message {      
-      margin: 0 auto;
+      margin: 0 auto;    
       width: 100%;
       padding: 0.5em;
       .spacer {
@@ -821,10 +821,7 @@ main {
       flex-direction: column;
       align-items: center;      
     }
-    .visit-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;  
+    .visit-info {      
       h6, p {
         text-align: center;
       }
@@ -837,13 +834,11 @@ main {
       width: 100%;
       display: flex;
       justify-content: center;
-      
-
+    
       fieldset {
         display: flex;
         justify-content: center;
         width: 350px;
-        margin-bottom: 2em;
         border: 1px solid var(--color-yellow-logo);
         padding: 0.7em;
         border-radius: var(--border-radius-boxes);
@@ -899,7 +894,6 @@ main {
         background-color: var(--color-grey-disabled);
         border: var(--border-1px-yellow);      
       }
-      
     }
   }  
   

@@ -843,7 +843,6 @@ main {
         display: flex;
         justify-content: center;
         width: 350px;
-        margin-bottom: 2em;
         border: 1px solid var(--color-yellow-logo);
         padding: 0.7em;
         border-radius: var(--border-radius-boxes);
@@ -899,7 +898,9 @@ main {
         background-color: var(--color-grey-disabled);
         border: var(--border-1px-yellow);      
       }
-      
+      .spacer {
+        height: 1em;
+      }
     }
   }  
   
