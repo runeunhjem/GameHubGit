@@ -550,6 +550,7 @@ main {
   margin-top: 1.3em;
 }
 
+#message:focus-within,
 #first:focus-within,
 #last:focus-within,
 #first-name:focus-within,
@@ -721,6 +722,9 @@ main {
 }
 
 /* Contact Page */
+.contact {
+  max-width: 100%;
+}
 .contact h1 {
   margin-top: 0.4em;
   font-weight: 400;
@@ -731,9 +735,7 @@ main {
 }
 .contact .contact__wrapper {
   display: block;
-  width: 99%;
   justify-content: space-around;
-  max-width: 1000px;
 }
 .contact .contact__wrapper .contact-info, .contact .contact__wrapper .visit-info, .contact .contact__wrapper .send-message {
   margin: 0 auto;
@@ -769,6 +771,9 @@ main {
 .contact .contact__wrapper .visit-info .maps__wrapper {
   display: flex;
   justify-content: center;
+  border: 4px solid var(--color-yellow-80);
+  box-shadow: 3px 4px 10px var(--color-yellow-80);
+  border-radius: var(--border-radius-boxes);
 }
 .contact .contact__wrapper .send-message {
   width: 100%;
@@ -817,6 +822,9 @@ main {
 .contact .contact__wrapper .send-message #message {
   width: 300px;
   height: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
 .contact .contact__wrapper .send-message a {
   color: var(--color-black);
@@ -1340,6 +1348,14 @@ a:hover {
   }
   .profile-links {
     width: 400px;
+  }
+  .contact .divider {
+    display: none;
+  }
+  .contact .contact__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
 }
 /* @media screensize over 1980px */

@@ -886,13 +886,11 @@ main {
         #message {
           width: 300px;
           height: 80px;
-          font-family: "Inter";
-          font-style: normal;
-          font-weight: 400;
         }
 
         a {
-        color: var(--color-black);        
+        color: var(--color-black);
+        
         padding: 5px 15px;
         border: var(--border-1px-yellow);
         background-color: var(--color-yellow-logo);
@@ -904,7 +902,6 @@ main {
         background-color: var(--color-grey-disabled);
         border: var(--border-1px-yellow);      
       }
-      
       
     }
   }  
