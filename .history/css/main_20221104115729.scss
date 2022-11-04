@@ -658,7 +658,7 @@ main {
   border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile {
+.about, .profile, .contact {
   h1 {    
     font-weight: 400;
     font-size: 4.3rem;
@@ -776,9 +776,7 @@ main {
 
 /* Contact Page */
 .contact {
-  h1 {
-    font-weight: 400;
-  }
+
   .contact__wrapper {
     display: flex;
     flex-wrap: wrap;

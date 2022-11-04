@@ -607,24 +607,24 @@ main {
   border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile, .contact {
+.about, .profile {
   width: 90%;
   min-height: 50vh;
   justify-content: flex-start;
 }
-.about h1, .profile h1, .contact h1 {
+.about h1, .profile h1 {
   font-weight: 400;
   font-size: 4.3rem;
   line-height: 97px;
 }
-.about h3, .profile h3, .contact h3 {
+.about h3, .profile h3 {
   color: var(--color-yellow-logo);
 }
-.about p, .profile p, .contact p {
+.about p, .profile p {
   font-size: 1.2rem;
   padding: 5px 0;
 }
-.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about, .contact .bottomdivider, .contact .divider_about {
+.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about {
   margin-bottom: 2em;
 }
 
@@ -715,6 +715,9 @@ main {
 }
 
 /* Contact Page */
+.contact h1 {
+  font-weight: 400;
+}
 .contact .contact__wrapper {
   display: flex;
   flex-wrap: wrap;
