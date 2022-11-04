@@ -831,12 +831,10 @@ main {
       }
     }
     .send-message{
-      width: 100%;
-      display: flex;
-      justify-content: center;
+
     
       fieldset {
-        display: flex;
+        display: block;
         justify-content: center;
         width: 350px;
         border: 1px solid var(--color-yellow-logo);

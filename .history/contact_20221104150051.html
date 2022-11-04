@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Register, Sign Up">
-    <meta name="Description" content="Sign in or Register to get your profile & stats going">
+    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, About Us">
+    <meta name="Description" content="We're here for you. Contact us if you have ">
     <link rel="stylesheet" href="css/main.css">
-    <title>Game Hub | Sign In or Register</title>
+    <title>Game Hub | Contact Us</title>
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
         <div class="header__wrapper header__wrapper-wide">
             <div class="placeholder"></div>
             <div class="header__logo"></div>
-            <div class="index_sign-in__profile_pic"></div>          
+            <div class="header__profile-pic"></div>          
             <div class="explore_none"></div>          
             <div class="explore explore_none">
               <h1>Let's Explore</h1>
@@ -42,9 +42,9 @@
                                         <!-- Checkbox hack to close the flyin-menu -->
                                         <input type="checkbox" id="ham-burger">
                                         <div class="links back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div>
-                                        <div class="links"><a href="index.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
+                                        <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                                         <div class="links"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
-                                        <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
+                                        <div class="links"><a href="contact.html" class="active"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
                                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                                         <div class="links"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
@@ -55,12 +55,12 @@
                                     </div>
                                 </div>
                               
-                          <div class="links"><a href="index.html" class="active"><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
+                          <div class="links"><a href="index.html"><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
                           <div class="links"><a href="psn-grid.html"><img class="topmenu__images" src="images/ico_psn.svg" alt="Go to Playstation Games"></a></div>                    
                           <div class="links"><a href="about.html"><img class="topmenu__images" src="images/ico_about.svg" alt="About Us"></a></div>
                           <div class="links"><a href="wishlist.html"><img class="topmenu__images" src="images/ico_heart.svg" alt="Open your Wishlist"></a></div>
                           <div class="links"><a href="cart.html"><img class="topmenu__images" src="images/ico_cart.svg" alt="Open Shopping Cart"></a></div>
-                          <div class="links"><a href="contact.html"><img class="topmenu__images" src="images/ico_contact.svg" alt="Contact Us"></a></div>
+                          <div class="links"><a href="contact.html" class="active"><img class="topmenu__images" src="images/ico_contact.svg" alt="Contact Us"></a></div>
                           <div class="links back"><a href="../"><div class="back"><img src="images/ico_chevron-left.svg" alt="Go Back one step">Back</div></a></div>
 
                               </div>                
@@ -69,125 +69,78 @@
             
             <div class="placeholder"> </div>
             
-            <div class="profile__name"><div class="left_profile_area"><a href="profile.html">Sign in or register to view your profile</a></div></div>
-            <div class="logout"><div class="right_profile_area"><a href="index.html">(Sign In)</a></div></div>
+            <div class="profile__name"><div><a href="profile.html">Gamer Gamerson</a></div></div>
+            <div class="logout"><div><a href="index_sign-in.html">(Log out)</a></div></div>
         </div>
         
     </header>
 
     <main id="main">
       <div class="main__wrapper">
-        <section class="index_sign-in" aria-label="Sign in or Register page, Main Section">
-          
-          <h2 class="h2_signin">Sign in/Register</h2>
-          <fieldset>
-            <legend>Sign in</legend>
-                <form class="sign_in">
-                  <div class="full_sign-in_wrapper">
-                        <div class="signin_form_wrapper">
-                          <div class="form_username">
-                            <label for="username_signin">Your Username:<span class="required">*</span></label>
-                            <input type="text" name="username" id="username_signin" placeholder="Username" aria-label="Write your Username" required>              
-                          </div>
-
-                          <div class="form_password">
-                            <label for="password_signin">Your Password:<span class="required">*</span></label>
-                            <input type="text" name="password" id="password_signin" placeholder="Password" aria-label="Write your Password" required>              
-                          </div>
-                        </div>
-                    <div class="sign-in-button"><a href="index.html">Sign In</a></div>
-                  </div>
-                  <!-- Button hidden and mimicked for now -->
-                  <!-- <button type="submit">Sign In</button> -->
-                </form>
-          </fieldset>
-
-          <h3>Quick access with:</h3>
-          
-          <div class="quick_buttons">
-            <a class="facebook" href="index.html">Facebook</a>
-            <a class="google" href="index.html">Google</a>
-          </div>
-          
-          <div class="divider"> </div>
-
-          <h4>Or register for account:</h4>
-
-          <fieldset class="fieldset_register">
-            <legend>Register your information</legend>
-                <form class="register">
-                      <div class="full_register_wrapper">
-                        <div class="register_form_wrapper">
-                            <div class="form_first-name">
-                              <label for="first-name">First Name:</label>
-                              <input type="text" name="first-name" id="first-name" placeholder="First Name" aria-label="Write your first name">
-                            </div>
-
-                            <div class="form_last-name">
-                              <label for="last-name">Last Name:</label>
-                              <input type="text" name="last-name" id="last-name" placeholder="Last Name" aria-label="Write your last name">
-                            </div>
-                        </div>
-
-                        <div class="register_form_wrapper">
-                          <div class="form_email">
-                            <label for="email">Email:<span class="required">*</span></label>
-                            <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your Email address" required>
-                          </div>
-                        </div>
-                        <div class="register_form_wrapper">
-                          <div class="form_street-address">
-                            <label for="street-address">Street Address:</label>
-                            <input type="text" name="street-address" id="street-address" placeholder="Street Address" aria-label="Write your Street Address">
-                          </div>
-                        </div>
-
-                      <div class="register_form_wrapper">
-                        <div class="form_zip">
-                          <label for="zip">Zip Code:</label>
-                          <input type="text" name="zip" id="zip" placeholder="Zip Code" aria-label="Enter your Zip code">
-                        </div>
-
-                        <div class="form_city">
-                          <label for="city">City:</label>
-                          <input type="text" name="city" id="city" placeholder="City" aria-label="Enter your City name">
-                        </div>
+        <section class="contact" aria-label="About Us | Main Section">
+              <h1>Contact Us</h1>
+              <p class="contact_intro">Our customer center is here to help you! Great if you have the customer number, order number or invoice number ready when you contact us.</p>
+              <div class="divider"> </div>
+              <div class="contact__wrapper">
+                <section class="contact-info">
+                    <h6>Opening Hours:</h6>
+                    <p>Monday-Saturday (08.00 - 00.00)</p>
+                    <div class="spacer"></div>
+                    <h6>Phone Number:</h6>
+                    <p>+47 123 45 678</p>
+                    <div class="spacer"></div>
+                    <h6>Email:</h6>
+                    <p><a href="customerservice@game-hub-ca.netlify.app">customerservice@game-hub-ca.netlify.app</a></p>
+                    <div class="spacer"></div>
+                    <div class="divider"> </div>
+                    <div class="spacer"></div>
+                </section>
+                <section class="visit-info">
+                    <div class="maps__wrapper">
+                        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8425.220488050712!2d7.939222!3d58.134971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463802a4c32a6519%3A0x551444ef8f3fd02b!2sSlettheiveien%2081E%2C%204626%20Kristiansand!5e0!3m2!1sno!2sno!4v1667565689054!5m2!1sno!2sno" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
-                    <div class="register_form_wrapper">
-                      <div class="form_country">
-                        <label for="country">Country:</label>
-                        <input type="text" name="country" id="country" placeholder="Country" aria-label="Enter your Country" required>
-                      </div>
-
-                      <div class="form_phone">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone Number" aria-label="Enter your Phonenumber">
-                      </div>
-                  </div>
-                    <div class="register_form_wrapper">
-                      <div class="form_username">
-                        <label for="username">Choose Username:<span class="required">*</span></label>
-                        <input type="text" name="username" id="username" placeholder="Username" aria-label="Choose your Username" required>
-                      </div>
-
-                      <div class="form_password">
-                        <label for="password">Choose Password:<span class="required">*</span></label>
-                        <input type="password" name="password" id="password" placeholder="Password" aria-label="Choose your Password" required>
-                      </div>
-                  </div>
-                    <div class="register_form_wrapper">
-                        <div class="form_repeat-password">
-                        <label for="repeat-password">Repeat Password:<span class="required">*</span></label>
-                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password" aria-label="Repeat your Password" required>
-                      </div>
-                  </div>
-                          <div class="register-button"><a href="profile.html">Create Account</a></div>
-                      </div>
-                  <!-- Button hidden and mimicked for now -->
-                  <!-- <button type="submit">Create Account</button> -->
-                </form>
-          </fieldset>
+                    <div class="spacer"></div>
+                    <h6>Visiting Address:</h6>
+                    <p>Slettheiveien 81E</p>
+                    <p>4626 Kristiansand</p>
+                </section>
+                <section class="send-message">
+                    <fieldset>
+                        <legend>Send us a message</legend>
+                            <form class="sendus-message">
+                              <div class="sendus-message">
+                                    <div class="sendus-message_form_wrapper">
+                                      <div class="form_first">
+                                        <label for="first">First Name:<span class="required">*</span></label>
+                                        <input type="text" name="first" id="first" placeholder="First Name" aria-label="Enter your First Name" required>
+                                      </div>
+            
+                                      <div class="form_last">
+                                        <label for="last">Last name:<span class="required">*</span></label>
+                                        <input type="text" name="last" id="last" placeholder="Last Name" aria-label="Enter your Last Name" required>              
+                                      </div>
+                                    </div>
+                                    <div class="sendus-message_form_wrapper">
+                                        <div class="form_email">
+                                            <label for="email">Email:<span class="required">*</span></label>
+                                            <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your Email address" required>
+                                          </div>
+                                    </div>
+                                    <div class="sendus-message_form_wrapper">
+                                        <div class="message">
+                                            <label for="message">Message:<span class="required">*</span></label>
+                                            <textarea name="message" id="message" placeholder="What can we help you with?" aria-label="Write your message" required></textarea>
+                                          </div>
+                                    </div>
+                                <div class="send-msg-button"><a href="index.html">Send Message</a></div>
+                              </div>
+                              <!-- Button hidden and mimicked for now -->
+                              <!-- <button type="submit">Sign In</button> -->
+                            </form>
+                      </fieldset>
+                </section>
+              </div>
+              <div class="divider bottomdivider"> </div>
 
         </section>
       </div>
@@ -196,12 +149,12 @@
     <footer>
       <div class="footer__wrapper">
                   <div class="left">
-                    <div class="footer__sitenav"><span>Site Navigation</span>
+                    <div class="footer__sitenav">Site Navigation
                       <div class="footer__sitenav" role="navigation" aria-label="Footer Site Navigation">              
                         <div class="links widescreen"><div class="back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div></div>
-                        <div class="links"><a href="index.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
+                        <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                         <div class="links widescreen"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
-                        <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact US">Contact</a></div>
+                        <div class="links"><a href="contact.html" class="active"><img src="images/ico_contact.svg" alt="Contact US">Contact</a></div>
                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                         <div class="links widescreen"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>

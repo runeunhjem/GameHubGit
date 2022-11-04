@@ -764,52 +764,61 @@ main {
   display: flex;
   justify-content: center;
 }
-.contact .contact__wrapper fieldset {
+.contact .contact__wrapper .send-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact__wrapper .send-message fieldset {
+  display: flex;
+  justify-content: center;
+  width: 350px;
   border: 1px solid var(--color-yellow-logo);
   padding: 0.7em;
   border-radius: var(--border-radius-boxes);
   color: var(--color-white);
   background-color: var(--color-black-60);
 }
-.contact .contact__wrapper legend {
+.contact .contact__wrapper .send-message legend {
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
   font-size: 1.4rem;
   text-align: center;
 }
-.contact .contact__wrapper .sendus-message_form_wrapper {
+.contact .contact__wrapper .send-message .sendus-message_form_wrapper {
+  width: 300px;
   display: flex;
   justify-content: space-around;
 }
-.contact .contact__wrapper #email {
-  width: 350px;
+.contact .contact__wrapper .send-message #email {
+  width: 300px;
 }
-.contact .contact__wrapper textarea, .contact .contact__wrapper input {
+.contact .contact__wrapper .send-message textarea, .contact .contact__wrapper .send-message input {
   text-indent: 10px;
 }
-.contact .contact__wrapper label {
+.contact .contact__wrapper .send-message label {
   display: flex;
   color: var(--color-white);
   justify-content: left;
 }
-.contact .contact__wrapper .send-msg-button {
+.contact .contact__wrapper .send-message .send-msg-button {
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.contact .contact__wrapper #message {
-  width: 350px;
+.contact .contact__wrapper .send-message #message {
+  width: 300px;
   height: 80px;
 }
-.contact .contact__wrapper a {
+.contact .contact__wrapper .send-message a {
   color: var(--color-black);
   padding: 5px 15px;
   border: var(--border-1px-yellow);
   background-color: var(--color-yellow-logo);
   border-radius: var(--border-radius-boxes);
 }
-.contact .contact__wrapper a:hover {
+.contact .contact__wrapper .send-message a:hover {
   background-color: var(--color-grey-disabled);
   border: var(--border-1px-yellow);
 }
