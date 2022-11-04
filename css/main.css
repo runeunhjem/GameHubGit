@@ -356,7 +356,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile {
+.index, .index_sign-in, .about, .profile, .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -433,6 +433,7 @@ main {
 .index_sign-in legend {
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
+  font-size: 1.4rem;
 }
 .index_sign-in .signin_form_wrapper,
 .index_sign-in .register_form_wrapper {
@@ -588,35 +589,42 @@ main {
 .divider {
   width: 200px;
   height: 1em;
+  margin-bottom: 1em;
   border-bottom: 1px solid var(--color-yellow-logo);
 }
 
 /* About Us Page */
 .about-us__content {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-us__content, .contact_intro {
   display: block;
   justify-content: left;
   padding: 1em;
+  margin-bottom: 1em;
   max-width: 580px;
+  border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile {
+.about, .profile, .contact {
   width: 90%;
   min-height: 50vh;
   justify-content: flex-start;
 }
-.about h1, .profile h1 {
+.about h1, .profile h1, .contact h1 {
   font-weight: 400;
   font-size: 4.3rem;
   line-height: 97px;
 }
-.about h3, .profile h3 {
+.about h3, .profile h3, .contact h3 {
   color: var(--color-yellow-logo);
 }
-.about p, .profile p {
+.about p, .profile p, .contact p {
   font-size: 1.2rem;
   padding: 5px 0;
 }
-.about .bottomdivider, .profile .bottomdivider {
+.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about, .contact .bottomdivider, .contact .divider_about {
   margin-bottom: 2em;
 }
 
@@ -651,6 +659,7 @@ main {
 .profile .stats .sold {
   color: var(--color-yellow-logo);
 }
+
 .profile__card {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -703,6 +712,37 @@ main {
 .profile-links .goto-cart a:after {
   content: url(../images/ico_arrow-right1.svg);
   padding: 5px;
+}
+
+/* Contact Page */
+.contact .contact__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contact .contact_intro {
+  text-align: center;
+  font-size: 1rem;
+}
+.contact .contact-info {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.contact .contact-info .spacer {
+  height: 1em;
+}
+.contact .contact-info p {
+  font-size: 1rem;
+}
+.contact .contact-info a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.contact .contact-info a:hover {
+  color: var(--color-yellow-logo);
 }
 
 /* Footer */
