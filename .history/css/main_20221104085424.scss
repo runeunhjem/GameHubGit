@@ -988,7 +988,8 @@ a:hover {
       justify-content: center;
     }
 
-    .header__logo {      
+    .header__logo {
+      a 
       display: none;
       grid-area: logo;
       background-image: url(../images/img_logo_footer.png);
@@ -1072,12 +1073,12 @@ a:hover {
       justify-content: center;
     }
 
-    .header__logo {      
-      grid-area: logo;
-      background-image: url(../images/img_logo_footer.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      margin-top: 5px;
+    .header__logo {
+    grid-area: logo;
+    background-image: url(../images/img_logo_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
     }
 
     .explore_none {

@@ -1072,7 +1072,8 @@ a:hover {
       justify-content: center;
     }
 
-    .header__logo {      
+    .header__logo {
+      display: block;
       grid-area: logo;
       background-image: url(../images/img_logo_footer.png);
       background-repeat: no-repeat;

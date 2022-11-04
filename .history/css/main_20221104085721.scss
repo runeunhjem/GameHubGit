@@ -1072,12 +1072,17 @@ a:hover {
       justify-content: center;
     }
 
-    .header__logo {      
+    .header__logo {
+      display: block;
       grid-area: logo;
       background-image: url(../images/img_logo_footer.png);
       background-repeat: no-repeat;
       background-size: contain;
       margin-top: 5px;
+      li {
+        height: 100%;
+        width: 100%;
+      }
     }
 
     .explore_none {
