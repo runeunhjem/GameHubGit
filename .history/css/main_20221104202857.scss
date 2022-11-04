@@ -714,7 +714,7 @@ main {
     color: var(--color-white);
     text-align: left;
   }
-  .sold, .yellow {
+  .sold, {
     color: var(--color-yellow-logo);      
   }
   
@@ -916,12 +916,7 @@ main {
 
 /* Checkout page */
 .checkout {
-  .vat {
-    font-size: 0.8rem;
-    white-space: nowrap;
-    text-align: right;
-    border-bottom: var(--border-1px-yellow);
-  }
+
 }
 
 

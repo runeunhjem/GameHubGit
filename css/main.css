@@ -356,7 +356,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact {
+.index, .index_sign-in, .about, .profile, .contact, .checkout {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -645,10 +645,11 @@ main {
 .profile h6 {
   padding-bottom: 1em;
 }
-.profile .stats {
+
+.stats, .checkout__cart {
   display: grid;
   grid-template-columns: 80px 80px 100px;
-  grid-template-rows: 25px 25px 25px 45px;
+  grid-template-rows: 25px 25px 25px 45px 25px 25px 25px 45px;
   background-color: var(--color-black-90);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
@@ -656,14 +657,14 @@ main {
   align-items: center;
   padding: 10px 0.8em 0 0.8em;
 }
-.profile .stats .amount, .profile .stats .type {
+.stats .amount, .stats .type, .checkout__cart .amount, .checkout__cart .type {
   text-align: right;
 }
-.profile .stats .bought {
+.stats .bought, .checkout__cart .bought {
   color: var(--color-white);
   text-align: left;
 }
-.profile .stats .sold {
+.stats .sold, .stats .yellow, .checkout__cart .sold, .checkout__cart .yellow {
   color: var(--color-yellow-logo);
 }
 
@@ -839,6 +840,14 @@ main {
 .contact .contact__wrapper .send-message a:hover {
   background-color: var(--color-grey-disabled);
   border: var(--border-1px-yellow);
+}
+
+/* Checkout page */
+.checkout .vat {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-align: right;
+  border-bottom: var(--border-1px-yellow);
 }
 
 /* Footer */

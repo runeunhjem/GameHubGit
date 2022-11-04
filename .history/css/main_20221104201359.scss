@@ -696,10 +696,32 @@ main {
   }
   
 }
-.stats, .checkout__cart {
+.stats, .stats {
+    display: grid;
+    grid-template-columns: 80px 80px 100px;
+    grid-template-rows: 25px 25px 25px 45px;
+    background-color: var(--color-black-90);
+    border: var(--border-1px-yellow);
+    border-radius: var(--border-radius-boxes);
+    margin-bottom: 2em;
+    align-items: center;
+    padding: 10px 0.8em 0 0.8em;
+    // gap: 3px;
+    .amount, .type {      
+      text-align: right;
+    }
+    .bought {
+      color: var(--color-white);
+      text-align: left;
+    }
+    .sold {
+      color: var(--color-yellow-logo);      
+    }
+    
+  } {
   display: grid;
   grid-template-columns: 80px 80px 100px;
-  grid-template-rows: 25px 25px 25px 45px 25px 25px 25px 45px;
+  grid-template-rows: 25px 25px 25px 45px;
   background-color: var(--color-black-90);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
@@ -714,7 +736,7 @@ main {
     color: var(--color-white);
     text-align: left;
   }
-  .sold, .yellow {
+  .sold {
     color: var(--color-yellow-logo);      
   }
   
@@ -916,12 +938,7 @@ main {
 
 /* Checkout page */
 .checkout {
-  .vat {
-    font-size: 0.8rem;
-    white-space: nowrap;
-    text-align: right;
-    border-bottom: var(--border-1px-yellow);
-  }
+
 }
 
 
