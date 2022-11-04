@@ -649,7 +649,7 @@ main {
 .stats, .checkout__cart {
   display: grid;
   grid-template-columns: 80px 80px 100px;
-  grid-template-rows: 25px 25px 25px 45px 25px 25px 25px 45px;
+  grid-template-rows: 25px 25px 25px 45px;
   background-color: var(--color-black-90);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
