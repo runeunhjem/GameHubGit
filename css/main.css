@@ -701,7 +701,7 @@ main {
   width: 360px;
 }
 .profile-links .buy-games__left, .profile-links .goto-cart {
-  padding: 1em auto;
+  padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
 }
@@ -711,6 +711,9 @@ main {
   color: var(--color-yellow-logo);
   text-decoration: none;
   font-size: 1.3rem;
+}
+.profile-links .buy-games__left a:hover, .profile-links .goto-cart a:hover {
+  text-decoration: underline;
 }
 .profile-links .buy-games__left a:before {
   content: url(../images/ico_arrow_left.svg);
