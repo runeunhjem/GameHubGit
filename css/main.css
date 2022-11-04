@@ -543,7 +543,32 @@ main {
   white-space: nowrap;
   padding: 4px 0;
 }
-.index_sign-in .register #first-name, .index_sign-in .register #last-name, .index_sign-in .register #email, .index_sign-in .register #street-address, .index_sign-in .register #zip, .index_sign-in .register #city, .index_sign-in .register #country, .index_sign-in .register #phone, .index_sign-in .register #username, .index_sign-in .register #password, .index_sign-in .register #repeat-password {
+.index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #repeat-password {
+  width: 310px;
+}
+.index_sign-in .register .register-button {
+  margin-top: 1.3em;
+}
+
+#first:focus-within,
+#last:focus-within,
+#first-name:focus-within,
+#last-name:focus-within,
+#email:focus-within,
+#street-address:focus-within,
+#zip:focus-within,
+#city:focus-within,
+#country:focus-within,
+#phone:focus-within,
+#username:focus-within,
+#password:focus-within,
+#repeat-password:focus-within {
+  background-color: lightgoldenrodyellow;
+  color: var(--color-black-90);
+}
+
+#first-name, #last-name, #email, #street-address, #zip, #city, #country, #phone, #username, #password, #repeat-password,
+#first, #last, #message {
   width: 152px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
@@ -553,28 +578,9 @@ main {
   margin: 0 20px;
   margin: 0.4em 0;
 }
-.index_sign-in .register #first-name input:invalid, .index_sign-in .register #last-name input:invalid, .index_sign-in .register #email input:invalid, .index_sign-in .register #street-address input:invalid, .index_sign-in .register #zip input:invalid, .index_sign-in .register #city input:invalid, .index_sign-in .register #country input:invalid, .index_sign-in .register #phone input:invalid, .index_sign-in .register #username input:invalid, .index_sign-in .register #password input:invalid, .index_sign-in .register #repeat-password input:invalid {
+#first-name input:invalid, #last-name input:invalid, #email input:invalid, #street-address input:invalid, #zip input:invalid, #city input:invalid, #country input:invalid, #phone input:invalid, #username input:invalid, #password input:invalid, #repeat-password input:invalid,
+#first input:invalid, #last input:invalid, #message input:invalid {
   border: 4px solid red;
-}
-.index_sign-in .register #first-name:focus-within,
-.index_sign-in .register #last-name:focus-within,
-.index_sign-in .register #email:focus-within,
-.index_sign-in .register #street-address:focus-within,
-.index_sign-in .register #zip:focus-within,
-.index_sign-in .register #city:focus-within,
-.index_sign-in .register #country:focus-within,
-.index_sign-in .register #phone:focus-within,
-.index_sign-in .register #username:focus-within,
-.index_sign-in .register #password:focus-within,
-.index_sign-in .register #repeat-password:focus-within {
-  background-color: lightgoldenrodyellow;
-  color: var(--color-black-90);
-}
-.index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #repeat-password {
-  width: 310px;
-}
-.index_sign-in .register .register-button {
-  margin-top: 1.3em;
 }
 
 .required {
@@ -614,7 +620,6 @@ main {
 }
 .about h1, .profile h1 {
   font-weight: 400;
-  font-size: 4.3rem;
   line-height: 97px;
 }
 .about h3, .profile h3 {
@@ -716,36 +721,97 @@ main {
 
 /* Contact Page */
 .contact h1 {
+  margin-top: 0.4em;
   font-weight: 400;
-}
-.contact .contact__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .contact .contact_intro {
   text-align: center;
   font-size: 1rem;
 }
-.contact .contact-info {
+.contact .contact__wrapper {
   display: block;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
+  width: 99%;
+  justify-content: space-around;
+  max-width: 1000px;
 }
-.contact .contact-info .spacer {
+.contact .contact__wrapper .contact-info, .contact .contact__wrapper .visit-info, .contact .contact__wrapper .send-message {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2em;
+}
+.contact .contact__wrapper .contact-info .spacer, .contact .contact__wrapper .visit-info .spacer, .contact .contact__wrapper .send-message .spacer {
   height: 1em;
 }
-.contact .contact-info p {
+.contact .contact__wrapper .contact-info p, .contact .contact__wrapper .visit-info p, .contact .contact__wrapper .send-message p {
   font-size: 1rem;
 }
-.contact .contact-info a {
+.contact .contact__wrapper .contact-info a, .contact .contact__wrapper .visit-info a, .contact .contact__wrapper .send-message a {
   color: var(--color-white);
   text-decoration: none;
 }
-.contact .contact-info a:hover {
+.contact .contact__wrapper .contact-info a:hover, .contact .contact__wrapper .visit-info a:hover, .contact .contact__wrapper .send-message a:hover {
   color: var(--color-yellow-logo);
+}
+.contact .contact__wrapper .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact__wrapper .visit-info h6, .contact .contact__wrapper .visit-info p {
+  text-align: center;
+}
+.contact .contact__wrapper .visit-info .maps__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact__wrapper fieldset {
+  border: 1px solid var(--color-yellow-logo);
+  padding: 0.7em;
+  border-radius: var(--border-radius-boxes);
+  color: var(--color-white);
+  background-color: var(--color-black-60);
+}
+.contact .contact__wrapper legend {
+  padding: 0 0.5em;
+  color: var(--color-yellow-logo);
+  font-size: 1.4rem;
+  text-align: center;
+}
+.contact .contact__wrapper .sendus-message_form_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.contact .contact__wrapper #email {
+  width: 350px;
+}
+.contact .contact__wrapper textarea, .contact .contact__wrapper input {
+  text-indent: 10px;
+}
+.contact .contact__wrapper label {
+  display: flex;
+  color: var(--color-white);
+  justify-content: left;
+}
+.contact .contact__wrapper .send-msg-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contact .contact__wrapper #message {
+  width: 350px;
+  height: 80px;
+}
+.contact .contact__wrapper a {
+  color: var(--color-black);
+  padding: 5px 15px;
+  border: var(--border-1px-yellow);
+  background-color: var(--color-yellow-logo);
+  border-radius: var(--border-radius-boxes);
+}
+.contact .contact__wrapper a:hover {
+  background-color: var(--color-grey-disabled);
+  border: var(--border-1px-yellow);
 }
 
 /* Footer */
