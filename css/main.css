@@ -627,17 +627,42 @@ main {
 .profile h4 {
   padding-bottom: 0.5em;
 }
-
+.profile h6 {
+  padding-bottom: 1em;
+}
+.profile .stats {
+  display: grid;
+  grid-template-columns: 80px 80px 100px;
+  grid-template-rows: 25px 25px 25px 45px;
+  background-color: var(--color-black-90);
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  margin-bottom: 2em;
+  align-items: center;
+  padding: 10px 0.8em 0 0.8em;
+}
+.profile .stats .amount, .profile .stats .type {
+  text-align: right;
+}
+.profile .stats .bought {
+  color: var(--color-white);
+  text-align: left;
+}
+.profile .stats .sold {
+  color: var(--color-yellow-logo);
+}
 .profile__card {
   display: grid;
   grid-template-columns: 200px 1fr;
   padding: 10px;
-  margin-bottom: 2em;
   width: 90%;
   background-color: var(--color-black-90);
   max-width: 600px;
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
+}
+.profile__card p {
+  font-size: 1rem;
 }
 .profile__card .picture {
   background-position: top right;
@@ -649,6 +674,35 @@ main {
 }
 .profile__card .spacer {
   height: 1em;
+}
+
+.profile-links {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 360px;
+}
+.profile-links .buy-games__left, .profile-links .goto-cart {
+  padding: 1em auto;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+}
+.profile-links .buy-games__left a, .profile-links .goto-cart a {
+  display: block;
+  align-self: center;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.profile-links .buy-games__left a:before {
+  content: url(../images/ico_arrow_left.svg);
+  padding: 5px;
+}
+.profile-links .goto-cart a:after {
+  content: url(../images/ico_arrow-right1.svg);
+  padding: 5px;
 }
 
 /* Footer */
@@ -960,6 +1014,9 @@ a:hover {
     grid-area: menu;
     width: 100%;
   }
+  .profile__card p {
+    font-size: 1.2rem;
+  }
   .profile__card .spacer {
     height: 3em;
   }
@@ -1043,12 +1100,18 @@ a:hover {
   .index_sign-in .sign_in, .index_sign-in .register {
     width: 360px;
   }
+  .profile-links {
+    width: 380px;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
   .main-menu {
     grid-area: menu;
     width: 100%;
+  }
+  .profile__card p {
+    font-size: 1.2rem;
   }
   .profile__card .spacer {
     height: 5em;
@@ -1144,11 +1207,14 @@ a:hover {
     padding-top: 1em;
   }
   .social-media {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   .index_sign-in .sign_in, .index_sign-in .register {
     width: 380px;
+  }
+  .profile-links {
+    width: 400px;
   }
 }
 /* @media screensize over 1980px */
