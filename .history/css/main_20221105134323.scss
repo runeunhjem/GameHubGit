@@ -1110,7 +1110,9 @@ max-width: 1500px;
   flex-wrap: wrap;
   justify-content: center;
   img {
-    width: 350px;
+    
+    align-items: center;
+    width: 80%;
   }
 }
 

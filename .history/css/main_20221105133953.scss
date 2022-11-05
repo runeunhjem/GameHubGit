@@ -1104,14 +1104,11 @@ legend {
 /* Playstation Grid Page */
 .psn-grid {
 max-width: 1500px;
-.image-mockup{
+.image-mockup{  
   gap: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  img {
-    width: 350px;
-  }
 }
 
 }

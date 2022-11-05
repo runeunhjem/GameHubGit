@@ -1023,6 +1023,9 @@ legend {
   flex-wrap: wrap;
   justify-content: center;
 }
+.psn-grid .image-mockup img {
+  width: 350px;
+}
 
 /* Footer */
 footer {
