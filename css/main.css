@@ -1014,6 +1014,16 @@ legend {
 }
 
 /* Playstation Grid Page */
+.psn-grid {
+  max-width: 1500px;
+}
+.psn-grid .image-mockup {
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* Footer */
 footer {
   display: flex;
