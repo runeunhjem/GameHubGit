@@ -441,9 +441,8 @@ input{
 .index_sign-in {
   min-height: 50vh;
   justify-content: flex-start;  
-  width: 100%;
+  width: 100%; 
   text-align: center;
- 
   input{
     text-indent: 10px;
   }
@@ -454,13 +453,13 @@ input{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     // font-family: "Roboto";
-    font-size: 2.8rem;
-    white-space: nowrap;  
+    // font-size: 3.33rem;
+    white-space: nowrap;    
     // font-style: normal;
   }
   fieldset {
     border: 1px solid var(--color-yellow-logo);
-    padding: 0.3em;
+    padding: 0.7em;
     border-radius: var(--border-radius-boxes);
     color: var(--color-white);
     background-color: var(--color-black-60);
