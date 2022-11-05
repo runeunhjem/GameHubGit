@@ -24,6 +24,7 @@
   font-family: "Roboto";
   font-size: 3.583rem;
   line-height: 67px;
+  font-weight: 400;
 }
 :root h2 {
   font-size: 2.986rem;
@@ -664,7 +665,7 @@ main {
   color: var(--color-white);
   text-align: left;
 }
-.stats .sold, .stats .yellow, .checkout__cart .sold, .checkout__cart .yellow {
+.stats .sold, .checkout__cart .sold {
   color: var(--color-yellow-logo);
 }
 
@@ -843,11 +844,38 @@ main {
 }
 
 /* Checkout page */
-.checkout .vat {
-  font-size: 0.8rem;
-  white-space: nowrap;
-  text-align: right;
+.checkout a {
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+}
+.checkout h1 {
+  margin: 0.3em auto;
+}
+.checkout .yellow, .checkout .price__before {
+  color: var(--color-yellow-logo);
+}
+.checkout .row3, .checkout .row5 {
+  padding-bottom: 1em;
   border-bottom: var(--border-1px-yellow);
+}
+.checkout span, .checkout .vat, .checkout .price__before, .checkout .checkout_items, .checkout .address, .checkout .change {
+  font-size: 0.8rem;
+}
+.checkout .price__before {
+  text-decoration: line-through;
+}
+.checkout .filler {
+  color: var(--color-black);
+}
+.checkout .checkout_items, .checkout .change {
+  text-align: right;
+}
+.checkout .vat, .checkout .order, .checkout .freight, .checkout .address {
+  white-space: nowrap;
+}
+.checkout .checkout__cart {
+  grid-template-columns: 120px 110px 70px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
 }
 
 /* Footer */
@@ -1248,6 +1276,15 @@ a:hover {
   .profile-links {
     width: 380px;
   }
+  .checkout .checkout__cart {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 190px 170px 105px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 50px;
+  }
+  .checkout__wrapper {
+    width: 500px;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
@@ -1368,6 +1405,15 @@ a:hover {
     display: flex;
     width: 100%;
     justify-content: space-around;
+  }
+  .checkout__wrapper {
+    width: 800px;
+  }
+  .checkout .checkout__cart {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 200px 100px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 50px;
   }
 }
 /* @media screensize over 1980px */
