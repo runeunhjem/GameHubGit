@@ -366,6 +366,10 @@ main {
   max-width: 1000px;
 }
 
+.yellow, .price__before {
+  color: var(--color-yellow-logo);
+}
+
 /* Homepage | Main section */
 .index .buy-sell_buttons {
   display: flex;
@@ -875,9 +879,6 @@ input {
 .checkout h1 {
   margin: 0.3em auto;
 }
-.checkout .yellow, .checkout .price__before {
-  color: var(--color-yellow-logo);
-}
 .checkout .row3, .checkout .row5 {
   padding-bottom: 1em;
   border-bottom: var(--border-1px-yellow);
@@ -975,9 +976,40 @@ legend {
   padding: 4px;
 }
 
-.checkout_success {
-  display: block;
+/* Checkout Success Page */
+.checkout_success a {
+  font-style: italic;
+}
+.checkout_success a:hover {
+  color: var(--color-white);
+}
+.checkout_success .success__wrapper {
+  padding: 2.5em 1em 0em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
+  width: 90%;
+  max-width: 600px;
+  height: 460px;
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  background-color: var(--color-black-60);
+}
+.checkout_success .success__wrapper p {
+  max-width: 500px;
+  font-size: 1rem;
+  padding: 1em;
+}
+.checkout_success .success__wrapper .success {
+  font-size: 1.3rem;
+}
+.checkout_success .success__wrapper img {
+  width: 110px;
+}
+.checkout_success .profile-links {
+  width: 340px;
 }
 
 /* Footer */
