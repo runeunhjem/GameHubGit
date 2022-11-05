@@ -534,6 +534,7 @@ input {
 .index_sign-in h4 {
   color: var(--color-white);
   margin: 1em auto;
+  font-size: 2rem;
 }
 .index_sign-in .fieldset_register {
   height: 570px;
