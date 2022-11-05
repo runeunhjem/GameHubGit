@@ -408,6 +408,10 @@ main {
   max-width: 156px;
 }
 
+input {
+  text-indent: 10px;
+}
+
 /* Sign in or Register | Main section */
 .index_sign-in {
   min-height: 50vh;
@@ -564,13 +568,16 @@ main {
 #phone:focus-within,
 #username:focus-within,
 #password:focus-within,
-#repeat-password:focus-within {
+#repeat-password:focus-within,
+#cardnumber:focus-within,
+#exp_date:focus-within,
+#cvc:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
 }
 
 #first-name, #last-name, #email, #street-address, #zip, #city, #country, #phone, #username, #password, #repeat-password,
-#first, #last, #message {
+#first, #last, #message, #cvc, #exp_date, #cardnumber {
   width: 152px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
@@ -581,7 +588,7 @@ main {
   margin: 0.4em 0;
 }
 #first-name input:invalid, #last-name input:invalid, #email input:invalid, #street-address input:invalid, #zip input:invalid, #city input:invalid, #country input:invalid, #phone input:invalid, #username input:invalid, #password input:invalid, #repeat-password input:invalid,
-#first input:invalid, #last input:invalid, #message input:invalid {
+#first input:invalid, #last input:invalid, #message input:invalid, #cvc input:invalid, #exp_date input:invalid, #cardnumber input:invalid {
   border: 4px solid red;
 }
 
@@ -786,7 +793,7 @@ main {
   justify-content: center;
 }
 .contact .contact__wrapper .send-message fieldset {
-  display: flex;
+  display: block;
   justify-content: center;
   width: 350px;
   margin-bottom: 2em;
@@ -844,6 +851,23 @@ main {
 }
 
 /* Checkout page */
+.checkout #cvc, .checkout #exp_date, .checkout #cardnumber {
+  width: 250px;
+}
+.checkout fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black-90);
+  padding: 20px;
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+}
+.checkout fieldset .form_cardnumber, .checkout fieldset .form_exp_date, .checkout fieldset .form_cvc {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 .checkout a {
   color: var(--color-yellow-logo);
   text-decoration: none;
@@ -876,6 +900,44 @@ main {
 .checkout .checkout__cart {
   grid-template-columns: 120px 110px 70px;
   grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
+}
+
+.checkout__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em;
+}
+
+.visa {
+  width: 350px;
+}
+
+legend {
+  padding: 0 0.5em;
+  color: var(--color-yellow-logo);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.paynow-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.paynow-button a {
+  margin-top: 20px;
+  color: var(--color-black);
+  padding: 5px 15px;
+  border: var(--border-1px-yellow);
+  background-color: var(--color-yellow-logo);
+  border-radius: var(--border-radius-boxes);
+}
+.paynow-button a:hover {
+  background-color: var(--color-grey-disabled);
+  color: var(--color-yellow-logo);
 }
 
 /* Footer */
