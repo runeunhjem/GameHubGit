@@ -898,6 +898,7 @@ input {
   white-space: nowrap;
 }
 .checkout .checkout__cart {
+  margin-bottom: 4em;
   grid-template-columns: 120px 110px 70px;
   grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
 }
@@ -910,8 +911,13 @@ input {
   padding: 0.7em;
 }
 
+.payment-options img {
+  width: 100%;
+}
+
 .visa {
   width: 350px;
+  margin-bottom: 2em;
 }
 
 legend {
@@ -938,6 +944,35 @@ legend {
 .paynow-button a:hover {
   background-color: var(--color-grey-disabled);
   color: var(--color-yellow-logo);
+}
+
+.checkout__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+.checkout__bottom .terms {
+  padding: 0.5em;
+  width: 200px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+.checkout__bottom a:hover {
+  text-decoration: underline;
+}
+.checkout__bottom a img {
+  padding: 2px;
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.red:after {
+  content: url(../images/ico_cancel-red.svg);
+  padding: 4px;
 }
 
 /* Footer */
