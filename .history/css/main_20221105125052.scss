@@ -375,14 +375,13 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, .psn-grid {
+.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, psn-grid {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   max-width: 1000px;
-  min-height: 50vh;
 }
 .yellow, .price__before {
   color: var(--color-yellow-logo);
@@ -674,7 +673,7 @@ input{
   border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile, .checkout_success, .psn-grid {
+.about, .profile, .checkout_success {
   h1 {
     font-weight: 400;
     // font-size: 4.3rem;
@@ -1102,11 +1101,7 @@ legend {
 }
 
 /* Playstation Grid Page */
-.psn-grid {
 
-  
-
-}
 
 
 /* Footer */

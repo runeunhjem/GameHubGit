@@ -357,13 +357,14 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success {
+.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, .psn-grid {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin: 0 auto;
   max-width: 1000px;
+  min-height: 50vh;
 }
 
 .yellow, .price__before {
@@ -627,23 +628,23 @@ input {
   border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile, .checkout_success {
+.about, .profile, .checkout_success, .psn-grid {
   width: 90%;
   min-height: 50vh;
   justify-content: flex-start;
 }
-.about h1, .profile h1, .checkout_success h1 {
+.about h1, .profile h1, .checkout_success h1, .psn-grid h1 {
   font-weight: 400;
   line-height: 97px;
 }
-.about h3, .profile h3, .checkout_success h3 {
+.about h3, .profile h3, .checkout_success h3, .psn-grid h3 {
   color: var(--color-yellow-logo);
 }
-.about p, .profile p, .checkout_success p {
+.about p, .profile p, .checkout_success p, .psn-grid p {
   font-size: 1.2rem;
   padding: 5px 0;
 }
-.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about, .checkout_success .bottomdivider, .checkout_success .divider_about {
+.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about, .checkout_success .bottomdivider, .checkout_success .divider_about, .psn-grid .bottomdivider, .psn-grid .divider_about {
   margin-bottom: 2em;
 }
 
@@ -1012,6 +1013,7 @@ legend {
   width: 340px;
 }
 
+/* Playstation Grid Page */
 /* Footer */
 footer {
   display: flex;
