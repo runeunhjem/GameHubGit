@@ -375,7 +375,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact, .checkout {
+.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -670,7 +670,7 @@ input{
   border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile {
+.about, .profile, .checkout_success {
   h1 {
     font-weight: 400;
     // font-size: 4.3rem;
@@ -1058,6 +1058,12 @@ legend {
   padding: 4px;  
 }
 
+
+.checkout_success {
+  display: block;
+  text-align: center;
+
+}
 
 /* Footer */
 footer {

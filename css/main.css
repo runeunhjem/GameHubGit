@@ -357,7 +357,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact, .checkout {
+.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -623,23 +623,23 @@ input {
   border-radius: var(--border-radius-boxes);
 }
 
-.about, .profile {
+.about, .profile, .checkout_success {
   width: 90%;
   min-height: 50vh;
   justify-content: flex-start;
 }
-.about h1, .profile h1 {
+.about h1, .profile h1, .checkout_success h1 {
   font-weight: 400;
   line-height: 97px;
 }
-.about h3, .profile h3 {
+.about h3, .profile h3, .checkout_success h3 {
   color: var(--color-yellow-logo);
 }
-.about p, .profile p {
+.about p, .profile p, .checkout_success p {
   font-size: 1.2rem;
   padding: 5px 0;
 }
-.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about {
+.about .bottomdivider, .about .divider_about, .profile .bottomdivider, .profile .divider_about, .checkout_success .bottomdivider, .checkout_success .divider_about {
   margin-bottom: 2em;
 }
 
@@ -973,6 +973,11 @@ legend {
 .red:after {
   content: url(../images/ico_cancel-red.svg);
   padding: 4px;
+}
+
+.checkout_success {
+  display: block;
+  text-align: center;
 }
 
 /* Footer */
