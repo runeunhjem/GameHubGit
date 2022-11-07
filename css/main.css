@@ -704,8 +704,31 @@ input {
   min-width: 100px;
   min-height: 100px;
 }
-.profile__card .spacer {
+
+.spacer {
   height: 1em;
+}
+
+.buy-games__left, .goto-cart {
+  padding: 1em 0;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+}
+.buy-games__left a, .goto-cart a {
+  display: block;
+  align-self: center;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.buy-games__left a:hover, .goto-cart a:hover {
+  text-decoration: underline;
+}
+
+.buy-games__left a:before {
+  content: url(../images/ico_arrow_left.svg);
+  padding: 5px;
+  height: 16px;
 }
 
 .profile-links {
@@ -716,28 +739,11 @@ input {
   margin-bottom: 2em;
   width: 360px;
 }
-.profile-links .buy-games__left, .profile-links .goto-cart {
-  padding: 1em 0;
-  color: var(--color-yellow-logo);
-  text-decoration: none;
-}
-.profile-links .buy-games__left a, .profile-links .goto-cart a {
-  display: block;
-  align-self: center;
-  color: var(--color-yellow-logo);
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-.profile-links .buy-games__left a:hover, .profile-links .goto-cart a:hover {
-  text-decoration: underline;
-}
-.profile-links .buy-games__left a:before {
-  content: url(../images/ico_arrow_left.svg);
-  padding: 5px;
-}
-.profile-links .goto-cart a:after {
+
+.goto-cart a:after {
   content: url(../images/ico_arrow-right1.svg);
   padding: 5px;
+  height: 16px;
 }
 
 /* Contact Page */
@@ -1030,15 +1036,27 @@ legend {
 }
 
 /* Product Details */
-.product_details, .cart {
+.product_details, .cart, .wishlist {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
 }
-.product_details h1, .cart h1 {
+.product_details h1, .cart h1, .wishlist h1 {
   margin: 0.25em;
+}
+.product_details .share, .cart .share, .wishlist .share {
+  display: block;
+  width: 220px;
+  height: 140px;
+  background-color: var(--color-black-60);
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+}
+.product_details .share p, .cart .share p, .wishlist .share p {
+  margin: 1em;
 }
 
 .product-image, .product-details, .product-addtocart {
@@ -1163,7 +1181,34 @@ legend {
   margin-bottom: 1em;
 }
 
-/* Shopping Cart */
+/* Shopping Cart & Wishlist */
+.cart .buy-games__left, .cart .goto-cart, .wishlist .buy-games__left, .wishlist .goto-cart {
+  width: 175px;
+}
+.cart .buy-games__left a, .cart .goto-cart a, .wishlist .buy-games__left a, .wishlist .goto-cart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.wishlist-links {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+}
+
+.wl-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wl-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .cart-items {
   display: none;
   gap: 1em;
@@ -1614,6 +1659,22 @@ a:hover {
   .cart-items-mob {
     display: none;
   }
+  .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
+    width: 532px;
+  }
+  .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
+    display: flex;
+    width: 266px;
+  }
+  .cart .wl-right a, .wishlist .wl-right a {
+    justify-content: flex-end;
+  }
+  .cart .wl-left a, .wishlist .wl-left a {
+    justify-content: flex-start;
+  }
+  .wishlist-links {
+    width: 532px;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
@@ -1785,6 +1846,22 @@ a:hover {
   }
   .cart-items-mob {
     display: none;
+  }
+  .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
+    width: 532px;
+  }
+  .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
+    display: flex;
+    width: 266px;
+  }
+  .cart .wl-right a, .wishlist .wl-right a {
+    justify-content: flex-end;
+  }
+  .cart .wl-left a, .wishlist .wl-left a {
+    justify-content: flex-start;
+  }
+  .wishlist-links {
+    width: 532px;
   }
 }
 /* @media screensize over 1980px */
