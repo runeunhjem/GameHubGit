@@ -1075,12 +1075,17 @@ legend {
 .description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1em;
+  align-items: center;
+  gap: 0.5em;
   width: 350px;
 }
+.description .divider {
+  margin: 0;
+  height: 0;
+}
 .description h4 {
-  margin: 0.5em auto;
+  margin: 25px auto 0 auto;
+  color: var(--color-white);
 }
 .description img {
   width: 350px;
@@ -1088,8 +1093,37 @@ legend {
 
 .product-price-mob {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   grid-area: addtocart;
+}
+.product-price-mob a {
+  text-decoration: none;
+}
+
+.addtocart__cta:hover,
+.checkout__cta:hover,
+.cta:hover {
+  background-color: var(--color-yellow-logo);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+.addtocart__cta, .checkout__cta, .cta {
+  width: 130px;
+  color: var(--color-yellow-logo);
+  background-color: var(--color-black);
+  text-align: center;
+  padding: 10px;
+  border-radius: var(--border-radius-boxes);
+  border: var(--border-1px-yellow);
+}
+
+.cta__buttons {
+  margin: 10px auto;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .product-addtocart {
@@ -1105,11 +1139,17 @@ legend {
 }
 
 .product-details {
+  border-bottom: var(--border-1px-yellow);
   grid-area: details;
 }
 
 .product-addtocart {
+  border-radius: var(--border-radius-boxes);
   grid-area: addtocart;
+}
+.product-addtocart img:hover {
+  box-shadow: 3px 5px 12px var(--color-yellow-logo);
+  border-radius: 0.6em;
 }
 
 .gameplay, .plot, .features {
@@ -1541,6 +1581,9 @@ a:hover {
   .description img {
     width: 500px;
   }
+  .product-details {
+    border-bottom: none;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
@@ -1703,6 +1746,9 @@ a:hover {
   }
   .summary {
     display: none;
+  }
+  .product-details {
+    border-bottom: none;
   }
 }
 /* @media screensize over 1980px */
