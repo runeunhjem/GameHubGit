@@ -1007,7 +1007,7 @@ input{
     .form_cardnumber, .form_exp_date, .form_cvc {
       display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     }
   }
   a {
