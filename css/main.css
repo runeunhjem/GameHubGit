@@ -357,7 +357,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, .psn-grid {
+.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, .psn-grid, .sellgames {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -418,44 +418,45 @@ input {
 }
 
 /* Sign in or Register | Main section */
-.index_sign-in {
+.index_sign-in, .sellgames {
   min-height: 50vh;
   justify-content: flex-start;
   width: 100%;
   text-align: center;
-  /* Register form */
 }
-.index_sign-in input {
+.index_sign-in input, .sellgames input {
   text-indent: 10px;
 }
-.index_sign-in .h2_signin, .index_sign-in .lets-explore {
-  margin-top: 0.5em;
+.index_sign-in h1, .index_sign-in .lets-explore, .sellgames h1, .sellgames .lets-explore {
+  margin-top: 0.4em;
   margin-bottom: 0.5em;
   font-family: "Roboto";
   font-size: 2.8rem;
   white-space: nowrap;
 }
-.index_sign-in fieldset {
+.index_sign-in fieldset, .sellgames fieldset {
   border: 1px solid var(--color-yellow-logo);
   padding: 0.3em;
   border-radius: var(--border-radius-boxes);
   color: var(--color-white);
   background-color: var(--color-black-60);
 }
-.index_sign-in legend {
+.index_sign-in legend, .sellgames legend {
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
   font-size: 1.4rem;
 }
 .index_sign-in .signin_form_wrapper,
-.index_sign-in .register_form_wrapper {
+.index_sign-in .register_form_wrapper, .index_sign-in .sellgames_form_wrapper, .sellgames .signin_form_wrapper,
+.sellgames .register_form_wrapper, .sellgames .sellgames_form_wrapper {
   display: flex;
   justify-content: space-around;
+  width: 350px;
 }
-.index_sign-in .full_sign-in_wrapper {
+.index_sign-in .full_sign-in_wrapper, .sellgames .full_sign-in_wrapper {
   display: block;
 }
-.index_sign-in .sign_in, .index_sign-in .register {
+.index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames, .sellgames .sign_in, .sellgames .register, .sellgames .sellgames {
   margin: 0.6em 0;
   display: flex;
   width: 320px;
@@ -463,18 +464,18 @@ input {
   align-items: center;
   justify-content: space-around;
 }
-.index_sign-in .sign_in label, .index_sign-in .register label {
+.index_sign-in .sign_in label, .index_sign-in .register label, .index_sign-in .sellgames label, .sellgames .sign_in label, .sellgames .register label, .sellgames .sellgames label {
   display: flex;
   color: var(--color-white);
   justify-content: left;
 }
-.index_sign-in .sign_in .sign-in-button, .index_sign-in .sign_in .register-button, .index_sign-in .register .sign-in-button, .index_sign-in .register .register-button {
+.index_sign-in .sign_in .sign-in-button, .index_sign-in .sign_in .register-button, .index_sign-in .register .sign-in-button, .index_sign-in .register .register-button, .index_sign-in .sellgames .sign-in-button, .index_sign-in .sellgames .register-button, .sellgames .sign_in .sign-in-button, .sellgames .sign_in .register-button, .sellgames .register .sign-in-button, .sellgames .register .register-button, .sellgames .sellgames .sign-in-button, .sellgames .sellgames .register-button {
   display: flex;
   justify-content: center;
   height: 40px;
   align-items: center;
 }
-.index_sign-in .sign_in #username_signin, .index_sign-in .sign_in #password_signin, .index_sign-in .register #username_signin, .index_sign-in .register #password_signin {
+.index_sign-in .sign_in #username_signin, .index_sign-in .sign_in #password_signin, .index_sign-in .register #username_signin, .index_sign-in .register #password_signin, .index_sign-in .sellgames #username_signin, .index_sign-in .sellgames #password_signin, .sellgames .sign_in #username_signin, .sellgames .sign_in #password_signin, .sellgames .register #username_signin, .sellgames .register #password_signin, .sellgames .sellgames #username_signin, .sellgames .sellgames #password_signin {
   width: 150px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
@@ -485,21 +486,22 @@ input {
   margin: 0.4em 0;
 }
 .index_sign-in #password_signin:focus-within,
-.index_sign-in #username_signin:focus-within {
+.index_sign-in #username_signin:focus-within, .sellgames #password_signin:focus-within,
+.sellgames #username_signin:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
 }
-.index_sign-in h3 {
+.index_sign-in h3, .sellgames h3 {
   margin-top: 1em;
 }
-.index_sign-in .quick_buttons {
+.index_sign-in .quick_buttons, .sellgames .quick_buttons {
   display: flex;
   justify-content: space-around;
   width: 370px;
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
-.index_sign-in .quick_buttons a {
+.index_sign-in .quick_buttons a, .sellgames .quick_buttons a {
   display: flex;
   width: 128px;
   height: 40px;
@@ -513,7 +515,7 @@ input {
   font-size: 1.15rem;
   white-space: nowrap;
 }
-.index_sign-in a {
+.index_sign-in a, .sellgames a {
   border: 1px solid var(--color-black-90);
   background-color: var(--color-yellow-logo);
   color: var(--color-black-90);
@@ -522,44 +524,88 @@ input {
   text-decoration: none;
   font-weight: 400;
 }
-.index_sign-in .facebook::before {
+.index_sign-in .facebook::before, .sellgames .facebook::before {
   content: url(../images/ico_facebook.svg);
 }
-.index_sign-in .google::before {
+.index_sign-in .google::before, .sellgames .google::before {
   content: url(../images/ico_google-chrome.svg);
 }
-.index_sign-in a:hover {
+.index_sign-in a:hover, .sellgames a:hover {
   background-color: var(--color-grey-disabled);
   color: var(--color-yellow-logo);
   border: 1px solid var(--color-yellow-logo);
 }
-.index_sign-in h4 {
+.index_sign-in h4, .sellgames h4 {
   color: var(--color-white);
   font-size: 2rem;
 }
-.index_sign-in .fieldset_register {
-  height: 570px;
-  margin-bottom: 2em;
-}
-.index_sign-in .fieldset_register label {
-  width: 151px;
-  text-align: left;
-}
-.index_sign-in .register {
+.index_sign-in .register, .index_sign-in .sellgames, .sellgames .register, .sellgames .sellgames {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
-.index_sign-in .register a {
+.index_sign-in .register a, .index_sign-in .sellgames a, .sellgames .register a, .sellgames .sellgames a {
   width: 315px;
   white-space: nowrap;
   padding: 4px 0;
 }
-.index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #repeat-password {
+.index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #title, .index_sign-in .register #repeat-password, .index_sign-in .sellgames #street-address, .index_sign-in .sellgames #email, .index_sign-in .sellgames #title, .index_sign-in .sellgames #repeat-password, .sellgames .register #street-address, .sellgames .register #email, .sellgames .register #title, .sellgames .register #repeat-password, .sellgames .sellgames #street-address, .sellgames .sellgames #email, .sellgames .sellgames #title, .sellgames .sellgames #repeat-password {
   width: 310px;
 }
-.index_sign-in .register .register-button {
+.index_sign-in .register #paypal, .index_sign-in .register #confirm, .index_sign-in .register #title, .index_sign-in .sellgames #paypal, .index_sign-in .sellgames #confirm, .index_sign-in .sellgames #title, .sellgames .register #paypal, .sellgames .register #confirm, .sellgames .register #title, .sellgames .sellgames #paypal, .sellgames .sellgames #confirm, .sellgames .sellgames #title {
+  width: 330px;
+}
+.index_sign-in .register .register-button, .index_sign-in .sellgames .register-button, .sellgames .register .register-button, .sellgames .sellgames .register-button {
   margin-top: 1.3em;
+}
+
+.sell-info {
+  width: 310px;
+  padding: 1em;
+  background-color: var(--color-black-60);
+  border-radius: var(--border-radius-boxes);
+  border: var(--border-1px-yellow);
+  margin: 1em auto;
+}
+
+/* Register form & Sell Games Form*/
+.fieldset_register, .fieldset_sellgames {
+  height: 570px;
+  margin-bottom: 2em;
+}
+.fieldset_register label, .fieldset_sellgames label {
+  width: 151px;
+  text-align: left;
+}
+
+.fieldset_sellgames {
+  display: flex;
+  justify-content: center;
+  height: 540px;
+  width: 358px;
+}
+.fieldset_sellgames .divider {
+  margin: 1em auto;
+}
+
+.sellgames-button {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sellgames-button a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form_confirm {
+  margin: 1em auto;
+}
+
+.form_paypal label, .form_confirm label {
+  width: 330px;
 }
 
 #message:focus-within,
@@ -578,25 +624,29 @@ input {
 #repeat-password:focus-within,
 #cardnumber:focus-within,
 #exp_date:focus-within,
-#cvc:focus-within {
+#cvc:focus-within,
+#asking-price:focus-within,
+#platform:focus-within,
+#title:focus-within,
+#type:focus-within,
+#cover:focus-within,
+#rating:focus-within,
+#gamespot-link:focus-within,
+#paypal:focus-within,
+#confirm:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
 }
 
 #first-name, #last-name, #email, #street-address, #zip, #city, #country, #phone, #username, #password, #repeat-password,
-#first, #last, #message, #cvc, #exp_date, #cardnumber {
+#first, #last, #message, #cvc, #exp_date, #cardnumber, #asking-price, #platform, #title, #type, #cover, #rating, #gamespot-link, #paypal, #confirm {
   width: 152px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: 1px solid var(--color-yellow-logo);
   height: 30px;
   border-radius: 0.4em;
-  margin: 0 20px;
   margin: 0.4em 0;
-}
-#first-name input:invalid, #last-name input:invalid, #email input:invalid, #street-address input:invalid, #zip input:invalid, #city input:invalid, #country input:invalid, #phone input:invalid, #username input:invalid, #password input:invalid, #repeat-password input:invalid,
-#first input:invalid, #last input:invalid, #message input:invalid, #cvc input:invalid, #exp_date input:invalid, #cardnumber input:invalid {
-  border: 4px solid red;
 }
 
 .required {
@@ -612,7 +662,7 @@ input {
   text-align: center;
   width: 200px;
   height: 1em;
-  margin-bottom: 1em;
+  margin: 0 auto 1em auto;
   border-bottom: 1px solid var(--color-yellow-logo);
 }
 
@@ -713,13 +763,14 @@ input {
   padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
+  align-items: center;
 }
 .buy-games__left a, .goto-cart a {
-  display: block;
-  align-self: center;
+  display: flex;
+  align-items: center;
   color: var(--color-yellow-logo);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .buy-games__left a:hover, .goto-cart a:hover {
   text-decoration: underline;
@@ -731,6 +782,12 @@ input {
   height: 16px;
 }
 
+.goto-cart a:after {
+  content: url(../images/ico_arrow-right1.svg);
+  padding: 5px;
+  height: 16px;
+}
+
 .profile-links {
   display: inline-flex;
   justify-content: space-between;
@@ -738,12 +795,6 @@ input {
   padding: 1em;
   margin-bottom: 2em;
   width: 360px;
-}
-
-.goto-cart a:after {
-  content: url(../images/ico_arrow-right1.svg);
-  padding: 5px;
-  height: 16px;
 }
 
 /* Contact Page */
@@ -827,8 +878,8 @@ input {
   display: flex;
   justify-content: space-around;
 }
-.contact .contact__wrapper .send-message #email {
-  width: 300px;
+.contact .contact__wrapper .send-message #email, .contact .contact__wrapper .send-message #title, .contact .contact__wrapper .send-message #paypal, .contact .contact__wrapper .send-message #confirm {
+  width: 330px;
 }
 .contact .contact__wrapper .send-message textarea, .contact .contact__wrapper .send-message input {
   text-indent: 10px;
@@ -1053,7 +1104,7 @@ legend {
   background-color: var(--color-black-60);
   justify-content: center;
   align-items: center;
-  margin: 2em auto;
+  margin: 3em auto;
 }
 .product_details .share p, .cart .share p, .wishlist .share p {
   margin: 1em;
@@ -1624,7 +1675,7 @@ a:hover {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  .index_sign-in .sign_in, .index_sign-in .register {
+  .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames {
     width: 360px;
   }
   .profile-links {
@@ -1782,7 +1833,7 @@ a:hover {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
-  .index_sign-in .sign_in, .index_sign-in .register {
+  .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames {
     width: 380px;
   }
   .profile-links {
