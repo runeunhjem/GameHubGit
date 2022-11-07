@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games">
-    <meta name="Description" content="All of our playstation games in one place">
+    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Profile">
+    <meta name="Description" content="All about you. Here you can change profile picture, edit your profile and check your Game Hub stats">
     <link rel="stylesheet" href="css/main.css">
-    <title>Game Hub | Playstation Games</title>
+    <title>Game Hub | Your Profile</title>
   </head>
   <body>
     <header>
       <a class="skip-link" href='#main'>Skip to main content</a>
         <div class="header__wrapper header__wrapper-wide">
             <div class="placeholder"></div>
-            <div class="header__logo"></div>
+            <div class="header__logo"><a href="index.html"></a></div>
             <div class="header__profile-pic"></div>          
             <div class="explore_none"></div>          
             <div class="explore explore_none">
-              <h1>Let's Explore</h1>
+              <h2>Let's Explore</h2>
               <div class="univers_of_games">
                 <img src="images/gamehub/the-universe-of-games.png" alt="The Universe Of Games Header">
               </div>
@@ -48,9 +48,9 @@
                                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                                         <div class="links"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                                        <div class="links"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                                        <div class="links"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                                         <div class="links"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
-                                        <div class="links"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
+                                        <div class="links"><a href="profile.html" class="active"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                                         
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@
             
             <div class="placeholder"> </div>
             
-            <div class="profile__name"><div><a href="profile.html">Gamer Gamerson</a></div></div>
+            <div class="profile__name"><div><a href="profile.html" class="active">Gamer Gamerson</a></div></div>
             <div class="logout"><div><a href="index_sign-in.html">(Log out)</a></div></div>
         </div>
         
@@ -77,20 +77,50 @@
 
     <main id="main">
       <div class="main__wrapper">
-        <section class="psn-grid" aria-label="Playstation Page | Main Section">
-            <h1>Playstation</h1>
-            <div class="image-mockup">
-                <a href="product_details.html"><img src="images/covers/ps5-forge-legend-disc.png" alt="PS5 Forge Legend | Disc Edition"></a>
-                <img src="images/covers/ps5-forge-legend-key.png" alt="PS5 Forge Legend | Key Only">
-                <img src="images/covers/ps4-forge-legend-key.png" alt="PS4 Forge Legend | Key Only">
-                <img src="images/covers/ps5-cyberpunk-key.png" alt="PS5 Cyberpunk | Key Only">
-                <img src="images/covers/ps4-cyberpunk-key.png" alt="PS4 Cyberpunk | Key Only">
-                <img src="images/covers/ps5-racing-key.png" alt="PS5 Racing | Key Only">
-                <img src="images/covers/ps5-boxer-disc.png" alt="PS5 Boxer | Disc Version">
+        <section class="profile" aria-label="Profile Page | Main Section">
+              <h1>Profile</h1>
+              <h4>Account Details</h4>
+              
+              
+                <div class="profile__card">
+                    <div class="info">
+                        <p>Gamer Gamerson</p>
+                        <p>Slettheiveien 81E</p>
+                        <p>4626 Kristiansand</p>
+                        <p>Norway</p>
+                        <div class="spacer"></div>
+                        <p class="tel">+47 123 45 678</p>
+                        <p class="mail">gamer.gamerson@gmail.com</p>
+                    </div>
+                    <div class="picture"></div>
+                </div>
 
-            </div>
+                <div class="profile-links">
+                  <div class="buy-games__left">
+                    <a href="psn-grid.html"> Buy Games</a>
+                  </div>
 
-            
+                  <div class="goto-cart">
+                    <a href="cart.html">Go to cart </a>
+                  </div>
+                </div>
+              <h6>Your Game Hub Statistics</h6>
+
+              <div class="stats">
+                <div class="bought row1">Bought:</div>
+                <div class="amount row1">12</div>
+                <div class="type row1">Discs</div>
+                <div class="bought row2">Bought:</div>
+                <div class="amount row2">7</div>
+                <div class="type row2">Keys</div>
+                <div class="bought row3">Bought:</div>
+                <div class="amount row3">2</div>
+                <div class="type row3">Accounts</div>
+                <div class="sold row4">Sold:</div>
+                <div class="amount sold row4">2</div>
+                <div class="type sold row4">Discs</div>
+              </div>
+
         </section>
       </div>
     </main>
@@ -107,9 +137,9 @@
                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                         <div class="links widescreen"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                        <div class="links widescreen"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                        <div class="links widescreen"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                         <div class="links widescreen"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
-                        <div class="links widescreen"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
+                        <div class="links widescreen"><a href="profile.html" class="active"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                       </div>
                     </div>
                   </div>

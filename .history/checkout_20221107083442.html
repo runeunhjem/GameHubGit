@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games">
-    <meta name="Description" content="All of our playstation games in one place">
+    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Checkout, Pay">
+    <meta name="Description" content="Checkout page. Pay with your preferred method">
     <link rel="stylesheet" href="css/main.css">
-    <title>Game Hub | Playstation Games</title>
+    <title>Game Hub | Checkout</title>
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
             <div class="header__profile-pic"></div>          
             <div class="explore_none"></div>          
             <div class="explore explore_none">
-              <h1>Let's Explore</h1>
+              <div class="lets-explore">Let's Explore</div>
               <div class="univers_of_games">
                 <img src="images/gamehub/the-universe-of-games.png" alt="The Universe Of Games Header">
               </div>
@@ -77,20 +77,84 @@
 
     <main id="main">
       <div class="main__wrapper">
-        <section class="psn-grid" aria-label="Playstation Page | Main Section">
-            <h1>Playstation</h1>
-            <div class="image-mockup">
-                <a href="product_details.html"><img src="images/covers/ps5-forge-legend-disc.png" alt="PS5 Forge Legend | Disc Edition"></a>
-                <img src="images/covers/ps5-forge-legend-key.png" alt="PS5 Forge Legend | Key Only">
-                <img src="images/covers/ps4-forge-legend-key.png" alt="PS4 Forge Legend | Key Only">
-                <img src="images/covers/ps5-cyberpunk-key.png" alt="PS5 Cyberpunk | Key Only">
-                <img src="images/covers/ps4-cyberpunk-key.png" alt="PS4 Cyberpunk | Key Only">
-                <img src="images/covers/ps5-racing-key.png" alt="PS5 Racing | Key Only">
-                <img src="images/covers/ps5-boxer-disc.png" alt="PS5 Boxer | Disc Version">
+        <section class="checkout" aria-label="Checkout Page | Main Section">
+              <h1>Payment</h1>              
+              
 
-            </div>
+              <div class="checkout__wrapper">
+                    <div class="checkout__cart">
+                        <div class="order row1">Order:</div>
+                        <div class="row1 checkout_items yellow">(2 items)</div>
+                        <div class="amount row1"><span class="yellow">$ </span>149.90</div>
+                        <div class="filler row2">.</div>
+                        <div class="row2"> </div>
+                        <div class="amount row2 price__before"><span class="yellow">$ </span>169.90</div>
+                        <div class="row3 vat">(VAT included if applicable)</div>
+                        <div class="row3 vat filler">.</div>
+                        <div class="row3 vat filler">.</div>
+                        <div class="freight row4">Freight:</div>
+                        <div class="filler row4">.</div>
+                        <div class="amount row4"><span class="yellow">$ </span>4.95</div>
+                        <div class="address row5 yellow">(Profile address used):</div>
+                        <div class="change row5 yellow"><a class="change" href="profile.html">(Change)</a></div>
+                        <div class="filler change row5">123</div>
+                        <div class="row6">Total:</div>
+                        <div class="checkout_items yellow row6">(2 items)</div>
+                        <div class="amount row6"><span class="yellow">$ </span>154.85</div>
+                        <div class="filler row7">.</div>
+                        <div class="filler row7">.</div>
+                        <div class="amount row7 price__before"><span class="yellow">$ </span>174.85</div>
+                        <div class="row8 vat">(VAT included if applicable)</div>
+                        <div class="row8 filler">.</div>
+                        <div class="filler row8">.</div>
+                  </div>
+                  <div class="payment-options">
+                    <img src="images/img_payment-options.png" alt="Choose your preferred method of payment">
+                  </div>
 
-            
+                    <div class="visa">
+                    <fieldset>
+                        <legend>Card Details</legend>
+                            <form class="creditcard__visa">
+                              <div class="creditcard__visa">
+
+                                <div class="creditcard__visa_form_wrapper">
+                                    <div class="form_cardnumber">
+                                        <label for="cardnumber">Card Number:<span class="required">*</span></label>
+                                        <input type="text" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-label="Enter your Card Number" required>
+                                    </div>
+                                </div>
+
+                                    <div class="creditcard__visa_form_wrapper">
+                                      <div class="form_exp_date">
+                                        <label for="exp_date">Expiration date:<span class="required">*</span></label>
+                                        <input type="text" name="exp_date" id="exp_date" placeholder="Expiration Date" aria-label="Cards Expiration Date" required>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="creditcard__visa_form_wrapper">
+                                      <div class="form_cvc">
+                                        <label for="cvc">CVC:<span class="required">*</span></label>
+                                        <input type="text" name="cvc" id="cvc" placeholder="CVC Code" aria-label="Cards CVC code" required>              
+                                      </div>
+                                    </div>
+                                    
+                                    
+                                <div class="paynow-button"><a href="checkout_success.html">Pay Now</a></div>
+                              </div>
+                              <!-- Button hidden and mimicked for now -->
+                              <!-- <button type="submit">Sign In</button> -->
+                            </form>
+                            <div class="checkout__bottom">
+                            <a href="psn-grid.html"><span class="red">Cancel order</span></a>
+                            <p class="terms yellow">By clicking “Pay Now” I agree to and confirm that I have read the shopping terms.</p>
+                            </div>
+                      </fieldset>
+                      <div class="spacer"> </div>
+                </div>
+              </div>
+              
+
         </section>
       </div>
     </main>

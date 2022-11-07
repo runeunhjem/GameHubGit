@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games">
-    <meta name="Description" content="All of our playstation games in one place">
+    <meta name="Keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Register, Sign Up">
+    <meta name="Description" content="Sign in or Register to get your profile & stats going">
     <link rel="stylesheet" href="css/main.css">
-    <title>Game Hub | Playstation Games</title>
+    <title>Game Hub | Sign In or Register</title>
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
         <div class="header__wrapper header__wrapper-wide">
             <div class="placeholder"></div>
             <div class="header__logo"></div>
-            <div class="header__profile-pic"></div>          
+            <div class="index_sign-in__profile_pic"></div>          
             <div class="explore_none"></div>          
             <div class="explore explore_none">
               <h1>Let's Explore</h1>
@@ -42,20 +42,20 @@
                                         <!-- Checkbox hack to close the flyin-menu -->
                                         <input type="checkbox" id="ham-burger">
                                         <div class="links back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div>
-                                        <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
+                                        <div class="links"><a href="index.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                                         <div class="links"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
                                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
                                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                                         <div class="links"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                                        <div class="links"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                                        <div class="links"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                                         <div class="links"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                                         <div class="links"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                                         
                                     </div>
                                 </div>
                               
-                          <div class="links"><a href="index.html"><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
+                          <div class="links"><a href="index.html" class="active"><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
                           <div class="links"><a href="psn-grid.html"><img class="topmenu__images" src="images/ico_psn.svg" alt="Go to Playstation Games"></a></div>                    
                           <div class="links"><a href="about.html"><img class="topmenu__images" src="images/ico_about.svg" alt="About Us"></a></div>
                           <div class="links"><a href="wishlist.html"><img class="topmenu__images" src="images/ico_heart.svg" alt="Open your Wishlist"></a></div>
@@ -69,28 +69,126 @@
             
             <div class="placeholder"> </div>
             
-            <div class="profile__name"><div><a href="profile.html">Gamer Gamerson</a></div></div>
-            <div class="logout"><div><a href="index_sign-in.html">(Log out)</a></div></div>
+            <div class="profile__name"><div class="left_profile_area"><a href="profile.html">Sign in or register to view your profile</a></div></div>
+            <div class="logout"><div class="right_profile_area"><a href="index.html">(Sign In)</a></div></div>
         </div>
         
     </header>
 
     <main id="main">
       <div class="main__wrapper">
-        <section class="psn-grid" aria-label="Playstation Page | Main Section">
-            <h1>Playstation</h1>
-            <div class="image-mockup">
-                <a href="product_details.html"><img src="images/covers/ps5-forge-legend-disc.png" alt="PS5 Forge Legend | Disc Edition"></a>
-                <img src="images/covers/ps5-forge-legend-key.png" alt="PS5 Forge Legend | Key Only">
-                <img src="images/covers/ps4-forge-legend-key.png" alt="PS4 Forge Legend | Key Only">
-                <img src="images/covers/ps5-cyberpunk-key.png" alt="PS5 Cyberpunk | Key Only">
-                <img src="images/covers/ps4-cyberpunk-key.png" alt="PS4 Cyberpunk | Key Only">
-                <img src="images/covers/ps5-racing-key.png" alt="PS5 Racing | Key Only">
-                <img src="images/covers/ps5-boxer-disc.png" alt="PS5 Boxer | Disc Version">
+        <section class="index_sign-in" aria-label="Sign in or Register page, Main Section">
+          
+          <h2 class="h2_signin">Sign in</h2>
+          <fieldset>
+            <legend>Sign in</legend>
+                <form class="sign_in">
+                  <div class="full_sign-in_wrapper">
+                        <div class="signin_form_wrapper">
+                          <div class="form_username">
+                            <label for="username_signin">Your Username:<span class="required">*</span></label>
+                            <input type="text" name="username" id="username_signin" placeholder="Username" aria-label="Write your Username" required>              
+                          </div>
 
-            </div>
+                          <div class="form_password">
+                            <label for="password_signin">Your Password:<span class="required">*</span></label>
+                            <input type="text" name="password" id="password_signin" placeholder="Password" aria-label="Write your Password" required>              
+                          </div>
+                        </div>
+                    <div class="sign-in-button"><a href="index.html">Sign In</a></div>
+                  </div>
+                  <!-- Button hidden and mimicked for now -->
+                  <!-- <button type="submit">Sign In</button> -->
+                </form>
+          </fieldset>
 
-            
+          <h3>Quick access with</h3>
+          
+          <div class="quick_buttons">
+            <a class="facebook" href="index.html">Facebook</a>
+            <a class="google" href="index.html">Google</a>
+          </div>
+          
+          <div class="divider"> </div>
+
+          <h4>Register for account:</h4>
+
+          <fieldset class="fieldset_register">
+            <legend>Register your information</legend>
+                <form class="register">
+                      <div class="full_register_wrapper">
+                        <div class="register_form_wrapper">
+                            <div class="form_first-name">
+                              <label for="first-name">First Name:</label>
+                              <input type="text" name="first-name" id="first-name" placeholder="First Name" aria-label="Write your first name">
+                            </div>
+
+                            <div class="form_last-name">
+                              <label for="last-name">Last Name:</label>
+                              <input type="text" name="last-name" id="last-name" placeholder="Last Name" aria-label="Write your last name">
+                            </div>
+                        </div>
+
+                        <div class="register_form_wrapper">
+                          <div class="form_email">
+                            <label for="email">Email:<span class="required">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your Email address" required>
+                          </div>
+                        </div>
+                        <div class="register_form_wrapper">
+                          <div class="form_street-address">
+                            <label for="street-address">Street Address:</label>
+                            <input type="text" name="street-address" id="street-address" placeholder="Street Address" aria-label="Write your Street Address">
+                          </div>
+                        </div>
+
+                      <div class="register_form_wrapper">
+                        <div class="form_zip">
+                          <label for="zip">Zip Code:</label>
+                          <input type="text" name="zip" id="zip" placeholder="Zip Code" aria-label="Enter your Zip code">
+                        </div>
+
+                        <div class="form_city">
+                          <label for="city">City:</label>
+                          <input type="text" name="city" id="city" placeholder="City" aria-label="Enter your City name">
+                        </div>
+                    </div>
+
+                    <div class="register_form_wrapper">
+                      <div class="form_country">
+                        <label for="country">Country:</label>
+                        <input type="text" name="country" id="country" placeholder="Country" aria-label="Enter your Country" required>
+                      </div>
+
+                      <div class="form_phone">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number" aria-label="Enter your Phonenumber">
+                      </div>
+                  </div>
+                    <div class="register_form_wrapper">
+                      <div class="form_username">
+                        <label for="username">Choose Username:<span class="required">*</span></label>
+                        <input type="text" name="username" id="username" placeholder="Username" aria-label="Choose your Username" required>
+                      </div>
+
+                      <div class="form_password">
+                        <label for="password">Choose Password:<span class="required">*</span></label>
+                        <input type="password" name="password" id="password" placeholder="Password" aria-label="Choose your Password" required>
+                      </div>
+                  </div>
+                    <div class="register_form_wrapper">
+                        <div class="form_repeat-password">
+                        <label for="repeat-password">Repeat Password:<span class="required">*</span></label>
+                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password" aria-label="Repeat your Password" required>
+                      </div>
+                  </div>
+                          <div class="register-button"><a href="profile.html">Create Account</a></div>
+                      </div>
+                  <!-- Button hidden and mimicked for now -->
+                  <!-- <button type="submit">Create Account</button> -->
+                </form>
+          </fieldset>
+
         </section>
       </div>
     </main>
@@ -98,16 +196,16 @@
     <footer>
       <div class="footer__wrapper">
                   <div class="left">
-                    <div class="footer__sitenav">Site Navigation
+                    <div class="footer__sitenav"><span>Site Navigation</span>
                       <div class="footer__sitenav" role="navigation" aria-label="Footer Site Navigation">              
                         <div class="links widescreen"><div class="back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div></div>
-                        <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
+                        <div class="links"><a href="index.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                         <div class="links widescreen"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact US">Contact</a></div>
                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                         <div class="links widescreen"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                        <div class="links widescreen"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                        <div class="links widescreen"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                         <div class="links widescreen"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                         <div class="links widescreen"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                       </div>
