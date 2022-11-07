@@ -2057,7 +2057,7 @@ a:hover {
   }
   .details {    
     grid-template-columns: 350px 350px 350px;
-    // justify-content: center;
+    justify-content: center;
     grid-template-areas: 
     'image details addtocart';
   }
