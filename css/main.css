@@ -108,6 +108,10 @@ footer a {
   display: none;
 }
 
+.links a {
+  width: 100%;
+}
+
 .menu-flyin {
   display: none;
   position: fixed;
@@ -357,7 +361,7 @@ main {
 }
 
 /* Put section ID's here from the different pages */
-.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, .psn-grid, .sellgames {
+.index, .index_sign-in, .about, .profile, .contact, .checkout, .checkout_success, .sellgames {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -686,7 +690,7 @@ input {
 .about, .profile, .checkout_success, .psn-grid {
   width: 90%;
   min-height: 50vh;
-  justify-content: flex-start;
+  text-align: center;
 }
 .about h1, .profile h1, .checkout_success h1, .psn-grid h1 {
   font-weight: 400;
@@ -1077,16 +1081,163 @@ legend {
 
 /* Playstation Grid Page */
 .psn-grid {
-  max-width: 1500px;
-}
-.psn-grid .image-mockup {
-  gap: 1em;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.image-mockup img {
+  width: 100%;
+}
+
+.psn__wrapper {
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1em;
 }
-.psn-grid .image-mockup img {
+
+.items {
   width: 350px;
+  height: 350px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 160px 70px 30px 80px;
+  grid-template-rows: 40px 30px 20px 20px 20px 20px 20px 20px 25px;
+  grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover backtogames backtogames backtogames" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover useroffers useroffers useroffers" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist";
+}
+
+.small {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.psnleft {
+  text-align: left;
+}
+.psnleft a {
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+}
+.psnleft a:hover {
+  text-decoration: underline;
+  color: var(--color-white);
+}
+
+.psnright {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+.psnright img, .psnright a {
+  width: 20px;
+  justify-content: flex-end;
+  height: 16px;
+  margin-left: 3em;
+}
+
+.psncenter {
+  text-align: center;
+}
+.psncenter img {
+  display: flex;
+  justify-content: center;
+  height: 14px;
+}
+
+.game-title {
+  text-indent: 0.9em;
+  grid-area: gametitle;
+}
+
+.game-cover {
+  display: inline-block;
+  grid-area: gamecover;
+  height: 200px;
+}
+.game-cover img {
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.backtogames {
+  grid-area: backtogames;
+  display: flex;
+  align-items: flex-end;
+}
+
+.release-date {
+  grid-area: releasedate;
+}
+
+.reldate {
+  grid-area: reldate;
+}
+
+.type {
+  grid-area: type;
+}
+
+.type-ico {
+  grid-area: typeico;
+}
+
+.type-text {
+  grid-area: typetext;
+}
+
+.region {
+  grid-area: region;
+}
+
+.region-ico {
+  grid-area: regionico;
+}
+
+.region-text {
+  grid-area: regiontext;
+}
+
+.platform {
+  grid-area: platform;
+}
+
+.platform-ico {
+  grid-area: platformico;
+}
+
+.platform-text {
+  grid-area: platformtext;
+}
+
+.useroffers {
+  grid-area: useroffers;
+}
+
+.gsrating {
+  white-space: nowrap;
+  grid-area: gsrating;
+}
+
+.rating {
+  grid-area: rating;
+}
+
+.readreview {
+  grid-area: readreview;
+}
+
+.togglewishlist {
+  grid-area: togglewishlist;
+  width: 100%;
+}
+.togglewishlist img {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Product Details */
@@ -1730,6 +1881,10 @@ a:hover {
   .wishlist-links {
     width: 532px;
   }
+  /* PSN-GRID */
+  .image-mockup {
+    max-width: 740px;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
@@ -1917,6 +2072,10 @@ a:hover {
   }
   .wishlist-links {
     width: 532px;
+  }
+  /* PSN-GRID */
+  .image-mockup {
+    max-width: 1500px;
   }
 }
 /* @media screensize over 1980px */
