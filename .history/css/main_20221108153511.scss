@@ -1170,9 +1170,6 @@ legend {
   grid-area: gametitle;
 }
 .game-cover {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   // display: inline-block;
   grid-area: gamecover;
   // height: 200px;
@@ -1181,7 +1178,9 @@ legend {
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
   }
   img {
-  
+  display: flex;
+  justify-content: flex-start;
+  align-items: ;
   // align-items: center;
   height: 95%;
   width: 95%;

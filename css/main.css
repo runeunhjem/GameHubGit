@@ -1104,7 +1104,7 @@ legend {
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 70px 30px 80px;
-  grid-template-rows: 40px 30px 20px 20px 20px 20px 20px 20px 25px;
+  grid-template-rows: 45px 20px 22px 22px 22px 22px 28px 22px 24px;
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover backtogames backtogames backtogames" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover useroffers useroffers useroffers" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist";
 }
 
@@ -1129,13 +1129,10 @@ legend {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  text-align: right;
 }
 .psnright img, .psnright a {
   width: 20px;
-  justify-content: flex-end;
-  height: 16px;
-  margin-left: 3em;
+  height: 20px;
 }
 
 .psncenter {
@@ -1148,20 +1145,23 @@ legend {
 }
 
 .game-title {
-  text-indent: 0.9em;
   grid-area: gametitle;
 }
 
 .game-cover {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   grid-area: gamecover;
-  height: 200px;
+}
+.game-cover img:hover {
+  border-radius: 1em;
+  box-shadow: 3px 3px 8px var(--color-yellow-logo);
 }
 .game-cover img {
-  align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 95%;
+  width: 95%;
+  margin-right: 5px;
 }
 
 .backtogames {
@@ -1216,6 +1216,8 @@ legend {
 
 .useroffers {
   grid-area: useroffers;
+  display: flex;
+  align-items: flex-start;
 }
 
 .gsrating {
@@ -1238,6 +1240,9 @@ legend {
 .togglewishlist img {
   display: flex;
   justify-content: flex-end;
+}
+.togglewishlist img:hover {
+  content: url(../images/ico_heart.svg);
 }
 
 /* Product Details */

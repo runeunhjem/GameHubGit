@@ -1149,30 +1149,27 @@ legend {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  // text-align: right;
+  text-align: right;
   img, a {
     width: 20px;
-    // justify-content: flex-end;
-    height: 20px;
-    
+    justify-content: flex-end;
+    height: 16px;
+    margin-left: 3em;
   }
 }
 .psncenter {
   img {
     display: flex;
     justify-content: center;
-    height: 14px;
+    height: 14px;    
   }
   text-align: center;
 }
 .game-title {
-  // text-indent: 0.5em;
+  text-indent: 0.5em;
   grid-area: gametitle;
 }
 .game-cover {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   // display: inline-block;
   grid-area: gamecover;
   // height: 200px;
@@ -1181,11 +1178,11 @@ legend {
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
   }
   img {
-  
+  // display: flex;
+  // justify-content: flex-start;
   // align-items: center;
-  height: 95%;
-  width: 95%;
-  margin-right: 5px;
+  height: 177px;
+  width: 142px;
   // height: fit-content;
   }
   
@@ -1249,11 +1246,9 @@ legend {
   img {
   display: flex;
   justify-content: flex-end;
-
   }
   img:hover {
-    content: url(../images/ico_heart.svg);
-    
+    content: ;
   }
 }
 

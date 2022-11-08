@@ -1116,7 +1116,7 @@ legend {
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 70px 30px 80px;
-  grid-template-rows: 45px 20px 22px 22px 22px 22px 28px 22px 24px;
+  grid-template-rows: 40px 30px 20px 20px 20px 20px 20px 20px 25px;
   grid-template-areas: 
   'gametitle gametitle gametitle gametitle'
   'gamecover backtogames backtogames backtogames'
@@ -1128,7 +1128,6 @@ legend {
   'gamecover gsrating gsrating rating'
   'gamecover readreview readreview togglewishlist';
   // max-width: 340px;
-  
 }
 .small {
   font-size: 0.8rem;
@@ -1149,46 +1148,37 @@ legend {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  // text-align: right;
+  text-align: right;
   img, a {
     width: 20px;
-    // justify-content: flex-end;
-    height: 20px;
-    
+    justify-content: flex-end;
+    height: 16px;
+    margin-left: 3em;
   }
 }
 .psncenter {
   img {
     display: flex;
     justify-content: center;
-    height: 14px;
+    height: 14px;    
   }
   text-align: center;
 }
 .game-title {
-  // text-indent: 0.5em;
+  text-indent: 0.9em;
   grid-area: gametitle;
 }
 .game-cover {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  // display: inline-block;
+  display: inline-block;
   grid-area: gamecover;
-  // height: 200px;
-  img:hover {
-    border-radius: 1em;
-    box-shadow: 3px 3px 8px var(--color-yellow-logo);
-  }
+  height: 200px;
   img {
-  
-  // align-items: center;
-  height: 95%;
-  width: 95%;
-  margin-right: 5px;
-  // height: fit-content;
-  }
-  
+  // display: flex;
+  // justify-content: flex-start;
+  align-items: center;
+  // width: 100%;
+  height: fit-content;
+}
 }
 .backtogames {
   grid-area: backtogames;
@@ -1230,8 +1220,6 @@ legend {
 }
 .useroffers {
   grid-area: useroffers;
-  display: flex;
-  align-items: flex-start;
 }
 .gsrating {
   white-space: nowrap;
@@ -1249,11 +1237,6 @@ legend {
   img {
   display: flex;
   justify-content: flex-end;
-
-  }
-  img:hover {
-    content: url(../images/ico_heart.svg);
-    
   }
 }
 
