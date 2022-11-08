@@ -1872,6 +1872,7 @@ a:hover {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
+
   .index_sign-in {
     .sign_in, .register, .sellgames {
       width: 380px;
@@ -1880,6 +1881,7 @@ a:hover {
   .profile-links {
     width: 400px;
   }
+
   .contact {
     .divider {
       display: none;
@@ -1903,12 +1905,14 @@ a:hover {
   }
   .details {    
     grid-template-columns: 350px 350px 350px;
+    // justify-content: center;
     grid-template-areas: 
     'image details addtocart';
   }
   .summary {
     display: none;
   }
+
   .details {  
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 256px;
@@ -1939,6 +1943,8 @@ a:hover {
   .product-details {
     border-bottom: none;    
   }
+
+
   .cart-items {
     display: flex;
   }
@@ -1948,6 +1954,7 @@ a:hover {
   .cart, .wishlist {
     .buy-games__left, .wl-left, .wl-right {
       width: 532px;
+
       a {
         display: flex;
         width: 266px;
@@ -1967,10 +1974,13 @@ a:hover {
   .wishlist-links {    
     width: 532px;
   }
+
 }
+
 
 /* @media screensize over 1980px */
 @media screen and (min-width: 1981px) {
+
   .header__wrapper-wide {
     height: 200px;
     max-width: 1980px;
@@ -1984,6 +1994,8 @@ a:hover {
       }
     }
   }
+  
+
   .footer__wrapper {
     padding-right: 550px;
     padding-left: 550px;

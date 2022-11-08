@@ -413,6 +413,7 @@ main {
   max-width: 156px;
 }
 
+/* Global text indent - all inputs */
 input {
   text-indent: 10px;
 }
@@ -447,8 +448,10 @@ input {
   font-size: 1.4rem;
 }
 .index_sign-in .signin_form_wrapper,
-.index_sign-in .register_form_wrapper, .index_sign-in .sellgames_form_wrapper, .sellgames .signin_form_wrapper,
-.sellgames .register_form_wrapper, .sellgames .sellgames_form_wrapper {
+.index_sign-in .register_form_wrapper,
+.index_sign-in .sellgames_form_wrapper, .sellgames .signin_form_wrapper,
+.sellgames .register_form_wrapper,
+.sellgames .sellgames_form_wrapper {
   display: flex;
   justify-content: space-around;
   width: 350px;

@@ -1948,6 +1948,7 @@ a:hover {
   .cart, .wishlist {
     .buy-games__left, .wl-left, .wl-right {
       width: 532px;
+
       a {
         display: flex;
         width: 266px;
@@ -1967,10 +1968,13 @@ a:hover {
   .wishlist-links {    
     width: 532px;
   }
+
 }
+
 
 /* @media screensize over 1980px */
 @media screen and (min-width: 1981px) {
+
   .header__wrapper-wide {
     height: 200px;
     max-width: 1980px;
@@ -1984,6 +1988,8 @@ a:hover {
       }
     }
   }
+  
+
   .footer__wrapper {
     padding-right: 550px;
     padding-left: 550px;
