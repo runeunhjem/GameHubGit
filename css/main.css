@@ -1186,11 +1186,15 @@ legend {
 .game-cover img:hover {
   border-radius: 1em;
   box-shadow: 3px 3px 8px var(--color-yellow-logo);
+  transform: scale(1.5);
 }
 .game-cover img {
   height: 95%;
   width: 95%;
   margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
 }
 
 .backtogames {
@@ -1272,6 +1276,9 @@ legend {
 }
 .togglewishlist img:hover {
   content: url(../images/ico_heart.svg);
+}
+.togglewishlist .remove:hover {
+  content: url(../images/ico_heart_-.svg);
 }
 
 .ourprice {

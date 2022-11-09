@@ -1111,6 +1111,7 @@ legend {
 .psn-grid {
   display: flex;
   flex-direction: column;
+  // flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   .spacer {
@@ -1126,7 +1127,8 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;  
+  gap: 1em;
+  
 }
 
 .container {
@@ -1141,6 +1143,9 @@ legend {
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
 }
 .items {
+  
+  // width: 350px;
+  // height: 300px;
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 70px 30px 80px;
@@ -1156,7 +1161,9 @@ legend {
   'gamecover gsrating gsrating rating'
   'gamecover readreview readreview togglewishlist'
   'ourprice number number price'
-  '. . . pricebefore';  
+  '. . . pricebefore';
+  // max-width: 340px;
+  
 }
 .small {
   font-size: 0.8rem;
@@ -1177,9 +1184,12 @@ legend {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  // text-align: right;
   img, a {
     width: 20px;
+    // justify-content: flex-end;
     height: 20px;
+    
   }
 }
 .psncenter {
@@ -1191,19 +1201,23 @@ legend {
   text-align: center;
 }
 .game-title {
+  // text-indent: 0.5em;
   grid-area: gametitle;
 }
 .game-cover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  // display: inline-block;
   grid-area: gamecover;
   height: 105%;
+  // width: 95%;
   padding: 6px;
   img:hover {
     border-radius: 1em;
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
-    transform: scale(1.5);    
+    transform: scale(1.5);
+    left: 
   }
   img {
   height: 95%;

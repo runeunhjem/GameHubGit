@@ -1111,6 +1111,7 @@ legend {
 .psn-grid {
   display: flex;
   flex-direction: column;
+  // flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   .spacer {
@@ -1126,7 +1127,8 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;  
+  gap: 1em;
+  
 }
 
 .container {
