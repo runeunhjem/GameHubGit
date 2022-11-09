@@ -1887,7 +1887,7 @@ a:hover {
     width: 532px;
   }
   /* PSN-GRID */
-  .image-mockup {
+  .image-mockup, .psn__wrapper {
     max-width: 740px;
   }
 }
@@ -2079,7 +2079,7 @@ a:hover {
     width: 532px;
   }
   /* PSN-GRID */
-  .image-mockup {
+  .image-mockup, .psn__wrapper {
     max-width: 1200px;
   }
 }
