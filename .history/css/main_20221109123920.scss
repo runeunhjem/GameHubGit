@@ -559,7 +559,7 @@ input {
       padding: 4px 0;
     }
     #street-address, #email, #title, #repeat-password {
-      width: 330px;
+      width: 310px;
     }
     #paypal, #confirm, #title {
       width: 330px;
@@ -582,10 +582,7 @@ input {
 /* Register form & Sell Games Form*/
 .fieldset_register, .fieldset_sellgames {
   height: 570px;
-  width: 90%;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
+  padding: 0 10px;
   margin-bottom: 2em;
   label {
     width: 151px;

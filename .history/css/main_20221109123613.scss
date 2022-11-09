@@ -39,13 +39,13 @@
     line-height: 48px;
   }
 
-  h4, .h4 {
+  h4 {
     font-size: 2.074rem;
     line-height: 40px;
     color: var(--color-yellow-logo);
   }
   .h4 {
-    color: var(--color-white);
+    color: ;
   }
   h5 {
     font-size: 1.728rem;
@@ -559,7 +559,7 @@ input {
       padding: 4px 0;
     }
     #street-address, #email, #title, #repeat-password {
-      width: 330px;
+      width: 310px;
     }
     #paypal, #confirm, #title {
       width: 330px;
@@ -582,10 +582,6 @@ input {
 /* Register form & Sell Games Form*/
 .fieldset_register, .fieldset_sellgames {
   height: 570px;
-  width: 90%;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
   margin-bottom: 2em;
   label {
     width: 151px;

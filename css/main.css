@@ -30,7 +30,7 @@
   font-size: 2.986rem;
   line-height: 58px;
 }
-:root h3 {
+:root h3, :root .h3 {
   font-size: 2.488rem;
   line-height: 48px;
 }
@@ -38,6 +38,9 @@
   font-size: 2.074rem;
   line-height: 40px;
   color: var(--color-yellow-logo);
+}
+:root .h4 {
+  color: var(--color-white);
 }
 :root h5 {
   font-size: 1.728rem;
@@ -450,6 +453,7 @@ input {
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
   font-size: 1.4rem;
+  text-align: center;
 }
 .index_sign-in .signin_form_wrapper,
 .index_sign-in .register_form_wrapper,
@@ -498,7 +502,7 @@ input {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
 }
-.index_sign-in h3, .sellgames h3 {
+.index_sign-in h3, .index_sign-in .h3, .sellgames h3, .sellgames .h3 {
   margin-top: 1em;
 }
 .index_sign-in .quick_buttons, .sellgames .quick_buttons {
@@ -558,7 +562,7 @@ input {
   padding: 4px 0;
 }
 .index_sign-in .register #street-address, .index_sign-in .register #email, .index_sign-in .register #title, .index_sign-in .register #repeat-password, .index_sign-in .sellgames #street-address, .index_sign-in .sellgames #email, .index_sign-in .sellgames #title, .index_sign-in .sellgames #repeat-password, .sellgames .register #street-address, .sellgames .register #email, .sellgames .register #title, .sellgames .register #repeat-password, .sellgames .sellgames #street-address, .sellgames .sellgames #email, .sellgames .sellgames #title, .sellgames .sellgames #repeat-password {
-  width: 310px;
+  width: 330px;
 }
 .index_sign-in .register #paypal, .index_sign-in .register #confirm, .index_sign-in .register #title, .index_sign-in .sellgames #paypal, .index_sign-in .sellgames #confirm, .index_sign-in .sellgames #title, .sellgames .register #paypal, .sellgames .register #confirm, .sellgames .register #title, .sellgames .sellgames #paypal, .sellgames .sellgames #confirm, .sellgames .sellgames #title {
   width: 330px;
@@ -579,6 +583,10 @@ input {
 /* Register form & Sell Games Form*/
 .fieldset_register, .fieldset_sellgames {
   height: 570px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 2em;
 }
 .fieldset_register label, .fieldset_sellgames label {
@@ -696,7 +704,7 @@ input {
   font-weight: 400;
   line-height: 97px;
 }
-.about h3, .profile h3, .checkout_success h3, .psn-grid h3 {
+.about h3, .about h3, .profile h3, .profile h3, .checkout_success h3, .checkout_success h3, .psn-grid h3, .psn-grid h3 {
   color: var(--color-yellow-logo);
 }
 .about p, .profile p, .checkout_success p, .psn-grid p {

@@ -34,18 +34,14 @@
     font-size: 2.986rem;
     line-height: 58px;
   }
-  h3, .h3 {
+  h3 {
     font-size: 2.488rem;
     line-height: 48px;
   }
-
   h4, .h4 {
     font-size: 2.074rem;
     line-height: 40px;
     color: var(--color-yellow-logo);
-  }
-  .h4 {
-    color: var(--color-white);
   }
   h5 {
     font-size: 1.728rem;
@@ -501,7 +497,7 @@ input {
     }
     h3, .h3 {
       margin-top: 1em;
-      
+      color: var(--color-white)
     }
     .quick_buttons {
       display: flex;
@@ -559,7 +555,7 @@ input {
       padding: 4px 0;
     }
     #street-address, #email, #title, #repeat-password {
-      width: 330px;
+      width: 310px;
     }
     #paypal, #confirm, #title {
       width: 330px;
@@ -582,10 +578,6 @@ input {
 /* Register form & Sell Games Form*/
 .fieldset_register, .fieldset_sellgames {
   height: 570px;
-  width: 90%;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
   margin-bottom: 2em;
   label {
     width: 151px;
@@ -700,7 +692,7 @@ input {
     font-weight: 400;
     line-height: 97px;
   }
-  h3, h3 {
+  h3 {
     color: var(--color-yellow-logo);
   }
   p {
