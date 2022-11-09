@@ -58,6 +58,9 @@
   box-sizing: border-box;
   font-size: 1rem;
 }
+* #yellow {
+  color: var(--color-yellow-logo);
+}
 
 html {
   font-family: Roboto, Inter, Helvetica, sans-serif;
@@ -1034,7 +1037,7 @@ legend {
 .checkout__bottom .terms {
   padding: 0.5em;
   width: 200px;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 .checkout__bottom a:hover {
