@@ -542,7 +542,7 @@ input {
   color: var(--color-yellow-logo);
   border: 1px solid var(--color-yellow-logo);
 }
-.index_sign-in h4, .sellgames h4 {
+.index_sign-in h4, .index_sign-in h4, .sellgames h4, .sellgames h4 {
   color: var(--color-white);
   font-size: 2rem;
 }
@@ -849,7 +849,7 @@ input {
   flex-direction: column;
   align-items: center;
 }
-.contact .contact__wrapper .visit-info h6, .contact .contact__wrapper .visit-info p {
+.contact .contact__wrapper .visit-info h6, .contact .contact__wrapper .visit-info .h6, .contact .contact__wrapper .visit-info p {
   text-align: center;
 }
 .contact .contact__wrapper .visit-info .maps__wrapper {
@@ -1312,7 +1312,7 @@ legend {
   margin: 0;
   height: 0;
 }
-.description h4 {
+.description h4, .description .h4 {
   margin: 25px auto 0 auto;
   color: var(--color-white);
 }
