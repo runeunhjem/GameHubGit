@@ -34,7 +34,7 @@
   font-size: 2.488rem;
   line-height: 48px;
 }
-:root h4 {
+:root h4, :root .h4 {
   font-size: 2.074rem;
   line-height: 40px;
   color: var(--color-yellow-logo);
@@ -43,7 +43,7 @@
   font-size: 1.728rem;
   line-height: 33px;
 }
-:root h6 {
+:root h6, :root .h6 {
   font-weight: 600;
   font-size: 1.44rem;
   line-height: 28px;
@@ -711,10 +711,10 @@ input {
 .profile {
   width: 100%;
 }
-.profile h4 {
+.profile h4, .profile .h4 {
   padding-bottom: 0.5em;
 }
-.profile h6 {
+.profile h6, .profile .h6 {
   padding-bottom: 1em;
 }
 
@@ -752,6 +752,7 @@ input {
 }
 .profile__card p {
   font-size: 1rem;
+  text-align: left;
 }
 .profile__card .picture {
   background-position: top right;

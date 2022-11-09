@@ -17,7 +17,7 @@
   --color-black-90: rgba(0, 0, 0, 0.9);
 
   /* Font styles */
-  h2, h3, h4, h5, h6 {
+  h2, h3, h4, .h4, h5, h6 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -47,7 +47,7 @@
     font-size: 1.728rem;
     line-height: 33px;
   }
-  h6, .h6 {
+  h6 {
     font-weight: 600;
     font-size: 1.44rem;
     line-height: 28px;
@@ -708,10 +708,10 @@ input {
 /* Profile Page */
 .profile {
   width: 100%;
-  h4, .h4 {    
+  .h4 {    
     padding-bottom: 0.5em;
   }
-  h6, .h6 {
+  .h6 {
     padding-bottom: 1em;
   }
   
@@ -742,7 +742,6 @@ input {
 .profile__card {
   p {
     font-size: 1rem;
-    text-align:left;
   }
   display: grid;
   grid-template-columns: 200px 1fr;
