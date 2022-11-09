@@ -776,7 +776,7 @@ input {
 }
 
 .spacer {
-  height: 1em;
+  height: 2em;
 }
 
 .buy-games__left, .goto-cart {
@@ -1099,26 +1099,40 @@ legend {
   align-items: center;
   margin: 0 auto;
 }
+.psn-grid .spacer {
+  height: 2em;
+}
 
 .image-mockup img {
   width: 100%;
 }
 
 .psn__wrapper {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
 }
 
-.items {
+.container {
+  background-color: var(--color-black-60);
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
   width: 350px;
   height: 350px;
+}
+
+.container:hover {
+  border-radius: 1em;
+  box-shadow: 3px 3px 8px var(--color-yellow-logo);
+}
+
+.items {
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 70px 30px 80px;
-  grid-template-rows: 45px 20px 22px 22px 22px 22px 28px 22px 24px;
-  grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover backtogames backtogames backtogames" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover useroffers useroffers useroffers" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist";
+  grid-template-rows: 45px 20px 22px 22px 22px 22px 28px 22px 24px 24px 24px;
+  grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover backtogames backtogames backtogames" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover useroffers useroffers useroffers" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "ourprice number number price" ". . . pricebefore";
 }
 
 .small {
@@ -1163,9 +1177,11 @@ legend {
 
 .game-cover {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   grid-area: gamecover;
+  height: 105%;
+  padding: 6px;
 }
 .game-cover img:hover {
   border-radius: 1em;
@@ -1258,6 +1274,66 @@ legend {
   content: url(../images/ico_heart.svg);
 }
 
+.ourprice {
+  grid-area: ourprice;
+}
+
+.number {
+  grid-area: number;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  grid-area: price;
+}
+
+.price__before {
+  grid-area: pricebefore;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+.price__before .dollar {
+  font-size: 0.8rem;
+}
+
+.dollar {
+  color: rgba(0, 0, 0, 0);
+}
+
+.dollar:before {
+  content: "$";
+  color: var(--color-yellow-logo);
+}
+
+.howmany {
+  font-size: 1rem;
+  border: var(--border-1px-yellow);
+  background-color: var(--color-black);
+  border-radius: var(--border-radius-boxes);
+  width: 40px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.psn__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.psn__buttons a {
+  display: flex;
+  justify-content: center;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.psn__buttons a:hover {
+  color: var(--color-black);
+  border: var(--color-black);
+}
+
 /* Product Details */
 .product_details, .cart, .wishlist {
   display: flex;
@@ -1342,6 +1418,7 @@ legend {
   text-decoration: none;
 }
 
+.viewdetails__cta,
 .addtocart__cta:hover,
 .checkout__cta:hover,
 .cta:hover {
@@ -1903,9 +1980,15 @@ a:hover {
   .image-mockup, .psn__wrapper {
     max-width: 740px;
   }
+  .spacer {
+    height: 2em;
+  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
+  .spacer {
+    height: 2em;
+  }
   .main-menu {
     grid-area: menu;
     width: 100%;
