@@ -471,7 +471,7 @@ input {
 .sellgames .register_form_wrapper,
 .sellgames .sellgames_form_wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .index_sign-in .full_sign-in_wrapper, .sellgames .full_sign-in_wrapper {
   display: block;
@@ -566,7 +566,7 @@ input {
   align-items: center;
 }
 .index_sign-in .register a, .index_sign-in .sellgames a, .sellgames .register a, .sellgames .sellgames a {
-  width: 315px;
+  width: 330px;
   white-space: nowrap;
   padding: 4px 0;
 }
@@ -578,6 +578,7 @@ input {
 }
 .index_sign-in .register .register-button, .index_sign-in .sellgames .register-button, .sellgames .register .register-button, .sellgames .sellgames .register-button {
   margin-top: 1.3em;
+  width: 100%;
 }
 
 .sell-info {
