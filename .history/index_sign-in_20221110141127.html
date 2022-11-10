@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Checkout, Pay">
-    <meta name="description" content="Checkout page. Pay with your preferred method">
+    <meta name="keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Register, Sign Up">
+    <meta name="description" content="Sign in or Register to get your profile & stats going">
     <link rel="stylesheet" href="css/main.css">
-    <title>Game Hub | Checkout</title>
+    <title>Game Hub | Sign In or Register</title>
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
         <div class="header__wrapper header__wrapper-wide">
             <div class="placeholder"></div>
             <div class="header__logo"></div>
-            <div class="header__profile-pic"></div>          
+            <div class="index_sign-in__profile_pic"></div>          
             <div class="explore_none"></div>          
             <div class="explore explore_none">
               <div class="lets-explore">Let's Explore</div>
@@ -39,118 +39,147 @@
                                         <!-- Checkbox hack to close the flyin-menu -->
                                         <input type="checkbox" id="ham-burger">
                                         <div class="links back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div>
-                                        <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
+                                        <div class="links"><a href="index.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                                         <div class="links"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
                                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
                                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                                         <div class="links"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                                        <div class="links"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                                        <div class="links"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                                         <div class="links"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                                         <div class="links"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>                                        
                                     </div>
                                 </div>                              
-                          <div class="links"><a href="index.html"><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
+                          <div class="links"><a href="index.html" class="active"><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
                           <div class="links"><a href="psn-grid.html"><img class="topmenu__images" src="images/ico_psn.svg" alt="Go to Playstation Games"></a></div>                    
                           <div class="links"><a href="about.html"><img class="topmenu__images" src="images/ico_about.svg" alt="About Us"></a></div>
                           <div class="links"><a href="wishlist.html"><img class="topmenu__images" src="images/ico_heart.svg" alt="Open your Wishlist"></a></div>
                           <div class="links"><a href="cart.html"><img class="topmenu__images" src="images/ico_cart.svg" alt="Open Shopping Cart"></a></div>
                           <div class="links"><a href="contact.html"><img class="topmenu__images" src="images/ico_contact.svg" alt="Contact Us"></a></div>
                           <div class="links back"><a href="../"><div class="back"><img src="images/ico_chevron-left.svg" alt="Go Back one step">Back</div></a></div>
-                  </div>
+                   </div>                
               </nav>
             </div>            
             <div class="placeholder"> </div>            
-            <div class="profile__name"><div><a href="profile.html">Gamer Gamerson</a></div></div>
-            <div class="logout"><div><a href="index_sign-in.html">(Log out)</a></div></div>
+            <div class="profile__name"><div class="left_profile_area"><a href="profile.html">Sign in or register to view your profile</a></div></div>
+            <div class="logout"><div class="right_profile_area"><a href="index.html">(Sign In)</a></div></div>
         </div>        
     </header>
     <main id="main">
       <div class="main__wrapper">
-        <section class="checkout" aria-label="Checkout Page | Main Section">
-              <h1>Payment</h1>
-               <div class="checkout__wrapper">
-                    <div class="checkout__cart">
-                        <div class="order row1">Order:</div>
-                        <div class="row1 checkout_items yellow">(2 items)</div>
-                        <div class="amount row1"><span class="yellow">$ </span>149.90</div>
-                        <div class="filler row2">.</div>
-                        <div class="filler row2"> </div>
-                        <div class="amount_before row2 price__before__top yellow"><span class="yellow">$ </span>169.90</div>
-                        <div class="row3 vat">(VAT included if applicable)</div>
-                        <div class="row3 filler"></div>
-                        <div class="row3 filler"></div>
-                        <div class="freight row4">Freight:</div>
-                        <div class="filler row4"></div>
-                        <div class="amountfreight row4"><span class="yellow">$ </span>4.95</div>
-                        <div class="address row5 yellow">(Profile address used):</div>
-                        <div class="change row5 yellow"><a class="change" href="profile.html">(Change)</a></div>
-                        <div class="filler change row5"></div>
-                        <div class="total row6">Total:</div>
-                        <div class="checkout_items yellow row6">(2 items)</div>
-                        <div class="totalamount row6"><span class="yellow">$ </span>154.85</div>
-                        <div class="filler row7"></div>
-                        <div class="filler row7"></div>
-                        <div class="price__before__bottom yellow row7"><span class="yellow">$ </span>174.85</div>
-                        <div class="row8 vat">(VAT included if applicable)</div>
-                        <div class="row8 filler"></div>
-                        <div class="filler row8"></div>
-                    </div>
-                    <div class="payment-options">
-                      <img src="images/img_payment-options.png" alt="Choose your preferred method of payment">
-                    </div>
-                    <div class="visa">
-                    <fieldset>
-                        <legend>Card Details</legend>
-                            <form class="creditcard__visa">
-                              <div class="creditcard__visa">
-                                <div class="creditcard__visa_form_wrapper">
-                                    <div class="form_cardnumber">
-                                        <label for="cardnumber">Card Number:<span class="required">*</span></label>
-                                        <input type="text" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-label="Enter your Card Number" required>
-                                    </div>
-                                </div>
-                                    <div class="creditcard__visa_form_wrapper">
-                                      <div class="form_exp_date">
-                                        <label for="exp_date">Expiration date:<span class="required">*</span></label>
-                                        <input type="text" name="exp_date" id="exp_date" placeholder="Expiration Date" aria-label="Cards Expiration Date" required>
-                                      </div>
-                                    </div>                                    
-                                    <div class="creditcard__visa_form_wrapper">
-                                      <div class="form_cvc">
-                                        <label for="cvc">CVC:<span class="required">*</span></label>
-                                        <input type="text" name="cvc" id="cvc" placeholder="CVC Code" aria-label="Cards CVC code" required>              
-                                      </div>
-                                    </div>                                    
-                                <div class="paynow-button"><a href="checkout_success.html" role="button">Pay Now</a></div>
-                              </div>
-                              <!-- Button hidden and mimicked for now -->
-                              <!-- <button type="submit">Sign In</button> -->
-                            </form>
-                            <div class="checkout__bottom">
-                            <a href="psn-grid.html"><span class="red">Cancel order</span></a>
-                            <p class="terms yellow">By clicking “Pay Now” I agree to and confirm that I have read the shopping terms.</p>
+        <section class="index_sign-in" aria-label="Sign in or Register page, Main Section">          
+          <h1>Sign in</h1>
+          <fieldset>
+            <legend>Sign in</legend>
+                <form class="sign_in">
+                  <div class="full_sign-in_wrapper">
+                        <div class="signin_form_wrapper">
+                          <div class="form_username">
+                            <label for="username_signin">Your Username:<span class="required">*</span></label>
+                            <input type="text" name="username" id="username_signin" placeholder="Username" aria-label="Write your Username" required>              
+                          </div>
+                          <div class="form_password">
+                            <label for="password_signin">Your Password:<span class="required">*</span></label>
+                            <input type="text" name="password" id="password_signin" placeholder="Password" aria-label="Write your Password" required>              
+                          </div>
+                        </div>
+                    <div class="sign-in-button"><a href="index.html" role="button">Sign In</a></div>
+                  </div>
+                  <!-- Button hidden and mimicked for now -->
+                  <!-- <button type="submit">Sign In</button> -->
+                </form>
+          </fieldset>
+          <h2 class="h3">Quick access with</h2>          
+          <div class="quick_buttons">
+            <a class="facebook" href="index.html">Facebook</a>
+            <a class="google" href="index.html">Google</a>
+          </div>          
+          <div class="divider"> </div>
+          <h3 class="h4">Register for account:</h3>
+          <fieldset class="fieldset_register">
+            <legend>Register your information</legend>
+                <form class="register">
+                      <div class="full_register_wrapper">
+                        <div class="register_form_wrapper">
+                            <div class="form_first-name">
+                              <label for="first-name">First Name:</label>
+                              <input type="text" name="first-name" id="first-name" placeholder="First Name" aria-label="Write your first name">
                             </div>
-                      </fieldset>
-                      <div class="spacer"> </div>
-                </div>
-              </div>
+                            <div class="form_last-name">
+                              <label for="last-name">Last Name:</label>
+                              <input type="text" name="last-name" id="last-name" placeholder="Last Name" aria-label="Write your last name">
+                            </div>
+                        </div>
+                        <div class="register_form_wrapper">
+                          <div class="form_email">
+                            <label for="email">Email:<span class="required">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your Email address" required>
+                          </div>
+                        </div>
+                        <div class="register_form_wrapper">
+                          <div class="form_street-address">
+                            <label for="street-address">Street Address:</label>
+                            <input type="text" name="street-address" id="street-address" placeholder="Street Address" aria-label="Write your Street Address">
+                          </div>
+                        </div>
+                      <div class="register_form_wrapper">
+                        <div class="form_zip">
+                          <label for="zip">Zip Code:</label>
+                          <input type="text" name="zip" id="zip" placeholder="Zip Code" aria-label="Enter your Zip code">
+                        </div>
+                        <div class="form_city">
+                          <label for="city">City:</label>
+                          <input type="text" name="city" id="city" placeholder="City" aria-label="Enter your City name">
+                        </div>
+                    </div>
+                    <div class="register_form_wrapper">
+                      <div class="form_country">
+                        <label for="country">Country:</label>
+                        <input type="text" name="country" id="country" placeholder="Country" aria-label="Enter your Country" required>
+                      </div>
+                      <div class="form_phone">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number" aria-label="Enter your Phonenumber">
+                      </div>
+                  </div>
+                    <div class="register_form_wrapper">
+                      <div class="form_username">
+                        <label for="username">Choose Username:<span class="required">*</span></label>
+                        <input type="text" name="username" id="username" placeholder="Username" aria-label="Choose your Username" required>
+                      </div>
+                      <div class="form_password">
+                        <label for="password">Choose Password:<span class="required">*</span></label>
+                        <input type="password" name="password" id="password" placeholder="Password" aria-label="Choose your Password" required>
+                      </div>
+                  </div>
+                    <div class="register_form_wrapper">
+                        <div class="form_repeat-password">
+                        <label for="repeat-password">Repeat Password:<span class="required">*</span></label>
+                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password" aria-label="Repeat your Password" required>
+                      </div>
+                  </div>
+                          <div class="register-button"><a href="profile.html">Create Account</a></div>
+                      </div>
+                  <!-- Button hidden and mimicked for now -->
+                  <!-- <button type="submit">Create Account</button> -->
+                </form>
+          </fieldset>
         </section>
       </div>
     </main>
     <footer>
       <div class="footer__wrapper">
                   <div class="left">
-                    <div class="footer__sitenav">Site Navigation
+                    <div class="footer__sitenav"><span>Site Navigation</span>
                       <div class="footer__sitenav" role="navigation" aria-label="Footer Site Navigation">              
                         <div class="links widescreen"><div class="back"><a href="../"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div></div>
-                        <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
+                        <div class="links"><a href="index.html" class="active"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
                         <div class="links widescreen"><a href="psn-grid.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact US">Contact</a></div>
                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                         <div class="links widescreen"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
                         <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                        <div class="links widescreen"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                        <div class="links widescreen"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                         <div class="links widescreen"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                         <div class="links widescreen"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                       </div>

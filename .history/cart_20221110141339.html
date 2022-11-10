@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Checkout, Pay">
-    <meta name="description" content="Checkout page. Pay with your preferred method">
+    <meta name="keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Shopping Cart">
+    <meta name="description" content="Shopping Cart | See what you have added so far">
     <link rel="stylesheet" href="css/main.css">
-    <title>Game Hub | Checkout</title>
+    <title>Game Hub | Shopping Cart</title>
   </head>
   <body>
     <header>
@@ -44,8 +44,8 @@
                                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
                                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                                         <div class="links"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
-                                        <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                                        <div class="links"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                                        <div class="links"><a href="cart.html" class="active"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
+                                        <div class="links"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                                         <div class="links"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                                         <div class="links"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>                                        
                                     </div>
@@ -54,7 +54,7 @@
                           <div class="links"><a href="psn-grid.html"><img class="topmenu__images" src="images/ico_psn.svg" alt="Go to Playstation Games"></a></div>                    
                           <div class="links"><a href="about.html"><img class="topmenu__images" src="images/ico_about.svg" alt="About Us"></a></div>
                           <div class="links"><a href="wishlist.html"><img class="topmenu__images" src="images/ico_heart.svg" alt="Open your Wishlist"></a></div>
-                          <div class="links"><a href="cart.html"><img class="topmenu__images" src="images/ico_cart.svg" alt="Open Shopping Cart"></a></div>
+                          <div class="links"><a href="cart.html" class="active"><img class="topmenu__images" src="images/ico_cart.svg" alt="Open Shopping Cart"></a></div>
                           <div class="links"><a href="contact.html"><img class="topmenu__images" src="images/ico_contact.svg" alt="Contact Us"></a></div>
                           <div class="links back"><a href="../"><div class="back"><img src="images/ico_chevron-left.svg" alt="Go Back one step">Back</div></a></div>
                   </div>
@@ -67,74 +67,106 @@
     </header>
     <main id="main">
       <div class="main__wrapper">
-        <section class="checkout" aria-label="Checkout Page | Main Section">
-              <h1>Payment</h1>
-               <div class="checkout__wrapper">
-                    <div class="checkout__cart">
-                        <div class="order row1">Order:</div>
-                        <div class="row1 checkout_items yellow">(2 items)</div>
-                        <div class="amount row1"><span class="yellow">$ </span>149.90</div>
-                        <div class="filler row2">.</div>
-                        <div class="filler row2"> </div>
-                        <div class="amount_before row2 price__before__top yellow"><span class="yellow">$ </span>169.90</div>
-                        <div class="row3 vat">(VAT included if applicable)</div>
-                        <div class="row3 filler"></div>
-                        <div class="row3 filler"></div>
-                        <div class="freight row4">Freight:</div>
-                        <div class="filler row4"></div>
-                        <div class="amountfreight row4"><span class="yellow">$ </span>4.95</div>
-                        <div class="address row5 yellow">(Profile address used):</div>
-                        <div class="change row5 yellow"><a class="change" href="profile.html">(Change)</a></div>
-                        <div class="filler change row5"></div>
-                        <div class="total row6">Total:</div>
-                        <div class="checkout_items yellow row6">(2 items)</div>
-                        <div class="totalamount row6"><span class="yellow">$ </span>154.85</div>
-                        <div class="filler row7"></div>
-                        <div class="filler row7"></div>
-                        <div class="price__before__bottom yellow row7"><span class="yellow">$ </span>174.85</div>
-                        <div class="row8 vat">(VAT included if applicable)</div>
-                        <div class="row8 filler"></div>
-                        <div class="filler row8"></div>
+        <section class="cart" aria-label="Shopping Cart | Main Section">
+            <h1>Shopping Cart</h1>            
+              <div class="buy-games__left">
+                <a href="psn-grid.html"> Back to Games</a>
+              </div>            
+                <div class="image-mockup psn__wrapper">              
+                  <div class="container">
+                    <div class="items ps5-forge-legend-disc" id="ps5-forge-legend-disc">                      
+                      <div class="psnleft game-title"><h2 class="h4 yellow" id="yellow">Forge Legend</h2></div>
+                      <div class="game-cover"><img src="images/covers/cover-ps5-forge-legend.png" alt="PS5 Forge Legend | Disc Version"></div>
+                      <div class="psnleft backtogames"><a href="checkout.html">Go to checkout</a></div>
+                      <div class="small psnleft release-date">Release Date:</div>
+                      <div class="small psnright reldate">2022/09/16</div>
+                      <div class="small psnleft type">Type:</div>
+                      <div class="small psncenter type-ico"><img src="images/ico_disc.svg" alt="Disc"></div>
+                      <div class="small psnright type-text">Disc</div>
+                      <div class="small psnleft region">Region:</div>
+                      <div class="small psncenter region-ico"><img src="images/ico_europe.svg" alt="Region | Europe"></div>
+                      <div class="small psnright region-text">Europe</div>
+                      <div class="small psnleft platform">Platform:</div>
+                      <div class="small psncenter platform-ico"><img src="images/ico_psn.svg" alt="Playstation 5"></div>
+                      <div class="small psnright platform-text">Playstation 5</div>
+                      <div class="small yellow psnleft useroffers">Offer from 3 sellers</div>
+                      <div class="psnleft gsrating">Gamespot Rating:</div>
+                      <div class="psnright rating">8/10</div>
+                      <div class="small psnleft readreview"><a href="https://www.gamespot.com/games/reviews/">Read review</a></div>
+                      <div class="togglewishlist"><a  class="small psnright" href="wishlist.html"><img class="remove small psnright" src="images/ico_heart.svg" alt="Add to wishlist"></a></div>
+                      <div class="ourprice psnright">Our Price:</div>
+                      <div class="number psnleft">-<div class="howmany">1</div>+</div>
+                      <div class="price psnright"><span class="dollar yellow">.</span>79.95</div>
+                      <div class="price__before psnright"><span class="dollar yellow">.</span>89.95</div>
                     </div>
-                    <div class="payment-options">
-                      <img src="images/img_payment-options.png" alt="Choose your preferred method of payment">
+                    <div class="psn__buttons">
+                      <a href="cart.html" role="button"><div class="cta">Add to cart</div></a>
+                      <a href="product_details_ps5-forge-legend-disc.html"><div class="cta">View Details</div></a>
                     </div>
-                    <div class="visa">
-                    <fieldset>
-                        <legend>Card Details</legend>
-                            <form class="creditcard__visa">
-                              <div class="creditcard__visa">
-                                <div class="creditcard__visa_form_wrapper">
-                                    <div class="form_cardnumber">
-                                        <label for="cardnumber">Card Number:<span class="required">*</span></label>
-                                        <input type="text" name="cardnumber" id="cardnumber" placeholder="Card Number" aria-label="Enter your Card Number" required>
-                                    </div>
-                                </div>
-                                    <div class="creditcard__visa_form_wrapper">
-                                      <div class="form_exp_date">
-                                        <label for="exp_date">Expiration date:<span class="required">*</span></label>
-                                        <input type="text" name="exp_date" id="exp_date" placeholder="Expiration Date" aria-label="Cards Expiration Date" required>
-                                      </div>
-                                    </div>                                    
-                                    <div class="creditcard__visa_form_wrapper">
-                                      <div class="form_cvc">
-                                        <label for="cvc">CVC:<span class="required">*</span></label>
-                                        <input type="text" name="cvc" id="cvc" placeholder="CVC Code" aria-label="Cards CVC code" required>              
-                                      </div>
-                                    </div>                                    
-                                <div class="paynow-button"><a href="checkout_success.html" role="button">Pay Now</a></div>
-                              </div>
-                              <!-- Button hidden and mimicked for now -->
-                              <!-- <button type="submit">Sign In</button> -->
-                            </form>
-                            <div class="checkout__bottom">
-                            <a href="psn-grid.html"><span class="red">Cancel order</span></a>
-                            <p class="terms yellow">By clicking “Pay Now” I agree to and confirm that I have read the shopping terms.</p>
-                            </div>
-                      </fieldset>
-                      <div class="spacer"> </div>
-                </div>
-              </div>
+                  </div>
+                  <div class="container">
+                    <div class="items ps5-cyberpunk-key" id="ps5-cyberpunk-key">                
+                      <div class="psnleft game-title"><h2 class="h4 yellow" id="yellow">Cyberpunk</h2></div>
+                      <div class="game-cover"><img src="images/covers/cover-ps5-cyberpunk.png" alt="PS5 Cyberpunk | Key Only"></div>
+                      <div class="psnleft backtogames"><a href="checkout.html">Go to checkout</a></div>
+                      <div class="small psnleft release-date">Release Date:</div>
+                      <div class="small psnright reldate">2022/09/16</div>
+                      <div class="small psnleft type">Type:</div>
+                      <div class="small psncenter type-ico"><img src="images/ico_key.svg" alt="Disc"></div>
+                      <div class="small psnright type-text">Key</div>
+                      <div class="small psnleft region">Region:</div>
+                      <div class="small psncenter region-ico"><img src="images/ico_europe.svg" alt="Region | Europe"></div>
+                      <div class="small psnright region-text">Europe</div>
+                      <div class="small psnleft platform">Platform:</div>
+                      <div class="small psncenter platform-ico"><img src="images/ico_psn.svg" alt="Playstation 5"></div>
+                      <div class="small psnright platform-text">Playstation 5</div>
+                      <div class="small yellow psnleft useroffers">Offer from 3 sellers</div>
+                      <div class="psnleft gsrating">Gamespot Rating:</div>
+                      <div class="psnright rating">8/10</div>
+                      <div class="small psnleft readreview"><a href="https://www.gamespot.com/games/reviews/">Read review</a></div>
+                      <div class="togglewishlist"><a  class="small psnright" href="wishlist.html"><img class="remove small psnright" src="images/ico_heart.svg" alt="Add to wishlist"></a></div>
+                      <div class="ourprice psnright">Our Price:</div>
+                      <div class="number psnleft">-<div class="howmany">1</div>+</div>
+                      <div class="price psnright"><span class="dollar yellow">.</span>69.95</div>
+                      <div class="price__before psnright"><span class="dollar yellow">.</span>79.95</div>
+                    </div>
+                    <div class="psn__buttons">
+                      <a href="cart.html"><div class="cta">Add to cart</div></a>
+                      <a href="#"><div class="cta">View Details</div></a>
+                    </div>
+                  </div>
+            </div>            
+            <div class="checkout__cart">
+              <div class="order row1">Order:</div>
+              <div class="row1 checkout_items yellow">(2 items)</div>
+              <div class="amount row1"><span class="yellow">$ </span>149.90</div>
+              <div class="filler row2">.</div>
+              <div class="filler row2"> </div>
+              <div class="amount_before row2 price__before__top yellow"><span class="yellow">$ </span>169.90</div>
+              <div class="row3 vat">(VAT included if applicable)</div>
+              <div class="row3 filler"></div>
+              <div class="row3 filler"></div>
+              <div class="freight row4">Freight:</div>
+              <div class="filler row4"></div>
+              <div class="amountfreight row4"><span class="yellow">$ </span>4.95</div>
+              <div class="address row5 yellow">(Profile address used):</div>
+              <div class="change row5 yellow"><a class="change" href="profile.html">(Change)</a></div>
+              <div class="filler change row5"></div>
+              <div class="total row6">Total:</div>
+              <div class="checkout_items yellow row6">(2 items)</div>
+              <div class="totalamount row6"><span class="yellow">$ </span>154.85</div>
+              <div class="filler row7"></div>
+              <div class="filler row7"></div>
+              <div class="price__before__bottom yellow row7"><span class="yellow">$ </span>174.85</div>
+              <div class="row8 vat">(VAT included if applicable)</div>
+              <div class="row8 filler"></div>
+              <div class="filler row8"></div>
+            </div>
+            <div class="cart-checkout">
+                <a href="checkout.html"><div class="cta">Checkout</div></a>                
+            </div>            
+              <a href="psn-grid.html"><span class="red">Cancel order</span></a>              
+              <div class="spacer"></div>
         </section>
       </div>
     </main>
@@ -149,8 +181,8 @@
                         <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact US">Contact</a></div>
                         <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                         <div class="links widescreen"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
-                        <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
-                        <div class="links widescreen"><a href="checkout.html" class="active"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
+                        <div class="links"><a href="cart.html" class="active"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
+                        <div class="links widescreen"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                         <div class="links widescreen"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                         <div class="links widescreen"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                       </div>
