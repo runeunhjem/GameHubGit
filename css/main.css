@@ -960,19 +960,20 @@ input {
   margin: 0.3em auto;
 }
 .checkout .row3, .checkout .row5 {
-  padding-bottom: 1em;
+  height: 20px;
   border-bottom: var(--border-1px-yellow);
 }
-.checkout span, .checkout .vat, .checkout .price__before, .checkout .checkout_items, .checkout .address, .checkout .change {
+.checkout span, .checkout .vat, .checkout .price__before, .checkout .price__before__top, .checkout .price__before__bottom, .checkout .checkout_items, .checkout .address, .checkout .change {
   font-size: 0.8rem;
 }
-.checkout .price__before {
+.checkout .price__before, .checkout .price__before__top, .checkout .price__before__bottom {
   text-decoration: line-through;
+  text-align: right;
 }
 .checkout .filler {
   color: var(--color-black);
 }
-.checkout .checkout_items, .checkout .change {
+.checkout .checkout_items, .checkout .change, .checkout .amountfreight, .checkout .totalamount {
   text-align: right;
 }
 .checkout .vat, .checkout .order, .checkout .freight, .checkout .address {
@@ -1516,23 +1517,6 @@ legend {
   justify-content: flex-start;
 }
 
-.cart-items {
-  display: none;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: space-around;
-}
-.cart-items img {
-  height: 256px;
-}
-
-.cart-items-mob {
-  display: block;
-}
-.cart-items-mob img {
-  width: 350px;
-}
-
 .cart-checkout {
   margin: 1em auto;
 }
@@ -1938,14 +1922,8 @@ a:hover {
   .profile-links {
     width: 380px;
   }
-  .checkout .checkout__cart {
-    display: grid;
-    justify-content: center;
+  .checkout__cart {
     grid-template-columns: 190px 170px 105px;
-    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 50px;
-  }
-  .checkout__wrapper {
-    width: 500px;
   }
   .details {
     grid-template-columns: 350px 350px;
@@ -2118,10 +2096,7 @@ a:hover {
     width: 800px;
   }
   .checkout .checkout__cart {
-    display: grid;
-    justify-content: center;
     grid-template-columns: 300px 200px 100px;
-    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 50px;
   }
   .details {
     grid-template-columns: 350px 350px 350px;
