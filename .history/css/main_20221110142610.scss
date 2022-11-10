@@ -343,7 +343,6 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
 }
 
 .index_sign-in__profile_pic {
@@ -1685,9 +1684,7 @@ a:hover {
   border: 1px solid var(--color-yellow-logo);
   padding: 1em;
   border-radius: 1em;
-  img {
-    transition: all 0.2s;
-  }
+  
   img:hover {    
     transform: scale(1.4);
   }
@@ -1977,7 +1974,6 @@ a:hover {
   }
   .footer__wrapper .links .widescreen {
     display: flex;
-    width: 100%;    
   }
   .left, .middle, .right,
   .get-app,

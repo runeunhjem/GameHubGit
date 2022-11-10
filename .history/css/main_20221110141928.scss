@@ -343,7 +343,6 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
 }
 
 .index_sign-in__profile_pic {
@@ -418,14 +417,13 @@ main {
     justify-content: space-around;
     margin: 2em auto 4em auto;
     img:hover {
-      transform: scale(1.1);
+      transform: ;
     }
   }
   .apps img {
     align-items: center;
     width: 100%;
     max-width: 156px;
-    transition: all 0.3s;
   }
 }
 
@@ -1235,7 +1233,7 @@ legend {
   img:hover {
     border-radius: 1em;
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
-    transform: scale(1.1); 
+    transform: scale(1.1);    
   }
   img {
   height: 95%;
@@ -1669,7 +1667,6 @@ a:hover {
   align-items: center;
   margin-top: 1em;
   gap: 2em;
-  
 }
 
 .get-app,
@@ -1678,19 +1675,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--color-yellow-logo);
-  
 }
 
 .social-media {
   border: 1px solid var(--color-yellow-logo);
   padding: 1em;
   border-radius: 1em;
-  img {
-    transition: all 0.2s;
-  }
-  img:hover {    
-    transform: scale(1.4);
-  }
 }
 
 .app-text,
@@ -1977,7 +1967,6 @@ a:hover {
   }
   .footer__wrapper .links .widescreen {
     display: flex;
-    width: 100%;    
   }
   .left, .middle, .right,
   .get-app,

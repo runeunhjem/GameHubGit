@@ -347,6 +347,7 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .index_sign-in__profile_pic {
@@ -394,6 +395,7 @@ main {
 .index .buy-sell_buttons img {
   width: 12vh;
   border-radius: 50%;
+  transition: all 0.3s;
 }
 .index .buy-sell_buttons a {
   border-radius: 50%;
@@ -417,10 +419,14 @@ main {
   justify-content: space-around;
   margin: 2em auto 4em auto;
 }
+.index .apps img:hover {
+  transform: scale(1.1);
+}
 .index .apps img {
   align-items: center;
   width: 100%;
   max-width: 156px;
+  transition: all 0.3s;
 }
 
 /* Global text indent - all inputs */
@@ -1644,6 +1650,12 @@ a:hover {
   padding: 1em;
   border-radius: 1em;
 }
+.social-media img {
+  transition: all 0.2s;
+}
+.social-media img:hover {
+  transform: scale(1.4);
+}
 
 .app-text,
 .social-media__icons,
@@ -1920,6 +1932,7 @@ a:hover {
   }
   .footer__wrapper .links .widescreen {
     display: flex;
+    width: 100%;
   }
   .left, .middle, .right,
 .get-app,
