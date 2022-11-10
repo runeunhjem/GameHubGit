@@ -76,7 +76,7 @@ body {
   position: relative;
   background-color: var(--color-black-90);
   background-image: url(../images/bg-img.jpg);
-  background-size: cover;  
+  background-size: contain;
   color: var(--color-white);
   height: 100vh;
 }
@@ -2270,10 +2270,6 @@ a:hover {
     justify-content: center;
     text-align: left;
     gap: 10px;
-    img {
-      overflow: hidden;
-      height: 100%;      
-    }
   }
   .product-price-mob {
     display: none;
