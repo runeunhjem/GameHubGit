@@ -995,7 +995,7 @@ input {
   }
 }
 .checkout__cart {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   margin-top: 2em;
 }
 .checkout__wrapper {  
@@ -1498,12 +1498,6 @@ legend {
     }
   }  
 }
-.cart {
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-  }
-}
 
 .wishlist-links {
   display: inline-flex;
@@ -1536,8 +1530,8 @@ legend {
 //   }  
 // }
 
-.cart-checkout {  
-  margin: 0 auto 0.5em auto;
+.cart-checkout {
+  margin: 0 auto auto;
   img {
     width: 300px;
   }
