@@ -1117,6 +1117,27 @@ legend {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
+  max-width: 600px;
+}
+
+.psn__wrapper_wide, .detail-image {
+  display: none;
+}
+
+.summary__wrapper {
+  display: flex;
+  margin: 0 0 0 1em;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.summary__wrapper .detail-image {
+  background-image: url(../images/gamedetails/forgelegenddetails2_small.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius-boxes);
+  height: 180px;
+  background-position: left;
 }
 
 .container {
@@ -1338,7 +1359,7 @@ legend {
   justify-content: center;
   color: var(--color-yellow-logo);
   text-decoration: none;
-  width: 100%;
+  width: 130px;
   height: 100%;
 }
 .psn__buttons a:hover {
@@ -1377,19 +1398,9 @@ legend {
   align-items: center;
 }
 
-.details {
-  display: grid;
-  margin: 0 auto;
-  gap: 10px;
-  justify-self: center;
-  align-content: center;
-  grid-template-columns: 350px;
-  grid-template-rows: 256px 256px 100px;
-  grid-template-areas: "image" "details" "addtocart";
-}
-.details img {
-  max-height: 256px;
-  max-width: 350px;
+.details .psn__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-price-mob {
@@ -1399,6 +1410,8 @@ legend {
 .summary {
   font-size: 1rem;
   max-width: 350px;
+  width: 95%;
+  grid-area: summary;
 }
 
 .description {
@@ -1457,10 +1470,6 @@ legend {
 }
 
 .product-addtocart {
-  display: none;
-}
-
-.summary {
   display: none;
 }
 
@@ -1837,7 +1846,7 @@ a:hover {
   }
 }
 /* @media screensize from 769px to 1080px */
-@media screen and (min-width: 769px) and (max-width: 1080px) {
+@media screen and (min-width: 769px) {
   .main-menu {
     grid-area: menu;
     width: 100%;
@@ -1934,10 +1943,26 @@ a:hover {
   .checkout .checkout__cart, .cart .checkout__cart {
     grid-template-columns: 200px 200px 100px;
   }
-  .details {
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 256px 100px;
-    grid-template-areas: "image details" "addtocart addtocart";
+  .details .psn__wrapper {
+    display: none;
+  }
+  .details .psn__wrapper_wide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 800px;
+    background-color: var(--color-black-60);
+    border-radius: var(--border-radius-boxes);
+    border: var(--border-1px-yellow);
+  }
+  .details .psn__wrapper_wide .detail-image {
+    display: block;
+  }
+  .details .psn__wrapper_wide .container {
+    box-shadow: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
   }
   .description {
     width: 500px;
@@ -2110,17 +2135,16 @@ a:hover {
   .checkout .checkout__cart, .cart .checkout__cart {
     grid-template-columns: 300px 200px 100px;
   }
-  .details {
-    grid-template-columns: 350px 350px 350px;
-    grid-template-areas: "image details addtocart";
+  .details .psn__wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
   .summary {
-    display: none;
+    max-width: 350px;
   }
-  .details {
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 256px;
-    grid-template-areas: "image details addtocart";
+  .details .psn__wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
   .description {
     width: 600px;
@@ -2139,9 +2163,6 @@ a:hover {
   }
   .product-addtocart {
     display: flex;
-  }
-  .summary {
-    display: none;
   }
   .product-details {
     border-bottom: none;
