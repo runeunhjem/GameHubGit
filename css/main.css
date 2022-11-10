@@ -1128,7 +1128,7 @@ legend {
 }
 
 .container:hover {
-  border-radius: 1em;
+  border-radius: var(--border-radius-boxes);
   box-shadow: 3px 3px 8px var(--color-yellow-logo);
 }
 
