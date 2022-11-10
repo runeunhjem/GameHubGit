@@ -1961,6 +1961,9 @@ a:hover {
     display: flex;
     width: 266px;
   }
+  .cart .cart h1, .wishlist .cart h1 {
+    font-size: 3.583rem;
+  }
   .cart .wl-right a, .wishlist .wl-right a {
     justify-content: flex-end;
   }
@@ -2155,6 +2158,9 @@ a:hover {
   .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
     display: flex;
     width: 266px;
+  }
+  .cart .cart h1, .wishlist .cart h1 {
+    font-size: 3.583rem;
   }
   .cart .wl-right a, .wishlist .wl-right a {
     justify-content: flex-end;
