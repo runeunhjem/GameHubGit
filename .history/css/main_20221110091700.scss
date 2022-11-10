@@ -989,7 +989,8 @@ input {
   .vat, .order, .freight, .address {
     white-space: nowrap;
   }
-  .checkout__cart {    
+  .checkout__cart {
+    
     grid-template-columns: 120px 110px 70px;
     grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
   }
@@ -1945,10 +1946,9 @@ a:hover {
   .profile-links {
     width: 380px;
   }
-  .checkout, .cart {
-    .checkout__cart {
-      grid-template-columns: 200px 200px 100px;      
-    }
+  .checkout__cart {
+    
+    grid-template-columns: 240px 110px 70px;
   }
   
   .details {  

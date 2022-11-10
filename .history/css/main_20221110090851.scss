@@ -989,15 +989,13 @@ input {
   .vat, .order, .freight, .address {
     white-space: nowrap;
   }
-  .checkout__cart {    
+  .checkout__cart {
+    margin-bottom: 4em;
     grid-template-columns: 120px 110px 70px;
     grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
   }
 }
-.checkout__cart {
-  margin-bottom: 4em;
-  margin-top: 2em;
-}
+
 .checkout__wrapper {  
   display: flex;
   flex-direction: column;
@@ -1496,7 +1494,8 @@ legend {
       align-items: center;      
       font-size: 0.8rem;      
     }
-  }  
+  }
+  .psn__wrapper 
 }
 
 .wishlist-links {
@@ -1945,10 +1944,8 @@ a:hover {
   .profile-links {
     width: 380px;
   }
-  .checkout, .cart {
-    .checkout__cart {
-      grid-template-columns: 200px 200px 100px;      
-    }
+  .checkout__cart {
+    grid-template-columns: 190px 170px 105px;
   }
   
   .details {  

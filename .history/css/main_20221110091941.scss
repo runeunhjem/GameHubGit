@@ -1945,10 +1945,9 @@ a:hover {
   .profile-links {
     width: 380px;
   }
-  .checkout, .cart {
-    .checkout__cart {
-      grid-template-columns: 200px 200px 100px;      
-    }
+  .checkout__cart {
+    // width: 500px;
+    // grid-template-columns: 340px 110px 70px;
   }
   
   .details {  
