@@ -2017,7 +2017,7 @@ a:hover {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 10px;
+      gap: 1em;
       max-width: 800px;      
       background-color: var(--color-black-60);
       border-radius: var(--border-radius-boxes);
@@ -2026,8 +2026,8 @@ a:hover {
         box-shadow: none;
         border: none;
         background-color: #0000;
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 10px;
+        margin-left: 
       }
     }
   }
