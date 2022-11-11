@@ -1184,7 +1184,7 @@ legend {
   align-items: flex-start;
   grid-area: gamecover;
   height: 105%;
-  padding: 0 6px;
+  padding: 6px;
   img:hover {
     border-radius: 1em;
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
@@ -1204,8 +1204,7 @@ legend {
   grid-area: backtogames;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 3px;
-  height: 16px;
+  margin-bottom: 32px;
 }
 .release-date {
   grid-area: releasedate;
