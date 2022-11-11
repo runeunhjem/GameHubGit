@@ -2076,12 +2076,12 @@ a:hover {
   // .product-details {
   //   border-bottom: none;    
   // }
-  // .cart-items {
-  //   display: flex;
-  // }
-  // .cart-items-mob {
-  //   display: none;
-  // }
+  .cart-items {
+    display: flex;
+  }
+  .cart-items-mob {
+    display: none;
+  }
   .cart, .wishlist {
     .buy-games__left, .wl-left, .wl-right {
       width: 532px;
@@ -2212,10 +2212,10 @@ a:hover {
   // .buy-sell_buttons img {
   //   width: 15vh;
   // }
-  // .footer__wrapper {
-  //   // flex-direction: row;
-  //   // align-items: flex-start;
-  // }
+  .footer__wrapper {
+    // flex-direction: row;
+    // align-items: flex-start;
+  }
   .footer__wrapper, .links, .widescreen {
     display: flex;
   }
@@ -2326,9 +2326,9 @@ a:hover {
   // .cart-items {
   //   display: flex;
   // }
-  // .cart-items-mob {
-  //   display: none;
-  // }
+  .cart-items-mob {
+    display: none;
+  }
   // .cart, .wishlist {
   //   .buy-games__left, .wl-left, .wl-right {
   //     width: 532px;

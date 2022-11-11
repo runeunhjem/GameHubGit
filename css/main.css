@@ -1868,12 +1868,6 @@ a:hover {
   .description img {
     width: 500px;
   }
-  .cart-items {
-    display: flex;
-  }
-  .cart-items-mob {
-    display: none;
-  }
   .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
     width: 532px;
   }
@@ -1955,12 +1949,6 @@ a:hover {
   .details-img img {
     overflow: hidden;
     height: 100%;
-  }
-  .cart-items {
-    display: flex;
-  }
-  .cart-items-mob {
-    display: none;
   }
   /* PSN-GRID */
   .image-mockup, .psn__wrapper {
