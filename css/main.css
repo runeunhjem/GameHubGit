@@ -1067,7 +1067,7 @@ legend {
   width: 110px;
 }
 .checkout_success .profile-links {
-  width: 340px;
+  width: 100%;
 }
 
 /* Playstation Grid Page */
@@ -1719,7 +1719,7 @@ a:hover {
   }
   .header__wrapper-wide .topnav__mob {
     grid-area: navbar;
-    width: 360px;
+    width: 100%;
     justify-content: center;
   }
   .header__wrapper-wide .header__logo {

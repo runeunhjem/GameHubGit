@@ -283,7 +283,7 @@ footer a {
 
 .topnav__mob .links {
   display: Flex;
-  list-style: none;
+  l.topnav__mobist-style: none;
   align-items: center;
   padding: 3px 0;
   width: auto;
@@ -1650,6 +1650,8 @@ a:hover {
   background-color: var(--color-black-90);
 }
 
+@media screen and (max-width: 360px) {
+  
 @media screen and (max-height: 450px) {
   .menu-flyin {
     height: 235px;
