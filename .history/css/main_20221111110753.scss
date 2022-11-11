@@ -1659,17 +1659,12 @@ a:hover {
   margin: 0 3px;
   padding: 3px;
   width: 180px;
-  img {
-    padding: 4px;
-    width: 30px;
-    height: 30px;
-  }
 }
-// .left .links img {
-//   padding: 4px;
-//   width: 30px;
-//   height: 30px;
-// }
+.left .links img {
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+}
 
 .left a {
   display: inline-flex;
