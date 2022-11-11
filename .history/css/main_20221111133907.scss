@@ -2247,7 +2247,7 @@ a:hover {
     .contact__wrapper {
       display: flex;
       width: 100%;
-      justify-content: space-around;
+      // justify-content: space-around;
     }
   }
   .checkout__wrapper{
@@ -2274,10 +2274,10 @@ a:hover {
   //   //   flex-wrap: wrap;
   //   // }
   // }
-  // .summary {
-  //   max-width: 350px;
-  //   // display: none;
-  // }
+  .summary {
+    max-width: 350px;
+    // display: none;
+  }
   // .details {  
   //   grid-template-columns: 350px 350px 350px;
   //   grid-template-rows: 256px;

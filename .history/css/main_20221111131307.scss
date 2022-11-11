@@ -1103,7 +1103,10 @@ legend {
   }
 }
 
-.red {  
+.red {
+  display: flex;
+  height:
+  align-items: center;
   color: var(--color-red);  
 }
 .red:hover {
@@ -2232,11 +2235,11 @@ a:hover {
   //   margin-top: 0.5em;
   //   margin-bottom: 0.5em;
   // }
-  // .index_sign-in {
-  //   .sign_in, .register, .sellgames {
-  //     width: 360px;
-  //   }
-  // }
+  .index_sign-in {
+    .sign_in, .register, .sellgames {
+      width: 380px;
+    }
+  }
   .profile-links {
     width: 400px;
   }
@@ -2274,10 +2277,10 @@ a:hover {
   //   //   flex-wrap: wrap;
   //   // }
   // }
-  // .summary {
-  //   max-width: 350px;
-  //   // display: none;
-  // }
+  .summary {
+    max-width: 350px;
+    // display: none;
+  }
   // .details {  
   //   grid-template-columns: 350px 350px 350px;
   //   grid-template-rows: 256px;
@@ -2353,9 +2356,9 @@ a:hover {
   //     }
   //   }
   // }
-  // .wishlist-links {    
-  //   width: 532px;
-  // }
+  .wishlist-links {    
+    width: 532px;
+  }
   /* PSN-GRID */
   .image-mockup, .psn__wrapper {
     max-width: 1200px;

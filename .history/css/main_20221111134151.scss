@@ -2067,6 +2067,16 @@ a:hover {
       }
     }
   }
+  .contact {
+    .divider {
+      display: none;
+    }
+    .contact__wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
   .description {
     width: 500px;
     img {
@@ -2240,16 +2250,16 @@ a:hover {
   .profile-links {
     width: 400px;
   }
-  .contact {
-    .divider {
-      display: none;
-    }
-    .contact__wrapper {
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-    }
-  }
+  // .contact {
+  //   .divider {
+  //     display: none;
+  //   }
+  //   .contact__wrapper {
+  //     display: flex;
+  //     width: 100%;
+  //     justify-content: space-around;
+  //   }
+  // }
   .checkout__wrapper{
     width: 800px;
   }
@@ -2274,10 +2284,10 @@ a:hover {
   //   //   flex-wrap: wrap;
   //   // }
   // }
-  // .summary {
-  //   max-width: 350px;
-  //   // display: none;
-  // }
+  .summary {
+    max-width: 350px;
+    // display: none;
+  }
   // .details {  
   //   grid-template-columns: 350px 350px 350px;
   //   grid-template-rows: 256px;

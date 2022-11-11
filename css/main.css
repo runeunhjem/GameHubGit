@@ -1054,6 +1054,10 @@ legend {
   color: var(--color-red);
 }
 
+.red:hover {
+  color: var(--color-white);
+}
+
 .red:after {
   content: url(../images/ico_cancel-red.svg);
   padding: 4px;
@@ -1919,9 +1923,6 @@ a:hover {
   .footer__wrapper, .links, .widescreen {
     display: flex;
   }
-  .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames {
-    width: 380px;
-  }
   .profile-links {
     width: 400px;
   }
@@ -1938,9 +1939,6 @@ a:hover {
   }
   .checkout .checkout__cart, .cart .checkout__cart {
     grid-template-columns: 300px 200px 100px;
-  }
-  .summary {
-    max-width: 350px;
   }
   .description {
     width: 600px;
@@ -1963,25 +1961,6 @@ a:hover {
   }
   .cart-items-mob {
     display: none;
-  }
-  .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
-    width: 532px;
-  }
-  .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
-    display: flex;
-    width: 266px;
-  }
-  .cart .cart h1, .wishlist .cart h1 {
-    font-size: 3.583rem;
-  }
-  .cart .wl-right a, .wishlist .wl-right a {
-    justify-content: flex-end;
-  }
-  .cart .wl-left a, .wishlist .wl-left a {
-    justify-content: flex-start;
-  }
-  .wishlist-links {
-    width: 532px;
   }
   /* PSN-GRID */
   .image-mockup, .psn__wrapper {
