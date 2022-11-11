@@ -1124,9 +1124,9 @@ legend {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  // .spacer {
-  //   height: 2em;
-  // }
+  .spacer {
+    height: 2em;
+  }
 }
 .image-mockup {
   img {
@@ -2078,16 +2078,16 @@ a:hover {
   .image-mockup, .psn__wrapper {
     max-width: 740px;
   }
-  // .spacer {
-  //   height: 2em;
-  // }  
+  .spacer {
+    height: 2em;
+  }  
 }
 
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
-  // .spacer {
-  //   height: 2em;
-  // }
+  .spacer {
+    height: 2em;
+  }
   .main-menu {    
     grid-area: menu;
     width: 100%;    

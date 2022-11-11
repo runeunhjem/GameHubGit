@@ -1111,9 +1111,6 @@ legend {
   align-items: center;
   margin: 0 auto;
 }
-.psn-grid .spacer {
-  height: 2em;
-}
 
 .image-mockup img {
   width: 100%;
@@ -2018,15 +2015,9 @@ a:hover {
   .image-mockup, .psn__wrapper {
     max-width: 740px;
   }
-  .spacer {
-    height: 2em;
-  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
-  .spacer {
-    height: 2em;
-  }
   .main-menu {
     grid-area: menu;
     width: 100%;
