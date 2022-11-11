@@ -1014,7 +1014,7 @@ input {
 
 .payment-options {
   img {
-    width: 350px;
+    width: 100%
   }
 }
 
@@ -1456,15 +1456,15 @@ legend {
   }
 }
 
-// .product-price-mob {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;  
-//   grid-area: addtocart;  
-//   a {
-//     text-decoration: none;
-//   }
-// }
+.product-price-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  grid-area: addtocart;  
+  a {
+    text-decoration: none;
+  }
+}
 .viewdetails__cta,
 .addtocart__cta:hover,
 .checkout__cta:hover,
