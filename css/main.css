@@ -122,7 +122,7 @@ footer a {
   display: none;
   position: fixed;
   width: 160px;
-  height: 360px;
+  height: 340px;
   top: 47px;
   right: 6px;
   margin: 0;
@@ -133,13 +133,6 @@ footer a {
 }
 .menu-flyin .active {
   height: 24px;
-}
-
-.menu-flyin .links:hover {
-  background-color: var(--color-grey-disabled);
-  color: var(--color-yellow-logo);
-  border-right: 2px solid var(--color-yellow-logo);
-  border-radius: 0.4em;
 }
 
 .menu-flyin .active {
@@ -293,6 +286,8 @@ footer a {
   border-bottom: 0px;
   border-left: 0px;
   color: var(--color-yellow-logo);
+  border-right: 2px solid var(--color-yellow-logo);
+  border-radius: 0.4em;
 }
 
 .topnav__mob .menu .active {
@@ -1703,7 +1698,7 @@ a:hover {
 
 @media screen and (max-height: 450px) {
   .menu-flyin {
-    height: 230px;
+    height: 235px;
   }
   .menu-flyin .active {
     height: 16px;

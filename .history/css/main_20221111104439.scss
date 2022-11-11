@@ -129,7 +129,7 @@ footer a {
   display: none;
   position: fixed;
   width: 160px;
-  height: 340px;
+  height: 360px;
   top: 47px;
   right: 6px;
   margin: 0;
@@ -142,7 +142,12 @@ footer a {
   }
 }
 
-
+.menu-flyin .links:hover {
+  background-color: var(--color-grey-disabled);
+  color: var(--color-yellow-logo);
+  border-right: 2px solid var(--color-yellow-logo);
+  border-radius: 0.4em;
+}
 
 .menu-flyin .active {
   background-color: var(--color-grey-disabled);
@@ -284,14 +289,7 @@ footer a {
   border-bottom: 0px;
   border-left: 0px;
   color: var(--color-yellow-logo);
-  border-right: 2px solid var(--color-yellow-logo);
-  border-radius: 0.4em;
 }
-// .menu-flyin .links:hover {
-//   // background-color: var(--color-grey-disabled);
-//   // color: var(--color-yellow-logo);
-  
-// }
 
 .topnav__mob .menu .active {
   background-color: var(--color-grey-disabled);
@@ -1796,7 +1794,7 @@ a:hover {
 
 @media screen and (max-height: 450px) {
   .menu-flyin {
-    height: 235px;
+    height: 240px;
     // padding: 0;
     .active {
       height: 16px;

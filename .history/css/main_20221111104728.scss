@@ -284,14 +284,13 @@ footer a {
   border-bottom: 0px;
   border-left: 0px;
   color: var(--color-yellow-logo);
+}
+.menu-flyin .links:hover {
+  // background-color: var(--color-grey-disabled);
+  // color: var(--color-yellow-logo);
   border-right: 2px solid var(--color-yellow-logo);
   border-radius: 0.4em;
 }
-// .menu-flyin .links:hover {
-//   // background-color: var(--color-grey-disabled);
-//   // color: var(--color-yellow-logo);
-  
-// }
 
 .topnav__mob .menu .active {
   background-color: var(--color-grey-disabled);
