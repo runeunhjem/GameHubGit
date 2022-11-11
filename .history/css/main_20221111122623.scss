@@ -1992,13 +1992,13 @@ a:hover {
     //   margin-left: 5px;
     //   margin-top: 5px;
     // }
-    // .logout {
-    //   display: grid;
-    //   text-align: right;
-    //   color: var(--color-yellow-logo);
-    //   padding-right: 5px;
-    //   margin-top: 5px;
-    // }
+    .logout {
+      display: grid;
+      text-align: right;
+      color: var(--color-yellow-logo);
+      padding-right: 5px;
+      margin-top: 5px;
+    }
     .topnav__mob {
       grid-area: navbar;
     }
