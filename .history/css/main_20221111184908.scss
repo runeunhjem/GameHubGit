@@ -29,12 +29,10 @@
     line-height: 67px;
     font-weight: 400;
   }
-
   h2 {
     font-size: 2.986rem;
     line-height: 58px;
   }
-
   h3, .h3 {
     font-size: 2.488rem;
     line-height: 48px;
@@ -45,11 +43,10 @@
     line-height: 40px;
     color: var(--color-yellow-logo);
   }
-
   .h4 {
     color: var(--color-white);
   }
-
+  
   h5, .h5 {
     font-size: 1.728rem;
     line-height: 33px;
@@ -1134,7 +1131,7 @@ legend {
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 70px 30px 80px;
-  grid-template-rows: 45px 24px 22px 22px 22px 22px 28px 22px 36px 24px 24px;
+  grid-template-rows: 45px 20px 22px 22px 22px 22px 28px 22px 24px 24px 24px;
   grid-template-areas: 
   'gametitle gametitle gametitle gametitle'
   'gamecover backtogames backtogames backtogames'
@@ -1188,7 +1185,7 @@ legend {
   justify-content: center;
   align-items: flex-start;
   grid-area: gamecover;
-  height: 100%;
+  height: 105%;
   padding: 0 6px;
   img:hover {
     border-radius: 1em;

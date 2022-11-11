@@ -1134,7 +1134,7 @@ legend {
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 70px 30px 80px;
-  grid-template-rows: 45px 24px 22px 22px 22px 22px 28px 22px 36px 24px 24px;
+  grid-template-rows: 45px 23px 22px 22px 22px 22px 28px 22px 24px 24px 24px;
   grid-template-areas: 
   'gametitle gametitle gametitle gametitle'
   'gamecover backtogames backtogames backtogames'
@@ -1188,7 +1188,7 @@ legend {
   justify-content: center;
   align-items: flex-start;
   grid-area: gamecover;
-  height: 100%;
+  height: 105%;
   padding: 0 6px;
   img:hover {
     border-radius: 1em;
