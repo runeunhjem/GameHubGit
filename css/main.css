@@ -1917,9 +1917,6 @@ a:hover {
   .header__wrapper-wide .explore img {
     width: 80%;
   }
-  .buy-sell_buttons img {
-    width: 15vh;
-  }
   .footer__wrapper {
     flex-direction: row;
     align-items: flex-start;
