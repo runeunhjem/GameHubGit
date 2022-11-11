@@ -712,6 +712,14 @@ input {
   height: 100%;
 }
 
+.profile__name {
+  display: grid;
+  grid-area: profile__name;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 .stats, .checkout__cart {
   display: grid;
   grid-template-columns: 80px 80px 100px;
@@ -1744,13 +1752,6 @@ a:hover {
     margin-right: 10px;
     margin-top: 5px;
   }
-  .header__wrapper-wide .profile__name {
-    display: grid;
-    grid-area: profile__name;
-    text-align: left;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
   .header__wrapper-wide .logout {
     display: grid;
     text-align: right;
@@ -1799,13 +1800,6 @@ a:hover {
   .header__wrapper-wide .header__profile-pic {
     margin: 10px;
     margin-top: 20px;
-  }
-  .header__wrapper-wide .profile__name {
-    display: grid;
-    grid-area: profile__name;
-    text-align: left;
-    margin-left: 5px;
-    margin-top: 5px;
   }
   .header__wrapper-wide .logout {
     display: grid;

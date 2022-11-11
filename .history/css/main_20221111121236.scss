@@ -1979,13 +1979,13 @@ a:hover {
       margin-top: 20px;
       
     }
-    // .profile__name {
-    //   display: grid;
-    //   grid-area: profile__name;
-    //   text-align: left;
-    //   margin-left: 5px;
-    //   margin-top: 5px;
-    // }
+    .profile__name {
+      display: grid;
+      grid-area: profile__name;
+      text-align: left;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
     .logout {
       display: grid;
       text-align: right;
