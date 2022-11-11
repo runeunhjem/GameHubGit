@@ -1491,9 +1491,9 @@ legend {
   justify-content: space-around;
 }
 
-// .product-addtocart {
-//   display: none;
-// }
+.product-addtocart {
+  display: none;
+}
 
 // .summary {
 //   display: none;
@@ -1526,17 +1526,17 @@ legend {
 
 
 /* Shopping Cart & Wishlist */
-// .cart, .wishlist {
-//   .buy-games__left, .goto-cart {
-//     // width: 175px;    
-//     a {
-//       // display: flex;
-//       // justify-content: center;
-//       // align-items: center;      
-//       // font-size: 0.8rem;      
-//     }
-//   }  
-// }
+.cart, .wishlist {
+  .buy-games__left, .goto-cart {
+    width: 175px;    
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+      font-size: 0.8rem;      
+    }
+  }  
+}
 .cart {
   h1 {
     font-size: 3rem;

@@ -1395,13 +1395,6 @@ legend {
   margin: 1em;
 }
 
-.product-image, .product-details, .product-addtocart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .details .psn__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1459,28 +1452,6 @@ legend {
   justify-content: space-around;
 }
 
-.product-addtocart {
-  display: none;
-}
-
-.product-image {
-  grid-area: image;
-}
-
-.product-details {
-  border-bottom: var(--border-1px-yellow);
-  grid-area: details;
-}
-
-.product-addtocart {
-  border-radius: var(--border-radius-boxes);
-  grid-area: addtocart;
-}
-.product-addtocart img:hover {
-  box-shadow: 3px 5px 12px var(--color-yellow-logo);
-  border-radius: 0.6em;
-}
-
 .gameplay, .plot, .features {
   display: block;
 }
@@ -1493,16 +1464,6 @@ legend {
 }
 
 /* Shopping Cart & Wishlist */
-.cart .buy-games__left, .cart .goto-cart, .wishlist .buy-games__left, .wishlist .goto-cart {
-  width: 175px;
-}
-.cart .buy-games__left a, .cart .goto-cart a, .wishlist .buy-games__left a, .wishlist .goto-cart a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.8rem;
-}
-
 .cart h1 {
   font-size: 3rem;
   text-align: center;
@@ -1969,9 +1930,6 @@ a:hover {
   .description img {
     width: 500px;
   }
-  .product-details {
-    border-bottom: none;
-  }
   .cart-items {
     display: flex;
   }
@@ -2146,12 +2104,6 @@ a:hover {
   .details-img img {
     overflow: hidden;
     height: 100%;
-  }
-  .product-addtocart {
-    display: flex;
-  }
-  .product-details {
-    border-bottom: none;
   }
   .cart-items {
     display: flex;
