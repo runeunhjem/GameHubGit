@@ -1117,9 +1117,9 @@ legend {
   background-color: var(--color-black-60);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
-  width: 360px;
+  width: 350px;
   height: 350px;
-  // padding: 1em;
+  padding: 5px;
 }
 .container:hover {
   border-radius: var(--border-radius-boxes);
