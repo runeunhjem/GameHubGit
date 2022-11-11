@@ -328,24 +328,24 @@ footer a {
   font-size: 0.8rem;
 }
 
-// .top-menu, .links {
-//   width: 146px;
-//   height: 32px;
-// }
+.top-menu, .links {
+  width: 146px;
+  height: 32px;
+}
 
-// .top-menu, .menu {
-//   // width: 156px;
-//   // border: none;
-// }
+.top-menu, .menu {
+  width: 156px;
+  border: none;
+}
 
-// .top-menu .menu .links:hover {
-//   // background-color: var(--color-grey-disabled);
-//   // border-right: 2px solid var(--color-yellow-logo);
-//   // border-top: none;
-//   // border-bottom: none;
-//   // border-radius: 0.4em;
-//   // color: var(--color-yellow-logo);
-// }
+.top-menu .menu .links:hover {
+  background-color: var(--color-grey-disabled);
+  border-right: 2px solid var(--color-yellow-logo);
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0.4em;
+  color: var(--color-yellow-logo);
+}
 
 .back {
   padding-right: 5px;
