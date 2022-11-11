@@ -1116,6 +1116,7 @@ legend {
   border-radius: var(--border-radius-boxes);
   width: 360px;
   height: 350px;
+  padding-right: 5px;
 }
 
 .container:hover {
