@@ -2022,9 +2022,8 @@ a:hover {
     padding-top: 1em;
   }
   .social-media {
-    margin: 1.5em 0;
-    // margin-top: 1em;
-    // margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .index_sign-in {
     .sign_in, .register, .sellgames {
@@ -2213,6 +2212,7 @@ a:hover {
   .footer__wrapper {
     // flex-direction: row;
     // align-items: flex-start;
+    
   }
   .footer__wrapper, .links, .widescreen {
     display: flex;
@@ -2226,10 +2226,10 @@ a:hover {
   // .trustpilot__images {
   //   padding-top: 1em;
   // }
-  // .social-media {
-  //   margin-top: 0.5em;
-  //   margin-bottom: 0.5em;
-  // }
+  .social-media {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
   .index_sign-in {
     .sign_in, .register, .sellgames {
       width: 380px;

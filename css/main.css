@@ -1824,8 +1824,7 @@ a:hover {
     padding-top: 1em;
   }
   .social-media {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1.5em 0;
   }
   .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames {
     width: 360px;
@@ -1917,16 +1916,8 @@ a:hover {
   .header__wrapper-wide .explore img {
     width: 80%;
   }
-  .footer__wrapper {
-    flex-direction: row;
-    align-items: flex-start;
-  }
   .footer__wrapper, .links, .widescreen {
     display: flex;
-  }
-  .social-media {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
   }
   .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames {
     width: 380px;
