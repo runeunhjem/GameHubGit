@@ -1703,7 +1703,7 @@ a:hover {
 
 @media screen and (max-height: 450px) {
   .menu-flyin {
-    height: 250px;
+    height: 230px;
   }
   .menu-flyin .active {
     height: 16px;
