@@ -2101,14 +2101,14 @@ a:hover {
   //   grid-area: menu;
   //   width: 100%;    
   // }
-  // .profile__card {
-  //   p {
-  //     font-size: 1.2rem;
-  //   }
-  //   .spacer {
-  //     height: 5em;
-  //   }
-  // }
+  .profile__card {
+    p {
+      font-size: 1.2rem;
+    }
+    .spacer {
+      height: 5em;
+    }
+  }
   .header__wrapper-wide {
     display: grid;    
     justify-content: space-around;

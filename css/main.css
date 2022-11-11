@@ -1919,16 +1919,6 @@ a:hover {
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
-  .main-menu {
-    grid-area: menu;
-    width: 100%;
-  }
-  .profile__card p {
-    font-size: 1.2rem;
-  }
-  .profile__card .spacer {
-    height: 5em;
-  }
   .header__wrapper-wide {
     display: grid;
     justify-content: space-around;
