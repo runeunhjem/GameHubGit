@@ -65,6 +65,7 @@
   #yellow {
     color: var(--color-yellow-logo);
   }
+  // transition: all 0.1s;
 }
 
 html {
@@ -144,6 +145,15 @@ footer a {
     color: var(--color-yellow-logo);
   }
 }
+
+
+
+// .menu-flyin .active {
+//   background-color: var(--color-grey-disabled);
+//   border-radius: 0.4em;
+//   cursor: default;
+//   color: var(--color-yellow-logo);
+// }
 
 .close {
   display: flex;
@@ -236,6 +246,14 @@ footer a {
   align-items: center;
 }
 
+// .links .active {
+//   // width: 100%;
+//   // background-color: var(--color-grey-disabled);
+//   // border-radius: 0.4em;
+//   // cursor: default;
+//   // color: var(--color-yellow-logo);
+// }
+
 .topnav__mob {
   display: flex;
   justify-content: center;
@@ -273,6 +291,11 @@ footer a {
   border-right: 2px solid var(--color-yellow-logo);
   border-radius: 0.4em;
 }
+// .menu-flyin .links:hover {
+//   // background-color: var(--color-grey-disabled);
+//   // color: var(--color-yellow-logo);
+  
+// }
 
 .topnav__mob .menu .active {
   background-color: var(--color-grey-disabled);
@@ -294,12 +317,35 @@ footer a {
   }
 }
 
+// .topnav__mob .links img {
+//   width: 24px;
+// }
+
 .topnav__mob, .links a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 0.8rem;
 }
+
+// .top-menu, .links {
+//   width: 146px;
+//   height: 32px;
+// }
+
+// .top-menu, .menu {
+//   // width: 156px;
+//   // border: none;
+// }
+
+// .top-menu .menu .links:hover {
+//   // background-color: var(--color-grey-disabled);
+//   // border-right: 2px solid var(--color-yellow-logo);
+//   // border-top: none;
+//   // border-bottom: none;
+//   // border-radius: 0.4em;
+//   // color: var(--color-yellow-logo);
+// }
 
 .back {
   padding-right: 5px;
@@ -427,9 +473,12 @@ input {
     font-size: 1.4rem;
     text-align: center;
   }
-  .signin_form_wrapper, .register_form_wrapper, .sellgames_form_wrapper {
+  .signin_form_wrapper,
+  .register_form_wrapper,
+  .sellgames_form_wrapper {
     display: flex;
     justify-content: space-between;
+    // width: 360px;
   }
   .full_sign-in_wrapper {
     display: block;
@@ -463,12 +512,14 @@ input {
       margin: 0.4em 0;
     }
   }
-  #password_signin:focus-within, #username_signin:focus-within {
+  #password_signin:focus-within,
+  #username_signin:focus-within {
       background-color: lightgoldenrodyellow;
       color: var(--color-black-90);
     }
     h3, .h3 {
-      margin-top: 1em;      
+      margin-top: 1em;
+      
     }
     .quick_buttons {
       display: flex;
@@ -588,13 +639,35 @@ input {
 .form_paypal, .form_confirm {
   label {
     width: 330px;
+    // text-align: left;
   }
 }
 
-#message:focus-within, #first:focus-within, #last:focus-within, #first-name:focus-within, #last-name:focus-within, #email:focus-within,
-#street-address:focus-within, #zip:focus-within, #city:focus-within, #country:focus-within, #phone:focus-within, #username:focus-within,
-#password:focus-within, #repeat-password:focus-within, #cardnumber:focus-within, #exp_date:focus-within, #cvc:focus-within, #asking-price:focus-within,
-#platform:focus-within, #title:focus-within, #type:focus-within, #cover:focus-within, #rating:focus-within, #gamespot-link:focus-within, #paypal:focus-within,
+#message:focus-within,
+#first:focus-within,
+#last:focus-within,
+#first-name:focus-within,
+#last-name:focus-within,
+#email:focus-within,
+#street-address:focus-within,
+#zip:focus-within,
+#city:focus-within,
+#country:focus-within,
+#phone:focus-within,
+#username:focus-within,
+#password:focus-within,
+#repeat-password:focus-within,
+#cardnumber:focus-within,
+#exp_date:focus-within,
+#cvc:focus-within,
+#asking-price:focus-within,
+#platform:focus-within,
+#title:focus-within,
+#type:focus-within,
+#cover:focus-within,
+#rating:focus-within,
+#gamespot-link:focus-within,
+#paypal:focus-within,
 #confirm:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
@@ -670,7 +743,8 @@ input {
   }
   h6, .h6 {
     padding-bottom: 1em;
-  }  
+  }
+  
 }
 .header__profile-pic {
   background-image: url(../images/img_profilepic_wide.png);
@@ -737,7 +811,8 @@ input {
     background-repeat: no-repeat;
     min-width: 100px;
     min-height: 100px;    
-  }  
+  }
+  
 }
 .spacer {
   height: 2em;
@@ -931,6 +1006,7 @@ input {
   }  
   .row3, .row5 {
     height: 20px;
+    // padding-bottom: 1em;
     border-bottom: var(--border-1px-yellow);
   }
   span, .vat, .price__before, .price__before__top, .price__before__bottom, .checkout_items, .address, .change {
@@ -1081,6 +1157,9 @@ legend {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  // .spacer {
+  //   height: 2em;
+  // }
 }
 .image-mockup {
   img {
@@ -1103,6 +1182,7 @@ legend {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  // margin: 1em auto;
   .detail-image {
     background-image: url(../images/gamedetails/forgelegenddetails2_small.jpg);
     background-size: contain;
@@ -1112,6 +1192,7 @@ legend {
     background-position: left;
   }  
 }
+
 
 .container {
   background-color: var(--color-black-60);
@@ -1196,9 +1277,9 @@ legend {
   overflow: hidden;
   position: relative;
   transition: all 0.3s;
-  }  
+  }
+  
 }
-
 .backtogames {
   grid-area: backtogames;
   display: flex;
@@ -1345,13 +1426,44 @@ legend {
   }
 }
 
-.details {  
+// .product-image, .product-details, .product-addtocart {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .details {
+//   img {    
+//     max-height: 256px;
+//     max-width: 350px;
+//   }
+//   display: grid;
+//   margin: 0 auto;
+//   gap: 10px;
+//   justify-self: center;
+//   align-content: center;
+//   grid-template-columns: 350px;
+//   grid-template-rows: 256px 256px 100px;
+//   grid-template-areas: 
+//   'image'
+//   'details'
+//   'addtocart';
+// }
+.details {
+  // grid-template-columns: 350px 350px;
+  // grid-template-rows: 256px 100px;
+  // grid-template-areas: 
+  // 'image details'
+  // 'addtocart addtocart';
   .psn__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
 }
-
+// .product-price-mob {
+//   display: none;
+// }
 .summary {
   font-size: 1rem;
   max-width: 350px;
@@ -1377,6 +1489,15 @@ legend {
   }
 }
 
+// .product-price-mob {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;  
+//   grid-area: addtocart;  
+//   a {
+//     text-decoration: none;
+//   }
+// }
 .viewdetails__cta,
 .addtocart__cta:hover,
 .checkout__cta:hover,

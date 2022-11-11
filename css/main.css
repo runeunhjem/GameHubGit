@@ -429,11 +429,7 @@ input {
   font-size: 1.4rem;
   text-align: center;
 }
-.index_sign-in .signin_form_wrapper,
-.index_sign-in .register_form_wrapper,
-.index_sign-in .sellgames_form_wrapper, .sellgames .signin_form_wrapper,
-.sellgames .register_form_wrapper,
-.sellgames .sellgames_form_wrapper {
+.index_sign-in .signin_form_wrapper, .index_sign-in .register_form_wrapper, .index_sign-in .sellgames_form_wrapper, .sellgames .signin_form_wrapper, .sellgames .register_form_wrapper, .sellgames .sellgames_form_wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -469,9 +465,7 @@ input {
   margin: 0 20px;
   margin: 0.4em 0;
 }
-.index_sign-in #password_signin:focus-within,
-.index_sign-in #username_signin:focus-within, .sellgames #password_signin:focus-within,
-.sellgames #username_signin:focus-within {
+.index_sign-in #password_signin:focus-within, .index_sign-in #username_signin:focus-within, .sellgames #password_signin:focus-within, .sellgames #username_signin:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
 }
@@ -597,31 +591,10 @@ input {
   width: 330px;
 }
 
-#message:focus-within,
-#first:focus-within,
-#last:focus-within,
-#first-name:focus-within,
-#last-name:focus-within,
-#email:focus-within,
-#street-address:focus-within,
-#zip:focus-within,
-#city:focus-within,
-#country:focus-within,
-#phone:focus-within,
-#username:focus-within,
-#password:focus-within,
-#repeat-password:focus-within,
-#cardnumber:focus-within,
-#exp_date:focus-within,
-#cvc:focus-within,
-#asking-price:focus-within,
-#platform:focus-within,
-#title:focus-within,
-#type:focus-within,
-#cover:focus-within,
-#rating:focus-within,
-#gamespot-link:focus-within,
-#paypal:focus-within,
+#message:focus-within, #first:focus-within, #last:focus-within, #first-name:focus-within, #last-name:focus-within, #email:focus-within,
+#street-address:focus-within, #zip:focus-within, #city:focus-within, #country:focus-within, #phone:focus-within, #username:focus-within,
+#password:focus-within, #repeat-password:focus-within, #cardnumber:focus-within, #exp_date:focus-within, #cvc:focus-within, #asking-price:focus-within,
+#platform:focus-within, #title:focus-within, #type:focus-within, #cover:focus-within, #rating:focus-within, #gamespot-link:focus-within, #paypal:focus-within,
 #confirm:focus-within {
   background-color: lightgoldenrodyellow;
   color: var(--color-black-90);
