@@ -1869,15 +1869,15 @@ a:hover {
     }
     .header__logo {      
       display: none;
-      // grid-area: logo;
-      // background-image: url(../images/img_logo_footer.png);
-      // background-repeat: no-repeat;
-      // background-size: contain;
-      // margin-top: 5px;
+      grid-area: logo;
+      background-image: url(../images/img_logo_footer.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 5px;
     }
     .explore_none {
       display: none;
-      // grid-area: explore;
+      grid-area: explore;
     }
     .explore {     
       display: none;      

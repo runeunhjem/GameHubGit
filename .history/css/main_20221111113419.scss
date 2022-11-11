@@ -66,7 +66,6 @@
   #yellow {
     color: var(--color-yellow-logo);
   }
-  transition: all 0.1s;
 }
 
 html {
@@ -1869,15 +1868,15 @@ a:hover {
     }
     .header__logo {      
       display: none;
-      // grid-area: logo;
-      // background-image: url(../images/img_logo_footer.png);
-      // background-repeat: no-repeat;
-      // background-size: contain;
-      // margin-top: 5px;
+      grid-area: logo;
+      background-image: url(../images/img_logo_footer.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 5px;
     }
     .explore_none {
       display: none;
-      // grid-area: explore;
+      grid-area: explore;
     }
     .explore {     
       display: none;      
@@ -2135,54 +2134,54 @@ a:hover {
     //   display: none;
     //   grid-area: explore;
     // }
-    .explore {
-      display: grid;      
-      width: 100%;
-      height: 100%;
-      grid-area: explore;
-      text-align: center;
-      .lets-explore, h1 {      
-        font-family: 'Roboto';
-        font-style: italic;
-        font-weight: 900;
-        font-size: 4.7vw;
-        white-space: nowrap;
-        color: var(--color-black);
-        -webkit-text-stroke: 1px;
-        -webkit-text-stroke-color: var(--color-yellow-logo);
-      }
-      img {
-        width: 80%;
-      }
-    }
-    // .header__profile-pic {
-    //   background-image: url(../images/img_profilepic_wide.png);
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   grid-area: profile__pic;
-    //   align-self: center;
-    //   background-position-y: top;
-    //   margin: 10px;
-    //   margin-top: 20px;
+    // .explore {
+    //   display: grid;      
+    //   width: 100%;
     //   height: 100%;
+    //   grid-area: explore;
+    //   text-align: center;
+    //   .lets-explore, h1 {      
+    //     font-family: 'Roboto';
+    //     font-style: italic;
+    //     font-weight: 900;
+    //     font-size: 4.7vw;
+    //     white-space: nowrap;
+    //     color: var(--color-black);
+    //     -webkit-text-stroke: 1px;
+    //     -webkit-text-stroke-color: var(--color-yellow-logo);
+    //   }
+    //   img {
+    //     width: 80%;
+    //   }
     // }
-    // .profile__name {
-    //   display: grid;
-    //   grid-area: profile__name;
-    //   text-align: left;
-    //   margin-left: 5px;
-    //   margin-top: 5px;
-    // }
-    // .logout {
-    //   display: grid;
-    //   text-align: right;
-    //   color: var(--color-yellow-logo);
-    //   padding-right: 5px;
-    //   margin-top: 5px;
-    // }
-    // .topnav__mob {
-    //   grid-area: navbar;
-    // }
+    .header__profile-pic {
+      background-image: url(../images/img_profilepic_wide.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-area: profile__pic;
+      align-self: center;
+      background-position-y: top;
+      margin: 10px;
+      margin-top: 20px;
+      height: 100%;
+    }
+    .profile__name {
+      display: grid;
+      grid-area: profile__name;
+      text-align: left;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    .logout {
+      display: grid;
+      text-align: right;
+      color: var(--color-yellow-logo);
+      padding-right: 5px;
+      margin-top: 5px;
+    }
+    .topnav__mob {
+      grid-area: navbar;
+    }
   }
   .buy-sell_buttons img {
     width: 15vh;

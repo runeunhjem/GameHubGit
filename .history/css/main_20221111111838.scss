@@ -66,7 +66,6 @@
   #yellow {
     color: var(--color-yellow-logo);
   }
-  transition: all 0.1s;
 }
 
 html {
@@ -1846,68 +1845,68 @@ a:hover {
   .placeholder {
     display: none;
   }
-  .header__wrapper-wide {
-    height: 140px;
-    display: grid;
-    padding: 0 5px;
-    width: 360px;
-    padding-top: 5px;    
-    justify-content: space-around;
-    align-content: flex-start;
-    grid-template-areas: 
-    'navbar navbar navbar'
-    'profile__pic profile__name logout'
-    'profile__pic . .';
-    grid-template-columns: 80px 200px 80px;
-    grid-template-rows: 45px 75px 15px;    
-    height: 140px;
-    width: 360px;
-    .topnav__mob {
-      grid-area: navbar;
-      width: 360px;      
-      justify-content: center;
-    }
-    .header__logo {      
-      display: none;
-      // grid-area: logo;
-      // background-image: url(../images/img_logo_footer.png);
-      // background-repeat: no-repeat;
-      // background-size: contain;
-      // margin-top: 5px;
-    }
-    .explore_none {
-      display: none;
-      // grid-area: explore;
-    }
-    .explore {     
-      display: none;      
-    }
-    .header__profile-pic {
-      background-image: url(../images/img_profilepic_wide.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      grid-area: profile__pic;
-      align-self: center;
-      background-position-y: top;
-      margin-right: 10px;
-      margin-top: 5px;
-      height: 100%;
-    }
-    .profile__name {
-      display: grid;
-      grid-area: profile__name;
-      text-align: left;
-      margin-left: 5px;
-      margin-top: 5px;
-    }
-    .logout {
-      display: grid;
-      text-align: right;
-      color: var(--color-yellow-logo);
-      padding-right: 5px;
-      margin-top: 5px;
-    }
-  }
+  // .header__wrapper-wide {
+  //   height: 140px;
+  //   display: grid;
+  //   padding: 0 5px;
+  //   width: 360px;
+  //   padding-top: 5px;    
+  //   justify-content: space-around;
+  //   align-content: flex-start;
+  //   grid-template-areas: 
+  //   'navbar navbar navbar'
+  //   'profile__pic profile__name logout'
+  //   'profile__pic . .';
+  //   grid-template-columns: 80px 200px 80px;
+  //   grid-template-rows: 45px 75px 15px;    
+  //   height: 140px;
+  //   width: 360px;
+  //   .topnav__mob {
+  //     grid-area: navbar;
+  //     width: 360px;      
+  //     justify-content: center;
+  //   }
+  //   .header__logo {      
+  //     display: none;
+  //     grid-area: logo;
+  //     background-image: url(../images/img_logo_footer.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+  //     margin-top: 5px;
+  //   }
+  //   .explore_none {
+  //     display: none;
+  //     grid-area: explore;
+  //   }
+  //   .explore {     
+  //     display: none;      
+  //   }
+  //   .header__profile-pic {
+  //     background-image: url(../images/img_profilepic_wide.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+  //     grid-area: profile__pic;
+  //     align-self: center;
+  //     background-position-y: top;
+  //     margin-right: 10px;
+  //     margin-top: 5px;
+  //     height: 100%;
+  //   }
+  //   .profile__name {
+  //     display: grid;
+  //     grid-area: profile__name;
+  //     text-align: left;
+  //     margin-left: 5px;
+  //     margin-top: 5px;
+  //   }
+  //   .logout {
+  //     display: grid;
+  //     text-align: right;
+  //     color: var(--color-yellow-logo);
+  //     padding-right: 5px;
+  //     margin-top: 5px;
+  //   }
+  // }
 }
 // @media screen and (min-width: 769px) and (max-width: 1080px) {
 /* @media screensize from 769px to 1080px */
@@ -1926,7 +1925,7 @@ a:hover {
   }
   .header__wrapper-wide {
     display: grid;
-    // width: 100%;
+    width: 100%;
     grid-template-areas: 
     'menu logo explore profile__pic navbar navbar'
     '. logo explore profile__pic profile__name logout'
@@ -2111,30 +2110,30 @@ a:hover {
   //   }
   // }
   .header__wrapper-wide {
-    // display: grid;    
-    // justify-content: space-around;
-    // grid-template-areas: 
-    // 'menu logo explore profile__pic navbar navbar'
-    // '. logo explore profile__pic profile__name logout'
-    // '. logo explore . . .';
-    // grid-template-columns: 60px 190px 1fr 100px 210px 155px;
-    // grid-template-rows: 45px 75px 15px;
-    // width: 100%;
-    // .topnav__mob {
-      // width: 100%;
-      // justify-content: center;
-    // }
-    // .header__logo {
-    // grid-area: logo;
-    // background-image: url(../images/img_logo_footer.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // margin-top: 5px;
-    // }
-    // .explore_none {
-    //   display: none;
-    //   grid-area: explore;
-    // }
+    display: grid;    
+    justify-content: space-around;
+    grid-template-areas: 
+    'menu logo explore profile__pic navbar navbar'
+    '. logo explore profile__pic profile__name logout'
+    '. logo explore . . .';
+    grid-template-columns: 60px 190px 1fr 100px 210px 155px;
+    grid-template-rows: 45px 75px 15px;
+    width: 100%;
+    .topnav__mob {
+      width: 100%;
+      justify-content: center;
+    }
+    .header__logo {
+    grid-area: logo;
+    background-image: url(../images/img_logo_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+    }
+    .explore_none {
+      display: none;
+      grid-area: explore;
+    }
     .explore {
       display: grid;      
       width: 100%;
@@ -2155,34 +2154,34 @@ a:hover {
         width: 80%;
       }
     }
-    // .header__profile-pic {
-    //   background-image: url(../images/img_profilepic_wide.png);
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   grid-area: profile__pic;
-    //   align-self: center;
-    //   background-position-y: top;
-    //   margin: 10px;
-    //   margin-top: 20px;
-    //   height: 100%;
-    // }
-    // .profile__name {
-    //   display: grid;
-    //   grid-area: profile__name;
-    //   text-align: left;
-    //   margin-left: 5px;
-    //   margin-top: 5px;
-    // }
-    // .logout {
-    //   display: grid;
-    //   text-align: right;
-    //   color: var(--color-yellow-logo);
-    //   padding-right: 5px;
-    //   margin-top: 5px;
-    // }
-    // .topnav__mob {
-    //   grid-area: navbar;
-    // }
+    .header__profile-pic {
+      background-image: url(../images/img_profilepic_wide.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-area: profile__pic;
+      align-self: center;
+      background-position-y: top;
+      margin: 10px;
+      margin-top: 20px;
+      height: 100%;
+    }
+    .profile__name {
+      display: grid;
+      grid-area: profile__name;
+      text-align: left;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+    .logout {
+      display: grid;
+      text-align: right;
+      color: var(--color-yellow-logo);
+      padding-right: 5px;
+      margin-top: 5px;
+    }
+    .topnav__mob {
+      grid-area: navbar;
+    }
   }
   .buy-sell_buttons img {
     width: 15vh;

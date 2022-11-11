@@ -57,6 +57,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1rem;
+  transition: all 0.1s;
 }
 * #yellow {
   color: var(--color-yellow-logo);
@@ -1722,15 +1723,9 @@ a:hover {
   }
   .header__wrapper-wide .header__logo {
     display: none;
-    grid-area: logo;
-    background-image: url(../images/img_logo_footer.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 5px;
   }
   .header__wrapper-wide .explore_none {
     display: none;
-    grid-area: explore;
   }
   .header__wrapper-wide .explore {
     display: none;
@@ -1775,7 +1770,6 @@ a:hover {
   }
   .header__wrapper-wide {
     display: grid;
-    width: 100%;
     grid-template-areas: "menu logo explore profile__pic navbar navbar" ". logo explore profile__pic profile__name logout" ". logo explore . . .";
     grid-template-columns: 80px 150px 1fr 100px 210px 155px;
     grid-template-rows: 45px 75px 15px;
@@ -1919,29 +1913,6 @@ a:hover {
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
-  .header__wrapper-wide {
-    display: grid;
-    justify-content: space-around;
-    grid-template-areas: "menu logo explore profile__pic navbar navbar" ". logo explore profile__pic profile__name logout" ". logo explore . . .";
-    grid-template-columns: 60px 190px 1fr 100px 210px 155px;
-    grid-template-rows: 45px 75px 15px;
-    width: 100%;
-  }
-  .header__wrapper-wide .topnav__mob {
-    width: 100%;
-    justify-content: center;
-  }
-  .header__wrapper-wide .header__logo {
-    grid-area: logo;
-    background-image: url(../images/img_logo_footer.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 5px;
-  }
-  .header__wrapper-wide .explore_none {
-    display: none;
-    grid-area: explore;
-  }
   .header__wrapper-wide .explore {
     display: grid;
     width: 100%;
@@ -1961,34 +1932,6 @@ a:hover {
   }
   .header__wrapper-wide .explore img {
     width: 80%;
-  }
-  .header__wrapper-wide .header__profile-pic {
-    background-image: url(../images/img_profilepic_wide.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-area: profile__pic;
-    align-self: center;
-    background-position-y: top;
-    margin: 10px;
-    margin-top: 20px;
-    height: 100%;
-  }
-  .header__wrapper-wide .profile__name {
-    display: grid;
-    grid-area: profile__name;
-    text-align: left;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
-  .header__wrapper-wide .logout {
-    display: grid;
-    text-align: right;
-    color: var(--color-yellow-logo);
-    padding-right: 5px;
-    margin-top: 5px;
-  }
-  .header__wrapper-wide .topnav__mob {
-    grid-area: navbar;
   }
   .buy-sell_buttons img {
     width: 15vh;
