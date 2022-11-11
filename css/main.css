@@ -1878,9 +1878,7 @@ a:hover {
     display: flex;
     width: 100%;
   }
-  .left, .middle, .right,
-.get-app,
-.trustpilot {
+  .left, .middle, .right, .get-app, .trustpilot {
     border-bottom: 0;
     margin-top: 0;
   }
@@ -2051,15 +2049,6 @@ a:hover {
   }
   .footer__wrapper, .links, .widescreen {
     display: flex;
-  }
-  .left, .middle, .right,
-.get-app,
-.trustpilot {
-    border-bottom: 0;
-    margin-top: 0;
-  }
-  .trustpilot__images {
-    padding-top: 1em;
   }
   .social-media {
     margin-top: 0.5em;

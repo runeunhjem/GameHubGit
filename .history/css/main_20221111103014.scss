@@ -2180,15 +2180,15 @@ a:hover {
   .footer__wrapper, .links, .widescreen {
     display: flex;
   }
-  // .left, .middle, .right,
-  // .get-app,
-  // .trustpilot {
-  //   border-bottom: 0;
-  //   margin-top: 0;
-  // }
-  // .trustpilot__images {
-  //   padding-top: 1em;
-  // }
+  .left, .middle, .right,
+  .get-app,
+  .trustpilot {
+    border-bottom: 0;
+    margin-top: 0;
+  }
+  .trustpilot__images {
+    padding-top: 1em;
+  }
   .social-media {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
