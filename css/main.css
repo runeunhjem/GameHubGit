@@ -1582,8 +1582,7 @@ a:hover {
   gap: 2em;
 }
 
-.get-app,
-.social-media {
+.get-app {
   display: block;
   justify-content: center;
   align-items: center;

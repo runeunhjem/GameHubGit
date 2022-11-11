@@ -1672,11 +1672,12 @@ a:hover {
   
 }
 
-.get-app {
+.get-app,
+.social-media {
   display: block;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--color-yellow-logo);
+  // border-bottom: 1px solid var(--color-yellow-logo);
   
 }
 
