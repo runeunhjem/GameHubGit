@@ -1051,7 +1051,6 @@ legend {
   text-align: center;
   width: 90%;
   max-width: 600px;
-  height: 460px;
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
   background-color: var(--color-black-60);
