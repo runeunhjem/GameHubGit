@@ -1,11 +1,6 @@
 # GameHubGit
 2022.11.08:
 Still a work in progress.
-Designwise, all done, so now its code and functionality that remains.
-
-I have pr november 8. 2022 only put in image placeholders in the psn-grid.html, product_details_ps5-forge-legend-disc.html, cart.html & wishlist.html.
-Will be using the rest of the time available before CA deadline to convert them to CSS grids. Thats the plan anyways.
-So hopefully there is enough time to make everything happen in time.
 
 GitHub: 
 https://github.com/runeunhjem/GameHubGit
@@ -22,3 +17,78 @@ https://www.figma.com/proto/RkjKDQ4C5js6YiEh0eiuUz/Game-Hub?page-id=1%3A2&node-i
 
 
 
+References: 
+
+Images 
+
+Background image: 
+Unsplash (harsh-gupta-1LHDZjtDhCY-unsplash.jpg) 
+
+Profile image: 
+Unsplash (erik-mclean-qgInQSplXBU-unsplash.jpg) 
+
+Product Details (2 images)
+Unsplash
+ 
+
+Icons 
+
+Material Design Icons Plugin (Community) 
+
+Material Design Icons Plugin 
+
+Icons8 Icons Plugin (Within the Material Design Icons Plugin) 
+
+IconFinder 
+
+ 
+
+Logos 
+
+https://logos-download.com/ 
+
+ 
+
+Website Inspirations & Partner links 
+
+https://gamezone.no/ 
+
+https://www.g2a.com/ 
+
+https://www.gamespot.com/ 
+
+https://www.imdb.com/ 
+
+https://www.gamesradar.com/new-games-2022/ 
+
+https://www.metacritic.com/browse/games/release-date/new-releases/all/date 
+
+ 
+
+Product Details 
+
+Horizon Forbidden West  
+
+Producer: Guerrilla 
+https://www.guerrilla-games.com/games 
+
+ 
+
+Typography 
+
+https://type-scale.com/ 
+
+https://www.fontpair.co/category/sansserif 
+
+ 
+Links to outside project sites:
+
+https://www.trustpilot.com/ 
+https://www.facebook.com/ 
+https://www.instagram.com/
+https://www.youtube.com/ 
+
+https://www.gamespot.com/games/reviews/ 
+
+
+ 
