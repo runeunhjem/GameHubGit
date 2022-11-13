@@ -1114,7 +1114,7 @@ legend {
   border-radius: var(--border-radius-boxes);
   width: 360px;
   height: 350px;
-  padding: 2px 5px 0 0;
+  padding: 4px 5px 0 0px;
 }
 
 .container:hover {
@@ -1835,8 +1835,7 @@ a:hover {
     box-shadow: none;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 4px;
   }
   .description {
     width: 500px;

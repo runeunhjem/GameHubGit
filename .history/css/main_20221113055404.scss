@@ -1123,7 +1123,7 @@ legend {
   width: 360px;
   height: 350px;
   // padding-right: 5px;
-  padding: 4px 5px 0 0px;
+  padding: 4px 5px 0 4px;
   // text-indent:  0px;
 }
 .container:hover {
@@ -1840,8 +1840,9 @@ a:hover {
       .container {
         box-shadow: none;
         border: none;
-        background-color: #0000;        
-        margin-left: 4px;
+        background-color: #0000;
+        margin-top: 10px;
+        margin-left: 10px;
       }
     }
   }
