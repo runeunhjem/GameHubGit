@@ -785,6 +785,7 @@ input {
   padding: 1em;
   margin-bottom: 2em;
   width: 360px;
+  max-width: 360px;
 }
 
 /* Contact Page */
@@ -1065,9 +1066,6 @@ legend {
 }
 .checkout_success .success__wrapper img {
   width: 110px;
-}
-.checkout_success .profile-links {
-  width: 100%;
 }
 
 /* Playstation Grid Page */
@@ -1833,8 +1831,8 @@ a:hover {
     box-shadow: none;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .description {
     width: 500px;
@@ -1892,7 +1890,7 @@ a:hover {
     display: flex;
   }
   .profile-links {
-    width: 400px;
+    width: 360px;
   }
   .contact .divider {
     display: none;
