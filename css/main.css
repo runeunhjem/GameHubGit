@@ -1114,12 +1114,16 @@ legend {
   border-radius: var(--border-radius-boxes);
   width: 360px;
   height: 350px;
-  padding-right: 5px;
+  padding: 2px 5px 0 0;
 }
 
 .container:hover {
   border-radius: var(--border-radius-boxes);
   box-shadow: 3px 3px 8px var(--color-yellow-logo);
+}
+
+.type {
+  text-indent: 6px;
 }
 
 .items {

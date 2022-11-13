@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;900&display=swap");
 
-:root {
+:root {.container
   /* Styles */
   --border-1px-yellow: 1px solid #F5C518;
   --border-radius-boxes: 0.4em; 
@@ -1122,16 +1122,11 @@ legend {
   border-radius: var(--border-radius-boxes);
   width: 360px;
   height: 350px;
-  // padding-right: 5px;
-  padding: 2px 5px 0 0;
-  // text-indent:  0px;
+  padding-right: 5px;
 }
 .container:hover {
   border-radius: var(--border-radius-boxes);
     box-shadow: 3px 3px 8px var(--color-yellow-logo);
-}
-.type {
-  text-indent: 6px;
 }
 .items {
   display: grid;
