@@ -342,7 +342,6 @@ main {
   min-height: 50vh;
 }
 
-
 .yellow, .price__before {
   color: var(--color-yellow-logo);
 }
@@ -406,7 +405,7 @@ input {
 /* Sign in or Register | Main section */
 .index_sign-in, .sellgames {
   min-height: 50vh;
-  justify-content: flex-start;
+  justify-content: flex-start;  
   width: 100%;
   text-align: center;
   input{
@@ -443,7 +442,7 @@ input {
   .sign_in, .register, .sellgames  {
     margin: 0.6em 0;
     display: flex;
-    width: 350px;
+    width: 320px;
     height: 100px;
     align-items: center;
     justify-content: space-around;
@@ -1810,7 +1809,8 @@ a:hover {
   }
   .index_sign-in {
     .sign_in, .register, .sellgames {
-      width: 360px;      
+      width: 360px;
+      just
     }
   }
   .profile-links {

@@ -439,7 +439,7 @@ input {
 .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames, .sellgames .sign_in, .sellgames .register, .sellgames .sellgames {
   margin: 0.6em 0;
   display: flex;
-  width: 320px;
+  width: 350px;
   height: 100px;
   align-items: center;
   justify-content: space-around;
