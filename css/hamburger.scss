@@ -1,0 +1,15 @@
+nav {
+    display: none;
+}
+
+nav ul {
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
