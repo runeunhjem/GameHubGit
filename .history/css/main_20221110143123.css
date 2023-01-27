@@ -1,0 +1,2106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;900&display=swap");
+:root {
+  /* Styles */
+  --border-1px-yellow: 1px solid #F5C518;
+  --border-radius-boxes: 0.4em;
+  /* Color styles */
+  --color-yellow-logo: #F5C518;
+  --color-yellow-80: rgba(245, 197, 24, 0.5);
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-red: #EF5A5A;
+  --color-green-checked: #2DEB35;
+  --color-black-60: rgba(0, 0, 0, 0.6);
+  --color-grey-disabled: #404040;
+  --color-black-90: rgba(0, 0, 0, 0.9);
+  /* Font styles */
+}
+:root h2, :root h3, :root h4, :root h5, :root h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+:root h1, :root .lets-explore {
+  font-family: "Roboto";
+  font-size: 3.583rem;
+  line-height: 67px;
+  font-weight: 400;
+}
+:root h2 {
+  font-size: 2.986rem;
+  line-height: 58px;
+}
+:root h3, :root .h3 {
+  font-size: 2.488rem;
+  line-height: 48px;
+}
+:root h4, :root .h4 {
+  font-size: 2.074rem;
+  line-height: 40px;
+  color: var(--color-yellow-logo);
+}
+:root .h4 {
+  color: var(--color-white);
+}
+:root h5, :root .h5 {
+  font-size: 1.728rem;
+  line-height: 33px;
+}
+:root h6, :root .h6 {
+  font-weight: 600;
+  font-size: 1.44rem;
+  line-height: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+* #yellow {
+  color: var(--color-yellow-logo);
+}
+
+html {
+  font-family: Roboto, Inter, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-black-90);
+  background-image: url(../images/bg-img.jpg);
+  background-size: 100%;
+  color: var(--color-white);
+  height: 100vh;
+}
+
+/* Header section */
+header {
+  border-bottom: 1px solid var(--color-yellow-logo);
+  background-color: var(--color-black-60);
+  width: 100%;
+}
+
+/* Skip-to main tip from https://css-tricks.com/how-to-create-a-skip-to-content-link/#maincontent */
+.skip-link {
+  background: var(--color-black-90);
+  color: var(--color-yellow-logo);
+  font-weight: 700;
+  left: 1%;
+  top: 10px;
+  padding: 4px;
+  border-radius: 0.4em;
+  border: 1px solid var(--color-yellow-logo);
+  position: absolute;
+  transform: translateY(-200px);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+header a,
+footer a {
+  color: var(--color-white);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.explore_none,
+.explore,
+.logout,
+.profile__name {
+  display: none;
+}
+
+.links a {
+  width: 100%;
+}
+
+.menu-flyin {
+  display: none;
+  position: fixed;
+  width: 160px;
+  height: 360px;
+  top: 47px;
+  right: 6px;
+  margin: 0;
+  background-color: var(--color-black-90);
+  z-index: 999;
+  border: 1px solid var(--color-yellow-logo);
+  border-radius: 1em;
+}
+.menu-flyin .active {
+  height: 24px;
+}
+
+.menu-flyin .links:hover {
+  background-color: var(--color-grey-disabled);
+  color: var(--color-yellow-logo);
+  border-right: 2px solid var(--color-yellow-logo);
+  border-radius: 0.4em;
+}
+
+.menu-flyin .active {
+  background-color: var(--color-grey-disabled);
+  border-radius: 0.4em;
+  cursor: default;
+  color: var(--color-yellow-logo);
+}
+
+.close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 20px;
+  gap: 3px;
+  margin-left: 80px;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.close img {
+  padding: 2px;
+  width: 20px;
+}
+
+.menu-flyin .links {
+  display: flex;
+  width: 140px;
+  padding: 3px 0;
+  margin: 0 3px;
+  z-index: 999;
+  cursor: pointer;
+}
+.menu-flyin .links img {
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+#ham-burger, #top-burger {
+  display: none;
+}
+
+#top-burger:checked ~ .menu-flyin {
+  display: block;
+  -webkit-animation-name: flyin;
+          animation-name: flyin;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes flyin {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 47px;
+  }
+}
+
+@keyframes flyin {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 47px;
+  }
+}
+.header__wrapper {
+  margin: 0 auto;
+  height: 140px;
+  width: 100%;
+}
+
+.top-burger {
+  cursor: pointer;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  position: fixed;
+  height: 35px;
+  background: var(--color-black);
+  border-radius: 0.5em;
+  padding-top: 0px;
+  z-index: 1000;
+}
+
+.navbar-top .topmenu__images {
+  margin: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top .top-menu {
+  display: inline-block;
+  margin-top: 2px;
+  width: 100%;
+  border: 0px;
+}
+
+.menu {
+  align-items: center;
+}
+
+.links .active {
+  width: 100%;
+  background-color: var(--color-grey-disabled);
+  border-radius: 0.4em;
+  cursor: default;
+  color: var(--color-yellow-logo);
+}
+
+.topnav__mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  padding: 0;
+}
+
+.topnav__mob .menu {
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  align-items: center;
+  width: 360px;
+  height: 35px;
+  border-radius: 0.5em;
+  border: 1px solid var(--color-yellow-logo);
+  padding: 0;
+}
+
+.topnav__mob .links:hover {
+  background-color: var(--color-grey-disabled);
+  border-top: 1px solid var(--color-yellow-logo);
+  border-bottom: 1px solid var(--color-yellow-logo);
+  border-radius: 0.4em;
+  color: var(--color-yellow-logo);
+}
+
+.menu-flyin .links:hover {
+  background-color: var(--color-grey-disabled);
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  color: var(--color-yellow-logo);
+}
+
+.topnav__mob .menu .active {
+  background-color: var(--color-grey-disabled);
+  border-radius: 0.4em;
+  cursor: default;
+  color: var(--color-yellow-logo);
+}
+
+.topnav__mob .links {
+  display: Flex;
+  list-style: none;
+  align-items: center;
+  padding: 3px 0;
+  width: auto;
+  height: 30px;
+  justify-content: flex-start;
+}
+
+.topnav__mob .links img {
+  width: 24px;
+}
+
+.topnav__mob, .links a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.top-menu, .links {
+  width: 146px;
+  height: 32px;
+}
+
+.top-menu, .menu {
+  width: 156px;
+  border: none;
+}
+
+.top-menu .menu .links:hover {
+  background-color: var(--color-grey-disabled);
+  border-right: 2px solid var(--color-yellow-logo);
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0.4em;
+  color: var(--color-yellow-logo);
+}
+
+.back {
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Main section*/
+  /* Put section ID's here from the different pages */
+  /* Homepage | Main section */
+  /* Global text indent - all inputs */
+  /* Sign in or Register | Main section */
+  /* Register form & Sell Games Form*/
+  /* About Us Page */
+  /* Profile Page */
+  /* Contact Page */
+  /* Checkout page */
+  /* Checkout Success Page */
+  /* Playstation Grid Page */
+  /* Product Details */
+  /* Shopping Cart & Wishlist */
+  /* Footer */
+  /* @media screensize under 769px */
+  /* @media screensize from 769px to 1080px */
+  /* PSN-GRID */
+}
+.back .back {
+  width: 100%;
+}
+.back .back a {
+  width: 100%;
+}
+.back .index_sign-in__profile_pic {
+  background-image: url(../images/img_profilepic_unregistered.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: profile__pic;
+  align-self: center;
+  background-position-y: top;
+  margin-right: 10px;
+  margin-top: 5px;
+  height: 100%;
+}
+.back main {
+  background-color: var(--color-black-60);
+}
+.back .index, .back .index_sign-in, .back .about, .back .profile, .back .contact, .back .checkout, .back .checkout_success, .back .sellgames {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 50vh;
+}
+.back .yellow, .back .price__before {
+  color: var(--color-yellow-logo);
+}
+.back .index .buy-sell_buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 5em;
+}
+.back .index .buy-sell_buttons img:hover {
+  transform: scale(1.5);
+}
+.back .index .buy-sell_buttons img {
+  width: 12vh;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.back .index .buy-sell_buttons a {
+  border-radius: 50%;
+}
+.back .index .logo__main {
+  display: flex;
+  margin: 0;
+  width: 80%;
+  max-width: 1000px;
+  height: 40vh;
+  justify-content: center;
+  background-image: url(../images/gamehub/logo_ylw_blk.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.back .index .apps {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-around;
+  margin: 2em auto 4em auto;
+}
+.back .index .apps img:hover {
+  transform: scale(1.1);
+}
+.back .index .apps img {
+  align-items: center;
+  width: 100%;
+  max-width: 156px;
+  transition: all 0.3s;
+}
+.back input {
+  text-indent: 10px;
+}
+.back .index_sign-in, .back .sellgames {
+  min-height: 50vh;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: center;
+}
+.back .index_sign-in input, .back .sellgames input {
+  text-indent: 10px;
+}
+.back .index_sign-in h1, .back .index_sign-in .lets-explore, .back .sellgames h1, .back .sellgames .lets-explore {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  font-family: "Roboto";
+  font-size: 2.8rem;
+  white-space: nowrap;
+}
+.back .index_sign-in fieldset, .back .sellgames fieldset {
+  width: 350px;
+  border: 1px solid var(--color-yellow-logo);
+  padding: 0.3em;
+  border-radius: var(--border-radius-boxes);
+  color: var(--color-white);
+  background-color: var(--color-black-60);
+}
+.back .index_sign-in legend, .back .sellgames legend {
+  padding: 0 0.5em;
+  color: var(--color-yellow-logo);
+  font-size: 1.4rem;
+  text-align: center;
+}
+.back .index_sign-in .signin_form_wrapper,
+.back .index_sign-in .register_form_wrapper,
+.back .index_sign-in .sellgames_form_wrapper, .back .sellgames .signin_form_wrapper,
+.back .sellgames .register_form_wrapper,
+.back .sellgames .sellgames_form_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.back .index_sign-in .full_sign-in_wrapper, .back .sellgames .full_sign-in_wrapper {
+  display: block;
+}
+.back .index_sign-in .sign_in, .back .index_sign-in .register, .back .index_sign-in .sellgames, .back .sellgames .sign_in, .back .sellgames .register, .back .sellgames .sellgames {
+  margin: 0.6em 0;
+  display: flex;
+  width: 320px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+.back .index_sign-in .sign_in label, .back .index_sign-in .register label, .back .index_sign-in .sellgames label, .back .sellgames .sign_in label, .back .sellgames .register label, .back .sellgames .sellgames label {
+  display: flex;
+  color: var(--color-white);
+  justify-content: left;
+}
+.back .index_sign-in .sign_in .sign-in-button, .back .index_sign-in .sign_in .register-button, .back .index_sign-in .register .sign-in-button, .back .index_sign-in .register .register-button, .back .index_sign-in .sellgames .sign-in-button, .back .index_sign-in .sellgames .register-button, .back .sellgames .sign_in .sign-in-button, .back .sellgames .sign_in .register-button, .back .sellgames .register .sign-in-button, .back .sellgames .register .register-button, .back .sellgames .sellgames .sign-in-button, .back .sellgames .sellgames .register-button {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+.back .index_sign-in .sign_in #username_signin, .back .index_sign-in .sign_in #password_signin, .back .index_sign-in .register #username_signin, .back .index_sign-in .register #password_signin, .back .index_sign-in .sellgames #username_signin, .back .index_sign-in .sellgames #password_signin, .back .sellgames .sign_in #username_signin, .back .sellgames .sign_in #password_signin, .back .sellgames .register #username_signin, .back .sellgames .register #password_signin, .back .sellgames .sellgames #username_signin, .back .sellgames .sellgames #password_signin {
+  width: 150px;
+  background-color: var(--color-black);
+  color: var(--color-yellow-logo);
+  border: 1px solid var(--color-yellow-logo);
+  height: 30px;
+  border-radius: 0.4em;
+  margin: 0 20px;
+  margin: 0.4em 0;
+}
+.back .index_sign-in #password_signin:focus-within,
+.back .index_sign-in #username_signin:focus-within, .back .sellgames #password_signin:focus-within,
+.back .sellgames #username_signin:focus-within {
+  background-color: lightgoldenrodyellow;
+  color: var(--color-black-90);
+}
+.back .index_sign-in h3, .back .index_sign-in .h3, .back .sellgames h3, .back .sellgames .h3 {
+  margin-top: 1em;
+}
+.back .index_sign-in .quick_buttons, .back .sellgames .quick_buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 370px;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+.back .index_sign-in .quick_buttons a, .back .sellgames .quick_buttons a {
+  display: flex;
+  width: 128px;
+  height: 40px;
+  text-decoration: none;
+  justify-content: space-evenly;
+  background-color: var(--color-black-90);
+  color: var(--color-white);
+  border: 1px solid var(--color-yellow-logo);
+  padding: 10px;
+  align-items: center;
+  font-size: 1.15rem;
+  white-space: nowrap;
+}
+.back .index_sign-in a, .back .sellgames a {
+  border: 1px solid var(--color-black-90);
+  background-color: var(--color-yellow-logo);
+  color: var(--color-black-90);
+  padding: 3px 8em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: 400;
+}
+.back .index_sign-in .facebook::before, .back .sellgames .facebook::before {
+  content: url(../images/ico_facebook.svg);
+}
+.back .index_sign-in .google::before, .back .sellgames .google::before {
+  content: url(../images/ico_google-chrome.svg);
+}
+.back .index_sign-in a:hover, .back .sellgames a:hover {
+  background-color: var(--color-grey-disabled);
+  color: var(--color-yellow-logo);
+  border: 1px solid var(--color-yellow-logo);
+}
+.back .index_sign-in h4, .back .index_sign-in h4, .back .sellgames h4, .back .sellgames h4 {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+.back .index_sign-in .register, .back .index_sign-in .sellgames, .back .sellgames .register, .back .sellgames .sellgames {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.back .index_sign-in .register a, .back .index_sign-in .sellgames a, .back .sellgames .register a, .back .sellgames .sellgames a {
+  width: 315px;
+  white-space: nowrap;
+  padding: 4px 0;
+}
+.back .index_sign-in .register #street-address, .back .index_sign-in .register #email, .back .index_sign-in .register #title, .back .index_sign-in .register #repeat-password, .back .index_sign-in .sellgames #street-address, .back .index_sign-in .sellgames #email, .back .index_sign-in .sellgames #title, .back .index_sign-in .sellgames #repeat-password, .back .sellgames .register #street-address, .back .sellgames .register #email, .back .sellgames .register #title, .back .sellgames .register #repeat-password, .back .sellgames .sellgames #street-address, .back .sellgames .sellgames #email, .back .sellgames .sellgames #title, .back .sellgames .sellgames #repeat-password {
+  width: 330px;
+}
+.back .index_sign-in .register #paypal, .back .index_sign-in .register #confirm, .back .index_sign-in .register #title, .back .index_sign-in .sellgames #paypal, .back .index_sign-in .sellgames #confirm, .back .index_sign-in .sellgames #title, .back .sellgames .register #paypal, .back .sellgames .register #confirm, .back .sellgames .register #title, .back .sellgames .sellgames #paypal, .back .sellgames .sellgames #confirm, .back .sellgames .sellgames #title {
+  width: 330px;
+}
+.back .index_sign-in .register .register-button, .back .index_sign-in .sellgames .register-button, .back .sellgames .register .register-button, .back .sellgames .sellgames .register-button {
+  margin-top: 1.3em;
+}
+.back .sell-info {
+  width: 310px;
+  padding: 1em;
+  background-color: var(--color-black-60);
+  border-radius: var(--border-radius-boxes);
+  border: var(--border-1px-yellow);
+  margin: 1em auto;
+}
+.back .fieldset_register, .back .fieldset_sellgames {
+  height: 570px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.back .fieldset_register label, .back .fieldset_sellgames label {
+  width: 151px;
+  text-align: left;
+}
+.back .fieldset_sellgames {
+  display: flex;
+  justify-content: center;
+  height: 540px;
+  width: 358px;
+}
+.back .fieldset_sellgames .divider {
+  margin: 1em auto;
+}
+.back .sellgames-button {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.back .sellgames-button a {
+  display: flex;
+  justify-content: space-around;
+}
+.back .form_confirm {
+  margin: 1em auto;
+}
+.back .form_paypal label, .back .form_confirm label {
+  width: 330px;
+}
+.back #message:focus-within,
+.back #first:focus-within,
+.back #last:focus-within,
+.back #first-name:focus-within,
+.back #last-name:focus-within,
+.back #email:focus-within,
+.back #street-address:focus-within,
+.back #zip:focus-within,
+.back #city:focus-within,
+.back #country:focus-within,
+.back #phone:focus-within,
+.back #username:focus-within,
+.back #password:focus-within,
+.back #repeat-password:focus-within,
+.back #cardnumber:focus-within,
+.back #exp_date:focus-within,
+.back #cvc:focus-within,
+.back #asking-price:focus-within,
+.back #platform:focus-within,
+.back #title:focus-within,
+.back #type:focus-within,
+.back #cover:focus-within,
+.back #rating:focus-within,
+.back #gamespot-link:focus-within,
+.back #paypal:focus-within,
+.back #confirm:focus-within {
+  background-color: lightgoldenrodyellow;
+  color: var(--color-black-90);
+}
+.back #first-name, .back #last-name, .back #email, .back #street-address, .back #zip, .back #city, .back #country, .back #phone, .back #username, .back #password, .back #repeat-password,
+.back #first, .back #last, .back #message, .back #cvc, .back #exp_date, .back #cardnumber, .back #asking-price, .back #platform, .back #title, .back #type, .back #cover, .back #rating, .back #gamespot-link, .back #paypal, .back #confirm {
+  width: 152px;
+  background-color: var(--color-black);
+  color: var(--color-yellow-logo);
+  border: 1px solid var(--color-yellow-logo);
+  height: 30px;
+  border-radius: 0.4em;
+  margin: 0.4em 0;
+}
+.back .required {
+  color: var(--color-red);
+}
+.back .required:before {
+  content: ".";
+  color: rgba(0, 0, 0, 0);
+}
+.back .divider {
+  text-align: center;
+  width: 200px;
+  height: 1em;
+  margin: 0 auto 1em auto;
+  border-bottom: 1px solid var(--color-yellow-logo);
+}
+.back .about-us__content {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.back .about-us__content, .back .contact_intro {
+  display: block;
+  justify-content: left;
+  padding: 1em;
+  margin-bottom: 1em;
+  max-width: 580px;
+  border-radius: var(--border-radius-boxes);
+}
+.back .about, .back .profile, .back .checkout_success, .back .psn-grid {
+  width: 90%;
+  min-height: 50vh;
+  text-align: center;
+}
+.back .about h1, .back .profile h1, .back .checkout_success h1, .back .psn-grid h1 {
+  font-weight: 400;
+  line-height: 97px;
+}
+.back .about h3, .back .about h3, .back .profile h3, .back .profile h3, .back .checkout_success h3, .back .checkout_success h3, .back .psn-grid h3, .back .psn-grid h3 {
+  color: var(--color-yellow-logo);
+}
+.back .about p, .back .profile p, .back .checkout_success p, .back .psn-grid p {
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+.back .about .bottomdivider, .back .about .divider_about, .back .profile .bottomdivider, .back .profile .divider_about, .back .checkout_success .bottomdivider, .back .checkout_success .divider_about, .back .psn-grid .bottomdivider, .back .psn-grid .divider_about {
+  margin-bottom: 2em;
+}
+.back .profile {
+  width: 100%;
+}
+.back .profile h4, .back .profile .h4 {
+  padding-bottom: 0.5em;
+}
+.back .profile h6, .back .profile .h6 {
+  padding-bottom: 1em;
+}
+.back .stats, .back .checkout__cart {
+  display: grid;
+  grid-template-columns: 80px 80px 100px;
+  grid-template-rows: 25px 25px 25px 45px;
+  background-color: var(--color-black-90);
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  margin-bottom: 2em;
+  align-items: center;
+  padding: 10px 0.8em 0 0.8em;
+}
+.back .stats .amount, .back .stats .type, .back .checkout__cart .amount, .back .checkout__cart .type {
+  text-align: right;
+}
+.back .stats .bought, .back .checkout__cart .bought {
+  color: var(--color-white);
+  text-align: left;
+}
+.back .stats .sold, .back .checkout__cart .sold {
+  color: var(--color-yellow-logo);
+}
+.back .profile__card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 10px;
+  width: 90%;
+  background-color: var(--color-black-90);
+  max-width: 600px;
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+}
+.back .profile__card p {
+  font-size: 1rem;
+  text-align: left;
+}
+.back .profile__card .picture {
+  background-position: top right;
+  background-image: url(../images/img_profilepic_wide.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 100px;
+  min-height: 100px;
+}
+.back .spacer {
+  height: 2em;
+}
+.back .buy-games__left, .back .goto-cart {
+  padding: 1em 0;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+  align-items: center;
+}
+.back .buy-games__left a, .back .goto-cart a {
+  display: flex;
+  align-items: center;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+  font-size: 1rem;
+}
+.back .buy-games__left a:hover, .back .goto-cart a:hover {
+  text-decoration: underline;
+}
+.back .buy-games__left a:before {
+  content: url(../images/ico_arrow_left.svg);
+  padding: 5px;
+  height: 16px;
+}
+.back .goto-cart a:after {
+  content: url(../images/ico_arrow-right1.svg);
+  padding: 5px;
+  height: 16px;
+}
+.back .profile-links {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 360px;
+}
+.back .contact {
+  max-width: 100%;
+}
+.back .contact h1 {
+  margin-top: 0.4em;
+  font-weight: 400;
+}
+.back .contact .contact_intro {
+  text-align: center;
+  font-size: 1rem;
+}
+.back .contact .contact__wrapper {
+  display: block;
+  justify-content: space-around;
+}
+.back .contact .contact__wrapper .contact-info, .back .contact .contact__wrapper .visit-info, .back .contact .contact__wrapper .send-message {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5em;
+}
+.back .contact .contact__wrapper .contact-info .spacer, .back .contact .contact__wrapper .visit-info .spacer, .back .contact .contact__wrapper .send-message .spacer {
+  height: 1em;
+}
+.back .contact .contact__wrapper .contact-info p, .back .contact .contact__wrapper .visit-info p, .back .contact .contact__wrapper .send-message p {
+  font-size: 1rem;
+}
+.back .contact .contact__wrapper .contact-info a, .back .contact .contact__wrapper .visit-info a, .back .contact .contact__wrapper .send-message a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.back .contact .contact__wrapper .contact-info a:hover, .back .contact .contact__wrapper .visit-info a:hover, .back .contact .contact__wrapper .send-message a:hover {
+  color: var(--color-yellow-logo);
+}
+.back .contact .contact__wrapper .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back .contact .contact__wrapper .visit-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back .contact .contact__wrapper .visit-info h6, .back .contact .contact__wrapper .visit-info .h6, .back .contact .contact__wrapper .visit-info p {
+  text-align: center;
+}
+.back .contact .contact__wrapper .visit-info .maps__wrapper {
+  display: flex;
+  justify-content: center;
+  border: 4px solid var(--color-yellow-80);
+  box-shadow: 3px 4px 10px var(--color-yellow-80);
+  border-radius: var(--border-radius-boxes);
+}
+.back .contact .contact__wrapper .send-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.back .contact .contact__wrapper .send-message fieldset {
+  display: block;
+  justify-content: center;
+  width: 350px;
+  margin-bottom: 2em;
+  border: 1px solid var(--color-yellow-logo);
+  padding: 0.7em;
+  border-radius: var(--border-radius-boxes);
+  color: var(--color-white);
+  background-color: var(--color-black-60);
+}
+.back .contact .contact__wrapper .send-message legend {
+  padding: 0 0.5em;
+  color: var(--color-yellow-logo);
+  font-size: 1.4rem;
+  text-align: center;
+}
+.back .contact .contact__wrapper .send-message .sendus-message_form_wrapper {
+  width: 340px;
+  display: flex;
+  justify-content: space-around;
+}
+.back .contact .contact__wrapper .send-message #email, .back .contact .contact__wrapper .send-message #title, .back .contact .contact__wrapper .send-message #paypal, .back .contact .contact__wrapper .send-message #confirm {
+  width: 326px;
+}
+.back .contact .contact__wrapper .send-message textarea, .back .contact .contact__wrapper .send-message input {
+  text-indent: 10px;
+}
+.back .contact .contact__wrapper .send-message label {
+  display: flex;
+  color: var(--color-white);
+  justify-content: left;
+}
+.back .contact .contact__wrapper .send-message .send-msg-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.back .contact .contact__wrapper .send-message #message {
+  width: 326px;
+  height: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+.back .contact .contact__wrapper .send-message a {
+  color: var(--color-black);
+  padding: 5px 15px;
+  border: var(--border-1px-yellow);
+  background-color: var(--color-yellow-logo);
+  border-radius: var(--border-radius-boxes);
+}
+.back .contact .contact__wrapper .send-message a:hover {
+  background-color: var(--color-grey-disabled);
+  border: var(--border-1px-yellow);
+}
+.back .checkout #cvc, .back .checkout #exp_date, .back .checkout #cardnumber, .back .cart #cvc, .back .cart #exp_date, .back .cart #cardnumber {
+  width: 250px;
+}
+.back .checkout fieldset, .back .cart fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black-90);
+  padding: 20px;
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+}
+.back .checkout fieldset .form_cardnumber, .back .checkout fieldset .form_exp_date, .back .checkout fieldset .form_cvc, .back .cart fieldset .form_cardnumber, .back .cart fieldset .form_exp_date, .back .cart fieldset .form_cvc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.back .checkout a, .back .cart a {
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+}
+.back .checkout h1, .back .cart h1 {
+  margin: 0.3em auto;
+}
+.back .checkout .row3, .back .checkout .row5, .back .cart .row3, .back .cart .row5 {
+  height: 20px;
+  border-bottom: var(--border-1px-yellow);
+}
+.back .checkout span, .back .checkout .vat, .back .checkout .price__before, .back .checkout .price__before__top, .back .checkout .price__before__bottom, .back .checkout .checkout_items, .back .checkout .address, .back .checkout .change, .back .cart span, .back .cart .vat, .back .cart .price__before, .back .cart .price__before__top, .back .cart .price__before__bottom, .back .cart .checkout_items, .back .cart .address, .back .cart .change {
+  font-size: 0.8rem;
+}
+.back .checkout .price__before, .back .checkout .price__before__top, .back .checkout .price__before__bottom, .back .cart .price__before, .back .cart .price__before__top, .back .cart .price__before__bottom {
+  text-decoration: line-through;
+  text-align: right;
+}
+.back .checkout .filler, .back .cart .filler {
+  color: var(--color-black);
+}
+.back .checkout .checkout_items, .back .checkout .change, .back .checkout .amountfreight, .back .checkout .totalamount, .back .cart .checkout_items, .back .cart .change, .back .cart .amountfreight, .back .cart .totalamount {
+  text-align: right;
+}
+.back .checkout .vat, .back .checkout .order, .back .checkout .freight, .back .checkout .address, .back .cart .vat, .back .cart .order, .back .cart .freight, .back .cart .address {
+  white-space: nowrap;
+}
+.back .checkout .checkout__cart, .back .cart .checkout__cart {
+  grid-template-columns: 120px 110px 70px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
+}
+.back .checkout__cart {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.back .checkout__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em;
+}
+.back .payment-options img {
+  width: 100%;
+}
+.back .visa {
+  width: 350px;
+  margin-bottom: 2em;
+}
+.back legend {
+  padding: 0 0.5em;
+  color: var(--color-yellow-logo);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.back .paynow-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.back .paynow-button a {
+  margin-top: 20px;
+  color: var(--color-black);
+  padding: 5px 15px;
+  border: var(--border-1px-yellow);
+  background-color: var(--color-yellow-logo);
+  border-radius: var(--border-radius-boxes);
+}
+.back .paynow-button a:hover {
+  background-color: var(--color-grey-disabled);
+  color: var(--color-yellow-logo);
+}
+.back .checkout__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+.back .checkout__bottom .terms {
+  padding: 0.5em;
+  width: 200px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.back .checkout__bottom a:hover {
+  text-decoration: underline;
+}
+.back .checkout__bottom a img {
+  padding: 2px;
+}
+.back .red {
+  color: var(--color-red);
+}
+.back .red:after {
+  content: url(../images/ico_cancel-red.svg);
+  padding: 4px;
+}
+.back .checkout_success a {
+  font-style: italic;
+}
+.back .checkout_success a:hover {
+  color: var(--color-white);
+}
+.back .checkout_success .success__wrapper {
+  padding: 2.5em 1em 0em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  height: 460px;
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  background-color: var(--color-black-60);
+}
+.back .checkout_success .success__wrapper p {
+  max-width: 500px;
+  font-size: 1rem;
+  padding: 1em;
+}
+.back .checkout_success .success__wrapper .success {
+  font-size: 1.3rem;
+}
+.back .checkout_success .success__wrapper img {
+  width: 110px;
+}
+.back .checkout_success .profile-links {
+  width: 340px;
+}
+.back .psn-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.back .psn-grid .spacer {
+  height: 2em;
+}
+.back .image-mockup img {
+  width: 100%;
+}
+.back .psn__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  max-width: 600px;
+}
+.back .psn__wrapper_wide, .back .detail-image {
+  display: none;
+}
+.back .summary__wrapper {
+  display: flex;
+  margin: 0 0 0 1em;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.back .summary__wrapper .detail-image {
+  background-image: url(../images/gamedetails/forgelegenddetails2_small.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius-boxes);
+  height: 180px;
+  background-position: left;
+}
+.back .container {
+  background-color: var(--color-black-60);
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  width: 350px;
+  height: 350px;
+}
+.back .container:hover {
+  border-radius: var(--border-radius-boxes);
+  box-shadow: 3px 3px 8px var(--color-yellow-logo);
+}
+.back .items {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 160px 70px 30px 80px;
+  grid-template-rows: 45px 20px 22px 22px 22px 22px 28px 22px 24px 24px 24px;
+  grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover backtogames backtogames backtogames" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover useroffers useroffers useroffers" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "ourprice number number price" ". . . pricebefore";
+}
+.back .small {
+  font-size: 0.8rem;
+  width: 100%;
+}
+.back .psnleft {
+  text-align: left;
+}
+.back .psnleft a {
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+}
+.back .psnleft a:hover {
+  text-decoration: underline;
+  color: var(--color-white);
+}
+.back .psnright {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.back .psnright img, .back .psnright a {
+  width: 20px;
+  height: 20px;
+}
+.back .psncenter {
+  text-align: center;
+}
+.back .psncenter img {
+  display: flex;
+  justify-content: center;
+  height: 14px;
+}
+.back .game-title {
+  grid-area: gametitle;
+}
+.back .game-cover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  grid-area: gamecover;
+  height: 105%;
+  padding: 6px;
+}
+.back .game-cover img:hover {
+  border-radius: 1em;
+  box-shadow: 3px 3px 8px var(--color-yellow-logo);
+  transform: scale(1.1);
+}
+.back .game-cover img {
+  height: 95%;
+  width: 95%;
+  margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+.back .backtogames {
+  grid-area: backtogames;
+  display: flex;
+  align-items: flex-end;
+}
+.back .release-date {
+  grid-area: releasedate;
+}
+.back .reldate {
+  grid-area: reldate;
+}
+.back .type {
+  grid-area: type;
+}
+.back .type-ico {
+  grid-area: typeico;
+}
+.back .type-text {
+  grid-area: typetext;
+}
+.back .region {
+  grid-area: region;
+}
+.back .region-ico {
+  grid-area: regionico;
+}
+.back .region-text {
+  grid-area: regiontext;
+}
+.back .platform {
+  grid-area: platform;
+}
+.back .platform-ico {
+  grid-area: platformico;
+}
+.back .platform-text {
+  grid-area: platformtext;
+}
+.back .useroffers {
+  grid-area: useroffers;
+  display: flex;
+  align-items: flex-start;
+}
+.back .gsrating {
+  white-space: nowrap;
+  grid-area: gsrating;
+}
+.back .rating {
+  grid-area: rating;
+}
+.back .readreview {
+  grid-area: readreview;
+}
+.back .togglewishlist {
+  grid-area: togglewishlist;
+  width: 100%;
+}
+.back .togglewishlist img {
+  display: flex;
+  justify-content: flex-end;
+}
+.back .togglewishlist img:hover {
+  content: url(../images/ico_heart.svg);
+}
+.back .togglewishlist .remove:hover {
+  content: url(../images/ico_heart_-.svg);
+}
+.back .ourprice {
+  grid-area: ourprice;
+}
+.back .number {
+  grid-area: number;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back .price {
+  grid-area: price;
+}
+.back .price__before {
+  grid-area: pricebefore;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+.back .price__before .dollar {
+  font-size: 0.8rem;
+}
+.back .dollar {
+  color: rgba(0, 0, 0, 0);
+}
+.back .dollar:before {
+  content: "$";
+  color: var(--color-yellow-logo);
+}
+.back .howmany {
+  font-size: 1rem;
+  border: var(--border-1px-yellow);
+  background-color: var(--color-black);
+  border-radius: var(--border-radius-boxes);
+  width: 40px;
+  margin: 0 5px;
+  text-align: center;
+}
+.back .psn__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.back .psn__buttons a {
+  display: flex;
+  justify-content: center;
+  color: var(--color-yellow-logo);
+  text-decoration: none;
+  width: 130px;
+  height: 100%;
+}
+.back .psn__buttons a:hover {
+  color: var(--color-black);
+  border: var(--color-black);
+}
+.back .product_details, .back .cart, .back .wishlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+.back .product_details h1, .back .cart h1, .back .wishlist h1 {
+  margin: 0.25em;
+}
+.back .product_details .share, .back .cart .share, .back .wishlist .share {
+  display: block;
+  width: 220px;
+  height: 140px;
+  background-color: var(--color-black-60);
+  justify-content: center;
+  align-items: center;
+  margin: 3em auto;
+}
+.back .product_details .share p, .back .cart .share p, .back .wishlist .share p {
+  margin: 1em;
+}
+.back .product-image, .back .product-details, .back .product-addtocart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back .details .psn__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.back .product-price-mob {
+  display: none;
+}
+.back .summary {
+  font-size: 1rem;
+  max-width: 350px;
+  width: 95%;
+  grid-area: summary;
+}
+.back .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 350px;
+}
+.back .description .divider {
+  margin: 0;
+  height: 0;
+}
+.back .description h4, .back .description .h4 {
+  margin: 25px auto 0 auto;
+  color: var(--color-white);
+}
+.back .description img {
+  width: 350px;
+}
+.back .product-price-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: addtocart;
+}
+.back .product-price-mob a {
+  text-decoration: none;
+}
+.back .viewdetails__cta,
+.back .addtocart__cta:hover,
+.back .checkout__cta:hover,
+.back .cta:hover {
+  background-color: var(--color-yellow-logo);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+.back .addtocart__cta, .back .checkout__cta, .back .cta {
+  width: 130px;
+  color: var(--color-yellow-logo);
+  background-color: var(--color-black);
+  text-align: center;
+  padding: 10px;
+  border-radius: var(--border-radius-boxes);
+  border: var(--border-1px-yellow);
+}
+.back .cta__buttons {
+  margin: 10px auto;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.back .product-addtocart {
+  display: none;
+}
+.back .product-image {
+  grid-area: image;
+}
+.back .product-details {
+  border-bottom: var(--border-1px-yellow);
+  grid-area: details;
+}
+.back .product-addtocart {
+  border-radius: var(--border-radius-boxes);
+  grid-area: addtocart;
+}
+.back .product-addtocart img:hover {
+  box-shadow: 3px 5px 12px var(--color-yellow-logo);
+  border-radius: 0.6em;
+}
+.back .gameplay, .back .plot, .back .features {
+  display: block;
+}
+.back .gameplay p, .back .plot p, .back .features p {
+  padding: 3px;
+}
+.back .features {
+  margin-bottom: 1em;
+}
+.back .cart .buy-games__left, .back .cart .goto-cart, .back .wishlist .buy-games__left, .back .wishlist .goto-cart {
+  width: 175px;
+}
+.back .cart .buy-games__left a, .back .cart .goto-cart a, .back .wishlist .buy-games__left a, .back .wishlist .goto-cart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.back .cart h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.back .wishlist-links {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+}
+.back .wl-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.back .wl-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.back .cart-checkout {
+  margin: 0 auto 0.5em auto;
+}
+.back .cart-checkout img {
+  width: 300px;
+}
+.back footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-black-90);
+}
+.back .footer__wrapper {
+  width: 100%;
+  border-top: 1px solid var(--color-yellow-logo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2em 0;
+}
+.back .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--color-yellow-logo);
+}
+.back .footer__sitenav {
+  margin-bottom: 8px;
+}
+.back .footer__sitenav span {
+  display: block;
+  align-items: flex-start;
+  height: 30px;
+}
+.back a:hover {
+  color: var(--color-yellow-logo);
+}
+.back .left .active {
+  background-color: var(--color-grey-disabled);
+  width: 100%;
+  border-radius: 0.4em;
+  cursor: default;
+  color: var(--color-yellow-logo);
+}
+.back .left .links:hover {
+  background-color: var(--color-grey-disabled);
+  border-right: 2px solid var(--color-yellow-logo);
+  border-radius: 0.4em;
+  color: var(--color-yellow-logo);
+}
+.back .left .menu {
+  width: 170px;
+  padding: 5px 10px;
+  margin: 5px auto;
+}
+.back .left .links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3px;
+  padding: 3px;
+  width: 180px;
+}
+.back .left .links img {
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+}
+.back .left a {
+  display: inline-flex;
+  align-items: center;
+}
+.back .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1em;
+  gap: 2em;
+}
+.back .get-app,
+.back .social-media {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--color-yellow-logo);
+}
+.back .social-media {
+  border: 1px solid var(--color-yellow-logo);
+  padding: 1em;
+  border-radius: 1em;
+}
+.back .social-media img {
+  transition: all 0.2s;
+}
+.back .social-media img:hover {
+  transform: scale(1.4);
+}
+.back .app-text,
+.back .social-media__icons,
+.back .trustpilot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.back .social-media__text {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.back .app-text,
+.back .partners {
+  display: block;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.back .app-text p {
+  padding: 2px;
+}
+.back .app-text a,
+.back .partners a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-yellow-logo);
+}
+.back .app-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+.back .app-images img {
+  max-width: 130px;
+  padding: 5px;
+}
+.back .trustpilot__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding-bottom: 1.5em;
+}
+.back .trustpilot {
+  border-bottom: 1px solid var(--color-yellow-logo);
+}
+.back .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.back .logo__footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.back .logo__footer img {
+  width: 75%;
+  max-width: 100%;
+}
+.back .partners {
+  padding-bottom: 1em;
+}
+.back .partners .checkpartners {
+  padding-bottom: 2em;
+  font-size: 1.2rem;
+}
+.back .partners .partners__spacer {
+  padding: 10px;
+}
+.back .partners a:hover {
+  text-decoration: underline;
+}
+.back .partners a {
+  padding: 2px 0;
+}
+.back .copyright {
+  display: block;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0;
+  border-top: 1px solid var(--color-yellow-logo);
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--color-black-90);
+}
+@media screen and (max-height: 450px) {
+  .back .menu-flyin {
+    height: 250px;
+  }
+  .back .menu-flyin .active {
+    height: 16px;
+  }
+  .back .menu-flyin .links {
+    height: 20px;
+    font-size: 8px;
+  }
+  .back .menu-flyin .links img {
+    padding: 0px;
+    width: 15px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .back .footer__wrapper .widescreen {
+    display: none;
+  }
+  .back .header__wrapper {
+    display: none;
+  }
+  .back .topnav__mob {
+    margin: 0 auto;
+  }
+  .back .navbar-top {
+    top: 5px;
+  }
+  .back .main-menu {
+    display: none;
+  }
+  .back .placeholder {
+    display: none;
+  }
+  .back .header__wrapper-wide {
+    height: 140px;
+    display: grid;
+    padding: 0 5px;
+    width: 360px;
+    padding-top: 5px;
+    justify-content: space-around;
+    align-content: flex-start;
+    grid-template-areas: "navbar navbar navbar" "profile__pic profile__name logout" "profile__pic . .";
+    grid-template-columns: 80px 200px 80px;
+    grid-template-rows: 45px 75px 15px;
+    height: 140px;
+    width: 360px;
+  }
+  .back .header__wrapper-wide .topnav__mob {
+    grid-area: navbar;
+    width: 360px;
+    justify-content: center;
+  }
+  .back .header__wrapper-wide .header__logo {
+    display: none;
+    grid-area: logo;
+    background-image: url(../images/img_logo_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+  }
+  .back .header__wrapper-wide .explore_none {
+    display: none;
+    grid-area: explore;
+  }
+  .back .header__wrapper-wide .explore {
+    display: none;
+  }
+  .back .header__wrapper-wide .header__profile-pic {
+    background-image: url(../images/img_profilepic_wide.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: profile__pic;
+    align-self: center;
+    background-position-y: top;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 100%;
+  }
+  .back .header__wrapper-wide .profile__name {
+    display: grid;
+    grid-area: profile__name;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .back .header__wrapper-wide .logout {
+    display: grid;
+    text-align: right;
+    color: var(--color-yellow-logo);
+    padding-right: 5px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .back .main-menu {
+    grid-area: menu;
+    width: 100%;
+  }
+  .back .profile__card p {
+    font-size: 1.2rem;
+  }
+  .back .profile__card .spacer {
+    height: 3em;
+  }
+  .back .header__wrapper-wide {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu logo explore profile__pic navbar navbar" ". logo explore profile__pic profile__name logout" ". logo explore . . .";
+    grid-template-columns: 80px 150px 1fr 100px 210px 155px;
+    grid-template-rows: 45px 75px 15px;
+    width: 100%;
+  }
+  .back .header__wrapper-wide .topnav__mob {
+    width: 100%;
+    justify-content: center;
+  }
+  .back .header__wrapper-wide .header__logo {
+    grid-area: logo;
+    background-image: url(../images/img_logo_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+  }
+  .back .header__wrapper-wide .explore_none {
+    display: flex;
+    grid-area: explore;
+  }
+  .back .header__wrapper-wide .explore {
+    display: none;
+  }
+  .back .header__wrapper-wide .header__profile-pic {
+    background-image: url(../images/img_profilepic_wide.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: profile__pic;
+    align-self: center;
+    background-position-y: top;
+    margin: 10px;
+    margin-top: 20px;
+    height: 100%;
+  }
+  .back .header__wrapper-wide .profile__name {
+    display: grid;
+    grid-area: profile__name;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .back .header__wrapper-wide .logout {
+    display: grid;
+    text-align: right;
+    color: var(--color-yellow-logo);
+    padding-right: 5px;
+    margin-top: 5px;
+  }
+  .back .header__wrapper-wide .topnav__mob {
+    grid-area: navbar;
+  }
+  .back .buy-sell_buttons img {
+    width: 15vh;
+  }
+  .back .footer__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .back .footer__wrapper .links .widescreen {
+    display: flex;
+    width: 100%;
+  }
+}
+.back .left, .back .middle, .back .right,
+.back .get-app,
+.back .trustpilot {
+  border-bottom: 0;
+  margin-top: 0;
+}
+.back .trustpilot__images {
+  padding-top: 1em;
+}
+.back .social-media {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.back .index_sign-in .sign_in, .back .index_sign-in .register, .back .index_sign-in .sellgames {
+  width: 360px;
+}
+.back .profile-links {
+  width: 380px;
+}
+.back .checkout .checkout__cart, .back .cart .checkout__cart {
+  grid-template-columns: 200px 200px 100px;
+}
+.back .details .psn__wrapper {
+  display: none;
+}
+.back .details .psn__wrapper_wide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+  max-width: 800px;
+  background-color: var(--color-black-60);
+  border-radius: var(--border-radius-boxes);
+  border: var(--border-1px-yellow);
+}
+.back .details .psn__wrapper_wide .detail-image {
+  display: block;
+}
+.back .details .psn__wrapper_wide .container {
+  box-shadow: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.back .description {
+  width: 500px;
+}
+.back .description img {
+  width: 500px;
+}
+.back .product-details {
+  border-bottom: none;
+}
+.back .cart-items {
+  display: flex;
+}
+.back .cart-items-mob {
+  display: none;
+}
+.back .cart .buy-games__left, .back .cart .wl-left, .back .cart .wl-right, .back .wishlist .buy-games__left, .back .wishlist .wl-left, .back .wishlist .wl-right {
+  width: 532px;
+}
+.back .cart .buy-games__left a, .back .cart .wl-left a, .back .cart .wl-right a, .back .wishlist .buy-games__left a, .back .wishlist .wl-left a, .back .wishlist .wl-right a {
+  display: flex;
+  width: 266px;
+}
+.back .cart .cart h1, .back .wishlist .cart h1 {
+  font-size: 3.583rem;
+}
+.back .cart .wl-right a, .back .wishlist .wl-right a {
+  justify-content: flex-end;
+}
+.back .cart .wl-left a, .back .wishlist .wl-left a {
+  justify-content: flex-start;
+}
+.back .wishlist-links {
+  width: 532px;
+}
+.back .image-mockup, .back .psn__wrapper {
+  max-width: 740px;
+}
+.back .spacer {
+  height: 2em;
+}
+
+/* @media screensize over 1080px */
+@media screen and (min-width: 1081px) {
+  .spacer {
+    height: 2em;
+  }
+  .main-menu {
+    grid-area: menu;
+    width: 100%;
+  }
+  .profile__card p {
+    font-size: 1.2rem;
+  }
+  .profile__card .spacer {
+    height: 5em;
+  }
+  .header__wrapper-wide {
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: "menu logo explore profile__pic navbar navbar" ". logo explore profile__pic profile__name logout" ". logo explore . . .";
+    grid-template-columns: 60px 190px 1fr 100px 210px 155px;
+    grid-template-rows: 45px 75px 15px;
+    width: 100%;
+  }
+  .header__wrapper-wide .topnav__mob {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__wrapper-wide .header__logo {
+    grid-area: logo;
+    background-image: url(../images/img_logo_footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+  }
+  .header__wrapper-wide .explore_none {
+    display: none;
+    grid-area: explore;
+  }
+  .header__wrapper-wide .explore {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-area: explore;
+    text-align: center;
+  }
+  .header__wrapper-wide .explore .lets-explore, .header__wrapper-wide .explore h1 {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 4.7vw;
+    white-space: nowrap;
+    color: var(--color-black);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--color-yellow-logo);
+  }
+  .header__wrapper-wide .explore img {
+    width: 80%;
+  }
+  .header__wrapper-wide .header__profile-pic {
+    background-image: url(../images/img_profilepic_wide.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: profile__pic;
+    align-self: center;
+    background-position-y: top;
+    margin: 10px;
+    margin-top: 20px;
+    height: 100%;
+  }
+  .header__wrapper-wide .profile__name {
+    display: grid;
+    grid-area: profile__name;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .header__wrapper-wide .logout {
+    display: grid;
+    text-align: right;
+    color: var(--color-yellow-logo);
+    padding-right: 5px;
+    margin-top: 5px;
+  }
+  .header__wrapper-wide .topnav__mob {
+    grid-area: navbar;
+  }
+  .buy-sell_buttons img {
+    width: 15vh;
+  }
+  .footer__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer__wrapper, .links, .widescreen {
+    display: flex;
+  }
+  .left, .middle, .right,
+.get-app,
+.trustpilot {
+    border-bottom: 0;
+    margin-top: 0;
+  }
+  .trustpilot__images {
+    padding-top: 1em;
+  }
+  .social-media {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .index_sign-in .sign_in, .index_sign-in .register, .index_sign-in .sellgames {
+    width: 380px;
+  }
+  .profile-links {
+    width: 400px;
+  }
+  .contact .divider {
+    display: none;
+  }
+  .contact .contact__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .checkout__wrapper {
+    width: 800px;
+  }
+  .checkout .checkout__cart, .cart .checkout__cart {
+    grid-template-columns: 300px 200px 100px;
+  }
+  .details .psn__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .summary {
+    max-width: 350px;
+  }
+  .details .psn__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .description {
+    width: 600px;
+  }
+  .description img {
+    width: 300px;
+  }
+  .details-img {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+  }
+  .product-price-mob {
+    display: none;
+  }
+  .product-addtocart {
+    display: flex;
+  }
+  .product-details {
+    border-bottom: none;
+  }
+  .cart-items {
+    display: flex;
+  }
+  .cart-items-mob {
+    display: none;
+  }
+  .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
+    width: 532px;
+  }
+  .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
+    display: flex;
+    width: 266px;
+  }
+  .cart .cart h1, .wishlist .cart h1 {
+    font-size: 3.583rem;
+  }
+  .cart .wl-right a, .wishlist .wl-right a {
+    justify-content: flex-end;
+  }
+  .cart .wl-left a, .wishlist .wl-left a {
+    justify-content: flex-start;
+  }
+  .wishlist-links {
+    width: 532px;
+  }
+  /* PSN-GRID */
+  .image-mockup, .psn__wrapper {
+    max-width: 1200px;
+  }
+}
+/* @media screensize over 1980px */
+@media screen and (min-width: 1981px) {
+  .header__wrapper-wide {
+    height: 200px;
+    max-width: 1980px;
+  }
+  .header__wrapper-wide .explore .h1, .header__wrapper-wide .explore .lets-explore {
+    margin-top: 30px;
+  }
+  .header__wrapper-wide .explore img {
+    margin-top: 25px;
+    width: 60%;
+  }
+  .footer__wrapper {
+    padding-right: 550px;
+    padding-left: 550px;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=main_20221110143123.css.map */
