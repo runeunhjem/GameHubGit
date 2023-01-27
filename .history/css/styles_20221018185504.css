@@ -1,0 +1,123 @@
+:root {
+  --color-yellow-logo: #F5C518;
+  --color-yellow-80: rgba(245, 197, 24, 0.5);
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-red: #EF5A5A;
+  --color-green-checked: #2DEB35;
+  --color-black-60: rgba(0, 0, 0, 0.6);
+  --color-grey-disabled: #404040;
+  --color-black-90: rgba(0, 0, 0, 0.9);
+  font-family: "Roboto", "Inter", Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-img.png);
+  background-size: cover;
+  color: var(--color-white);
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+}
+header a {
+  color: var(--color-white);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu-main {
+  display: flex;
+  background: var(--color-black-90);
+  padding: 0px 10px 0px 0px;
+  gap: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 0.5em;
+  border: 1px solid var(--color-yellow-logo);
+  height: 35px;
+  align-items: center;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 45px;
+  left: 5px;
+  background-color: var(--color-black-60);
+  z-index: 50;
+  border: 1px solid var(--color-yellow-logo);
+  border-radius: 1em;
+}
+nav li:hover {
+  background-color: var(--color-grey-disabled);
+  border-right: 2px solid var(--color-yellow-logo);
+}
+
+nav ul {
+  width: 165px;
+  padding: 0 0 0 10px;
+  margin: 5px auto;
+}
+
+.close {
+  display: grid;
+  grid-template-columns: 0.4fr 0.2fr;
+  justify-content: right;
+  right: 20px;
+  padding: 0 0 5px 0;
+  margin-left: 30px;
+}
+
+nav li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3px;
+}
+nav li img {
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+  -webkit-animation-name: flyin;
+          animation-name: flyin;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-direction: "normal";
+          animation-direction: "normal";
+}
+@-webkit-keyframes flyin {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes flyin {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}/*# sourceMappingURL=styles_20221018185504.css.map */
